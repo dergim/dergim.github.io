@@ -1,0 +1,594 @@
+/*  */
+html, body{ overflow: hidden; width: 100%; height: 100%; margin: 0; }
+body { overflow: hidden; margin: 0; background-image: url('../imgs/mainBg.jpg');  background-image: radial-gradient(at 39% 135% , #ee475c -67%, #19182A 80%);
+  background-image: -webkit-radial-gradient(at 39% 135% , #ee475c -67%, #19182A 80%);
+  background-image: -moz-radial-gradient(at 39% 135% , #ee475c -67%, #19182A 80%);
+  background-image: -o-radial-gradient(at 39% 135% , #ee475c -67%, #19182A 80%); background-size: 100% 100%; background-repeat: no-repeat;  background-attachment: fixed;}
+input[type=text], input[type=submit], input[type=buttom], input[type=reset],input[type=password], textarea, select  { background: none; border: 0 none; appearance: none; -moz-appearance: none; -webkit-appearance: none; border-radius: 0; -webkit-border-radius: 0; -moz-border-radius: 0; box-shadow: 0 0 0 0; -moz-box-shadow: 0 0 0 0; -webkit-box-shadow: 0 0 0 0; }
+
+input[type=text], input[type=password] { background-color: #fff }
+
+
+/* #wrapper_gradient */
+
+#wrapper { width: 100%; height: 100%; }
+
+/*#wrapper.defaultBg { 
+  
+}*/
+
+#wrapper.creBg { 
+  background-image: radial-gradient(at 39% 135% , #ee475c -67%, #19182A 80%);
+  background-image: -webkit-radial-gradient(at 39% 135% , #ee475c -67%, #19182A 80%);
+  background-image: -moz-radial-gradient(at 39% 135% , #ee475c -67%, #19182A 80%);
+  background-image: -o-radial-gradient(at 39% 135% , #ee475c -67%, #19182A 80%);
+}
+
+#wrapper .proBg { 
+  background-image: radial-gradient(at 39% 135% , #47b6ee -67%, #19182A 80%);
+  background-image: -webkit-radial-gradient(at 39% 135% , #47b6ee -67%, #19182A 80%);
+  background-image: -moz-radial-gradient(at 39% 135% , #47b6ee -67%, #19182A 80%);
+  background-image: -o-radial-gradient(at 39% 135% , #47b6ee -67%, #19182A 80%);
+}
+
+#wrapper .effBg { 
+  background-image: radial-gradient(at 39% 135% , #ff9d00 -67%, #19182A 80%);
+  background-image: -webkit-radial-gradient(at 39% 135% , #ff9d00 -67%, #19182A 80%);
+  background-image: -moz-radial-gradient(at 39% 135% , #ff9d00 -67%, #19182A 80%);
+  background-image: -o-radial-gradient(at 39% 135% , #ff9d00 -67%, #19182A 80%);
+}
+
+#wrapper .infoBg { 
+  background-image: radial-gradient(at 39% 135% , #49eebb -67%, #19182A 80%);
+  background-image: -webkit-radial-gradient(at 39% 135% , #49eebb -67%, #19182A 80%);
+  background-image: -moz-radial-gradient(at 39% 135% , #49eebb -67%, #19182A 80%);
+  background-image: -o-radial-gradient(at 39% 135% , #49eebb -67%, #19182A 80%);
+}
+
+
+/* header */
+
+header h1 { position: absolute; bottom: 50px; left: 50px; letter-spacing: 0.15em; }
+header h1 svg { float: left }
+header h1 span { float: left; display: inline-block; padding: 4px 0 0 4px }
+header h1 a { display: inline-block; opacity: 0.2; }
+header h1 a:hover { display: inline-block; opacity: 0.5; }
+
+header .break { display: block; }
+header .planet { position: absolute; display: block; width: 300px; height: 300px; border-radius: 50%; transiton: 0.7s; -moz-transition: 0.7s; -webkit-transition: 0.7s; }
+
+header .planet.cre { width: 280px; height: 280px; top: -43px; left: 10%; opacity: 0.7;
+	background-image: url('../imgs/crePlanet.jpg');
+	background-size: cover;
+
+	background-image: radial-gradient(at 63% 12% , #F32651 0%, #0A2A48 95%);
+	background-image: -webkit-radial-gradient(at 63% 12% , #F32651 0%, #0A2A48 95%);
+	background-image: -moz-radial-gradient(at 63% 12% , #F32651 0%, #0A2A48 95%);
+	background-image: -o-radial-gradient(at 63% 12% , #F32651 0%, #0A2A48 95%);
+}
+header .planet.eff { width: 216px; height: 216px; top: -39px; right: 31%;  opacity: 0.6;
+	background-image: url('../imgs/effPlanet.jpg');
+	background-size: cover;
+
+  background-image: radial-gradient(at 63% 12% , #F48E0F 0%, #0A2A48 95%);
+  background-image: -webkit-radial-gradient(at 63% 12% , #F48E0F 0%, #0A2A48 95%);
+  background-image: -moz-radial-gradient(at 63% 12% , #F48E0F 0%, #0A2A48 95%);
+  background-image: -o-radial-gradient(at 63% 12% , #F48E0F 0%, #0A2A48 95%);
+}
+header .planet.pro { width: 146px; height: 146px; top: -42px; left: 38%;  opacity: 0.3;
+	background-image: url('../imgs/proPlanet.jpg');
+	background-size: cover;
+
+  background-image: radial-gradient(at 63% 12% , #10CEE9 0%, #0A2A48 95%);
+  background-image: -webkit-radial-gradient(at 63% 12% , #10CEE9 0%, #0A2A48 95%);
+  background-image: -moz-radial-gradient(at 63% 12% , #10CEE9 0%, #0A2A48 95%);
+  background-image: -o-radial-gradient(at 63% 12% , #10CEE9 0%, #0A2A48 95%);
+}
+header .planet.info { width: 450px; height: 450px; top: -35px; right: -142px; 
+	background-image: url('../imgs/infoPlanet.jpg');
+	background-size: cover;
+
+	background-image: radial-gradient(at 63% 12% , #11F5B0 0%, #0A2A48 95%);
+  	background-image: -webkit-radial-gradient(at 63% 12% , #11F5B0 0%, #0A2A48 95%);
+  	background-image: -moz-radial-gradient(at 63% 12% , #11F5B0 0%, #0A2A48 95%);
+  	background-image: -o-radial-gradient(at 63% 12% , #11F5B0 0%, #0A2A48 95%);  
+}
+
+header .planet:hover { opacity: 1; transiton: 0.7s ease-in-out; -moz-transition: 0.7s ease-in-out; -webkit-transition: 0.7s ease-in-out; }
+
+.planet.pro:hover { box-shadow: #10CEE9 4px 1px 33.5px; }
+.planet.eff:hover { box-shadow: #F48E0F 4px 1px 33.5px; }
+.planet.cre:hover { box-shadow: #F32651 4px 1px 33.5px; }
+.planet.info:hover { box-shadow: #11F5B0 4px 1px 33.5px;  }
+
+header .words {  z-index: 1000; position: absolute; font-size: 11px; font-weight: 400; opacity: 0.3; letter-spacing: 0.15em}
+header .words.cre { left: 14%; top: 320px }
+header .words.eff { right: 34%; top: 240px; text-align: right }
+header .words.pro { left: 40%; top: 150px; }
+header .words.info { right: 7%; top: 530px; text-align: right; height: 300px; display: inline-block; }
+
+.stLine { display: block; width: 1px; height: 200px; background-color: #fff; opacity: 0.5 }
+.cre .stLine { float: left; margin-top: -175px; margin-right: 10px; }
+.eff .stLine { float: right; margin-left: 10px; margin-top: -132px; height: 158px }
+.pro .stLine { float: left; margin-top: -79px; height: 105px; margin-right: 10px; }
+.info .stLine { float: right; margin-left: 10px; height: 270px; margin-top: -244px }
+
+
+
+/* keyframes for planets */
+
+@-webkit-keyframes boucingPlanets{
+  0% {-webkit-transform:translate(0, 0);}
+  25%{-webkit-transform:translate(0,7%);}
+  50% {-webkit-transform:trans late(0, 0);}
+  75% {-webkit-transform:translate(0, 7%);}
+  100% {-webkit-transform:translate(0, 0);}
+}
+@-moz-keyframes boucingPlanets{
+  0%{-moz-transform:translate(0, 0);}
+  25%{-moz-transform:translate(0,7%);}
+  50% {-moz-transform:translate(0, 0);}
+  75% {-moz-transform:translate(0, 7%);}
+  100%{-moz-transform:translate(0, 0);}
+}
+@-o-keyframes boucingPlanets{
+  0%{-o-transform:translate(0, 0);}
+  25%{-o-transform:translate(0,7%);}
+  50% {-o-transform:translate(0, 0);}
+  75% {-o-transform:translate(0, 7%);}
+  100%{-o-transform:translate(0, 0);}
+}
+@keyframes boucingPlanets{
+  0% {transform:translate(0, 0);}
+  25%{transform:translate(0,7%);}
+  50% {transform:translate(0, 0);}
+  75% {transform:translate(0, 7%);}
+  100% {transform:translate(0, 0);}
+  }
+
+.planet {-moz-animation:boucingPlanets 4s ease-in-out infinite;-o-animation:boucingPlanets 4s ease-in-out infinite;-webkit-animation:boucingPlanets 4s ease-in-out infinite;animation:boucingPlanets 4s ease-in-out infinite; }
+
+
+
+
+
+
+/* nav */
+
+.mainNav { bottom: 54px; left: 49%; z-index: 20000; position: absolute; font-size: 0 }
+#mainMenu { position: relative; display: block; width: 30px; height: 20px; cursor: pointer; opacity: 0.4 }
+#mainMenu span { z-index: 1200; position: absolute; display: inline-block; width: 100%; height: 1px; background-color: #fff;  transiton: 0.3s ease-in-out; -moz-transition: 0.3s ease-in-out; -webkit-transition: 0.3s ease-in-out;  }
+#mainMenu span:nth-child(2) { top: 9.5px; left: 0; }
+#mainMenu span:nth-child(3) { bottom: 0 }
+#mainMenu:hover { opacity: 0.6; }
+
+
+header nav a { display: block; width: 100%; color: #efefef; font-weight: 700; text-align: center; font-size: 2em; text-transform: uppercase; margin-bottom: 20px; }
+header nav a:hover { color: #F32651; font-style: italic }
+header nav .navBg {  z-index: 10000; position: absolute;  background-attachment: fixed; width: 100%; height: 100%; background-color: #151522; opacity: 0.9; transform: translateY(0); transform: -webkit-translateY(0); transform: -moz-translateY(0); transform: -o-translateY(0); transiton: 0.3s ease-in-out; -moz-transition: 0.3s ease-in-out; -webkit-transition: 0.3s ease-in-out;  }
+.navA { opacity: 1; position: absolute; width: 100%; height: 80%; z-index: 15000; padding-top: 20%; transform: translateY(0); transform: -webkit-translateY(0); transform: -moz-translateY(0); transform: -o-translateY(0); transiton: 0.3s ease-in-out; -moz-transition: 0.3s ease-in-out; -webkit-transition: 0.3s ease-in-out; }
+
+#wrapper .navBg.firstHide, #wrapper .navA.firstHide { opacity: 0; transform: translateY(100%); transform: -webkit-translateY(100%); transform: -moz-translateY(100%); transform: -o-translateY(100%); transiton: 0.3s ease-in-out; -moz-transition: 0.3s ease-in-out; -webkit-transition: 0.3s ease-in-out; }
+
+.navTop { transform: rotate(45deg) translate(7px, 7px); -webkit-transform: rotate(45deg) translate(7px, 7px); -o-transform: rotate(45deg) translate(7px, 7px); -moz-transform: rotate(45deg) translate(7px, 7px); transiton: 0.3s ease-in-out; -moz-transition: 0.3s ease-in-out; -webkit-transition: 0.3s ease-in-out;  }
+.navMid { left: -100px; opacity: 0; transiton: 0.3s ease-in-out; -moz-transition: 0.3s ease-in-out; -webkit-transition: 0.3s ease-in-out;  }
+.navBttm {  transform: rotate(-45deg) translate(7px, -7px); -webkit-transform: rotate(-45deg) translate(7px, -7px); -o-transform: rotate(-45deg) translate(7px, -7px); -moz-transform: rotate(-45deg) translate(7px, -7px); transiton: 0.3s ease-in-out; -moz-transition: 0.3s ease-in-out; -webkit-transition: 0.3s ease-in-out;   }
+
+
+/* #banner */
+
+#banenr { width: 100%; height: 100%; position: relative; }
+#banner h2.over1000 { width: 100%; margin-top: 450px; text-align: center; color: #CEAD3B; opacity: 0.5; line-height: 35px; font-weight: 400; letter-spacing: 0.15em; font-size: 1.2em }
+#banner h2.over1000 .break { display: block }
+#banner .dottedLine { display: inline-block; width: 90px; height: 23px; border-top: 1px dotted #CEAD3B }
+#banner h2.over1000 .words { display: inline-block; margin: 0 15px; }
+#banner h2.lets { font-size: 2.6em; font-weight: 400; width: 100%; text-align: center; color: #fff;  letter-spacing: 0.2em; margin-top: 50px; opacity: 0.8 }
+
+#logIn { width: 100%; margin-top: 50px; }
+.logInPage { text-align: center; display: inline-block; width: 100% }
+#logIn input[type=text] { border-top-left-radius: 7px; border-bottom-left-radius: 5px }
+#logIn input { width: 200px; border: 0 none; height: 15px; padding: 20px 20px; opacity: 0.6; font-size: 13px; font-weight: 400; color: #615F60; outline: none; transiton: 0.3s ease-in-out; -moz-transition: 0.3s ease-in-out; -webkit-transition: 0.3s ease-in-out;}
+#logIn input:hover { opacity: 0.7; transiton: 0.3s ease-in-out; -moz-transition: 0.3s ease-in-out; -webkit-transition: 0.3s ease-in-out;}
+#logIn input[type=password] { margin-left: -3px; margin-right: 2px }
+#logIn input[type=submit] { width: 150px; padding: 20px 20px; font-size: 15px; height: 55px; line-height: 15px; background-color: #1595CA; color: #fff; font-weight: 600; letter-spacing: 0.15em; cursor: pointer; opacity: 1; border-top-right-radius: 7px; border-bottom-right-radius: 7px;  transiton: 0.3s ease-in-out; -moz-transition: 0.3s ease-in-out; -webkit-transition: 0.3s ease-in-out; }
+#logIn input[type=submit]:hover { background-color: #007EB2;  transiton: 0.3s ease-in-out; -moz-transition: 0.3s ease-in-out; -webkit-transition: 0.3s ease-in-out; }
+
+#banner .groupping { width: 100%; text-align: center; margin-top: 30px }
+#banner h3 { display: inline-block; letter-spacing: 0.10em; font-weight: 300; }
+#banner h3 a { font-weight: 400; opacity: 0.5 }
+#banner h3:first-child { margin-right: 280px; }
+#banner h3:last-child { color: #B9B9B9 }
+#banner h3:last-child a { color: #DACF45;  }
+#banner h3 a:hover { opacity: 0.7; }
+#banner h3:last-child a:hover { display: inline-block; padding-bottom: 5px; border-bottom: 1px solid #DACF45 }
+
+/* footer */
+
+footer p { z-index: 100; position: fixed; bottom: 60px; right: 50px; color: #fff; opacity: 0.3; font-size: 10px; letter-spacing: 0.15em }
+
+
+
+
+
+
+
+
+
+
+
+/* media query */
+
+
+
+
+@media only screen and (min-width: 2100px) {
+	header .planet.cre { width: 330px; height: 330px; top: -43px; left: 10%; }
+	header .planet.eff { width: 270px; height: 270px; top: -39px; right: 31%; }
+	header .planet.pro { width: 200px; height: 200px; top: -42px; left: 38%; }
+	header .planet.info { width: 550px; height: 550px; top: -35px; right: -142px;  }
+
+	header .words {  z-index: 1000; position: absolute; font-size: 12px; font-weight: 400; opacity: 0.3; letter-spacing: 0.15em}
+	header .words.cre { top: 400px }
+	header .words.eff { top: 300px; }
+	header .words.pro { top: 220px; }
+	header .words.info { top: 660px;  }
+
+	.cre .stLine {  margin-top: -239px; height: 270px;}
+	.eff .stLine {  margin-left: 10px; margin-top: -178px; height: 208px }
+	.pro .stLine { margin-top: -125px; height: 155px; }
+	.info .stLine {  margin-left: 10px; height: 350px; margin-top: -321px }
+}
+
+@media only screen and (min-width: 2400px) {
+	header .planet.cre { width: 380px; height: 380px; top: -43px; left: 10%; }
+	header .planet.eff { width: 300px; height: 300px; top: -39px; right: 31%; }
+	header .planet.pro { width: 230px; height: 230px; top: -42px; left: 38%; }
+	header .planet.info { width: 640px; height: 640px; top: -35px; right: -142px;  }
+
+	header .words {  z-index: 1000; position: absolute; font-size: 12px; font-weight: 400; opacity: 0.3; letter-spacing: 0.15em}
+	header .words.cre { top: 450px }
+	header .words.eff { top: 350px; }
+	header .words.pro { top: 250px; }
+	header .words.info { top: 710px;  }
+
+	.cre .stLine {  margin-top: -239px; height: 270px;}
+	.eff .stLine {  margin-left: 10px; margin-top: -178px; height: 208px }
+	.pro .stLine { margin-top: -125px; height: 155px; }
+	.info .stLine {  margin-left: 10px; height: 350px; margin-top: -321px }
+}
+
+
+
+@media only screen and (min-height: 1000px) and (min-width: 1500px) {
+	#banner h2.over1000 { margin-top: 500px }
+	#banner h2.over1000 .words { font-size: 1.15em }
+	#banner h2.lets { font-size: 2.75em }
+	#logIn input { width: 220px }
+	#banner h3:first-child { margin-right: 313px }
+}
+@media only screen and (min-height: 1100px) and (min-width: 1500px) {
+	#banner h2.over1000 { margin-top: 550px }
+	#banner h2.over1000 .words { font-size: 1.35em }
+	#banner h2.lets { font-size: 2.95em }
+	#logIn input { width: 250px }
+	#banner h3:first-child { margin-right: 373px }
+	#banner .dottedLine { border-top: 2px dotted #CEAD3B }
+}
+@media only screen and (min-height: 1100px) and (min-width: 1025px) {
+	#banner h2.over1000 { margin-top: 600px }
+}
+
+@media only screen and (max-height: 960px) and (min-width: 1025px) {
+	#banner h2.over1000 { margin-top: 430px }
+
+	header .planet.cre { width: 240px; height: 240px; top: -43px; left: 10%; }
+	header .planet.eff { width: 180px; height: 180px; top: -39px; right: 31%; }
+	header .planet.pro { width: 120px; height: 120px; top: -42px; left: 38%; }
+	header .planet.info { width: 400px; height: 400px; top: -35px; right: -142px;  }
+
+	header .words {  z-index: 1000; position: absolute; font-size: 11px; font-weight: 400; opacity: 0.3; letter-spacing: 0.15em}
+	header .words.cre { left: 14%; top: 300px }
+	header .words.eff { right: 34%; top: 220px; text-align: right }
+	header .words.pro { left: 40%; top: 130px; }
+	header .words.info { right: 7%; top: 510px; text-align: right; height: 300px; display: inline-block; }
+
+	.stLine { display: block; width: 1px; height: 200px; background-color: #fff; opacity: 0.5 }
+	.cre .stLine { float: left; margin-top: -175px; margin-right: 10px; }
+	.eff .stLine { float: right; margin-left: 10px; margin-top: -132px; height: 158px }
+	.pro .stLine { float: left; margin-top: -79px; height: 105px; margin-right: 10px; }
+	.info .stLine { float: right; margin-left: 10px; height: 270px; margin-top: -244px }
+
+	#banner h2.over1000 { font-size: 1.1em; line-height: 30px }
+	#banner h2.lets { font-size: 2.4em; margin-top: 45px }
+	#logIn input { width: 185px }
+	#banner h3:first-child { margin-right: 248px }
+}
+
+
+@media only screen and (min-height: 1250px) and (min-width: 1100px) {
+	#banner h2.over1000 { margin-top: 630px }
+	#banner h2.over1000 .words { font-size: 1.5em }
+	#banner h2.lets { font-size: 3.2em }
+	#logIn input { width: 270px; height: 25px }
+	#logIn input[type=submit] { height: 65px; line-height: 18px; width: 180px }
+	#banner h3:first-child { margin-right: 400px }
+	#banner h3 a { font-size: 1.2em }
+	#logIn { margin-top: 60px }
+}
+
+@media only screen and (min-height: 1350px) and (min-width: 1100px) {
+	#banner h2.over1000 { margin-top: 670px }
+}
+
+
+
+
+
+@media only screen and (max-height: 850px) and (min-width: 1025px) {
+	#wrapper #banner h2.over1000 { margin-top: 330px }
+
+
+	#banner h2.over1000 { font-size: 1em; line-height: 30px }
+	#banner h2.lets { font-size: 2.2em; margin-top: 35px }
+	#logIn { margin-top: 40px }
+	#logIn input { width: 185px }
+	#banner h3:first-child { margin-right: 248px }
+
+	header .words.cre { left: 14%; top: 250px }
+	header .words.eff { right: 34%; top: 180px; }
+	header .words.pro { left: 40%; top: 100px; }
+	header .words.info { right: 7%; top: 450px; height: 300px; }
+
+	.cre .stLine { float: left; margin-top: -107px; margin-right: 10px; height: 135px }
+	.eff .stLine { float: right; margin-left: 10px; margin-top: -81px; height: 109px }
+	.pro .stLine { float: left; margin-top: -50px; height: 79px; margin-right: 10px; }
+	.info .stLine { float: right; margin-left: 10px; height: 186px; margin-top: -158px }
+}
+
+@media only screen and (max-width: 1366px) {
+	header .planet.cre { width: 200px; height: 200px; top: -43px; left: 10%; }
+	header .planet.eff { width: 150px; height: 150px; top: -39px; right: 31%; }
+	header .planet.pro { width: 110px; height: 110px; top: -42px; left: 38%; }
+	header .planet.info { width: 350px; height:350px; top: -35px; right: -142px;  }
+
+	header .words {  z-index: 1000; position: absolute; font-size: 11px; font-weight: 400; opacity: 0.3; letter-spacing: 0.15em}
+	header .words.cre { left: 14%; top: 210px }
+	header .words.eff { right: 34%; top: 160px; text-align: right }
+	header .words.pro { left: 40%; top: 90px; }
+	header .words.info { right: 7%; top: 400px; text-align: right; height: 300px; display: inline-block; }
+	.cre .stLine { float: left; margin-top: -107px; margin-right: 10px; height: 135px }
+	.eff .stLine { float: right; margin-left: 10px; margin-top: -81px; height: 109px }
+	.pro .stLine { float: left; margin-top: -50px; height: 79px; margin-right: 10px; }
+	.info .stLine { float: right; margin-left: 10px; height: 186px; margin-top: -158px }
+
+
+	
+}
+
+
+
+@media only screen and (max-width: 1366px) and (max-height: 768px) {
+	#wrapper #banner h2.over1000 { margin-top: 340px }
+	#logIn input { width: 170px; height: 12px }
+	#banner h2.over1000 .words { font-size: 1em }
+	#banner .dottedLine { width: 70px }
+	#banner h2.lets { font-size: 1.9em; margin-top: 25px }
+	#logIn input[type=submit] { width: 125px; height: 52px }
+	#banner h2.over1000 { line-height: 25px }
+	#banner h3:first-child { margin-right: 200px }
+	#banner .groupping { margin-top: 20px }
+
+
+
+
+}
+
+
+@media only screen and (max-width: 1200px) {
+	header .planet.cre { width: 170px; height: 170px; top: -43px; left: 10%; }
+	header .planet.eff { width: 130px; height: 130px; top: -39px; right: 31%; }
+	header .planet.pro { width: 95px; height: 95px; top: -42px; left: 38%; }
+	header .planet.info { width: 300px; height:300px; top: -35px; right: -142px;  }
+	
+	header .words.cre { top: 190px }
+	header .words.eff { top: 140px; }
+	header .words.pro { top: 80px; }
+	header .words.info { top: 350px;  }
+	
+
+	#logIn input { width: 170px; height: 12px }
+	#banner h2.over1000 .words { font-size: 1em }
+	#banner .dottedLine { width: 70px }
+	#banner h2.lets { font-size: 1.9em; margin-top: 25px }
+	#logIn input[type=submit] { width: 125px; height: 52px }
+	#banner h2.over1000 { line-height: 25px }
+	#banner h3:first-child { margin-right: 200px }
+	#banner .groupping { margin-top: 20px }
+
+
+/*.cre .stLine { float: left; margin-top: -107px; margin-right: 10px; height: 135px }
+	.eff .stLine { float: right; margin-left: 10px; margin-top: -81px; height: 109px }
+	.pro .stLine { float: left; margin-top: -50px; height: 79px; margin-right: 10px; }
+	.info .stLine { float: right; margin-left: 10px; height: 186px; margin-top: -158px }*/
+}
+
+
+@media only screen and (max-width: 1024px) {
+	#wrapper header .planet { width: 150px; height: 150px; top: 100px; opacity: 1 }
+	#wrapper header .planet.pro { left: 31% }
+	#wrapper header .planet.eff { right: 31% }
+	#wrapper header .planet.info { right: 10% }
+	header .stLine { display: none; }
+	#wrapper header .words { z-index: 1000; top: 165px; opacity: 0.6; text-align: center } 
+	#wrapper header .words.pro { left: 34% }
+	#wrapper header .words.eff { right: 35% }
+	#wrapper header .words.info { right: 12.8% }
+
+
+}
+
+@media only screen and (max-width: 910px) {
+	#banner h2.over1000 .words { letter-spacing: 0.10em; font-size: 0.9em }
+	#logIn { margin-top: 40px }
+	#wrapper header .planet { width: 130px; height: 130px; }
+	#wrapper header .words { top: 160px; height: auto }
+	#wrapper header .words.cre { left: 13.5% }
+	#wrapper header .words.pro { left: 33.5% }
+	#wrapper header .words.eff { right: 34% }
+	#wrapper header .words.info { right: 12% }
+
+	#banner .dottedLine { width: 40px; }
+
+	#logIn input { width: 140px }
+
+	#banner h3:first-child { margin-right: 135px }
+}
+
+
+@media only screen and (max-width: 768px) {
+	#wrapper #banner h2.over1000 {margin-top: 120px }
+	#wrapper { height: 960px; max-height: 960px; }
+	body, html { height: 960px; max-height: 960px; overflow-y: auto }
+	body { position: relative; background-image: radial-gradient(at 50% 194% , #ee475c -56%, #19182A 89%);
+  background-image: -webkit-radial-gradient(at 50% 194% , #ee475c -56%, #19182A 89%);
+  background-image: -moz-radial-gradient(at 50% 194% , #ee475c -56%, #19182A 89%);
+  background-image: -o-radial-gradient(at 50% 194% , #ee475c -56%, #19182A 89%);  }
+
+
+	
+	#wrapper header .planet.cre { top: 450px; left: 20%; }
+	#wrapper header .planet.pro { top: 450px; left: auto; right: 20% }
+	#wrapper header .planet.eff { top: 650px; right: auto; left: 20% }
+	#wrapper header .planet.info { top: 650px; right: 20% }
+
+	#wrapper header .words { top: 505px }
+	#wrapper header .words.cre { left: 24.2% }
+	#wrapper header .words.pro { left: auto; right: 22.2% }
+	#wrapper header .words.eff { top: 705px; left: 24%; right: auto }
+	#wrapper header .words.info { top: 705px;right: 22.7% }
+	
+	#banner { overflow: hidden; clear: both }
+
+	#banner h2.lets { font-size: 1.7em; margin-top: 30px }
+	#banner h2.over1000 .words { font-size: 0.8em }
+
+	#logIn input { padding: 17px 15px; font-size: 1em }
+	#logIn input[type=submit] { padding: 17px 15px; font-size: 1.1em; width: 110px; height: 46px }
+	#banner h3:first-child { margin-right: 100px }
+	.navBg { height: 1000px }
+	#wrapper .navBg.firstHide, #wrapper .navA.firstHide { opacity: 0; transform: translateX(100%); transform: -webkit-translateX(100%); transform: -moz-translateX(100%); transform: -o-translateX(100%); transiton: 0.3s ease-in-out; -moz-transition: 0.3s ease-in-out; -webkit-transition: 0.3s ease-in-out; }
+
+	header h1 { bottom: auto; left: 30px; top: 40px }
+	.mainNav { bottom: auto; right: 30px; left: auto; top: 41px }
+	footer p { bottom: 50px; right: auto; width: 100%; text-align: center; position: absolute; }
+
+	.navA { height: 100%; padding-top: 0 }
+	header nav a:first-child { margin-top: 40px }
+
+}
+
+
+
+@media only screen and (max-width: 640px) {
+	#wrapper { height: 940px; max-height: 940px; }
+	body, html { height: 940px; max-height: 940px; }
+
+	#wrapper header .planet.cre { left: 15%; }
+	#wrapper header .planet.pro { left: auto; right: 15% }
+	#wrapper header .planet.eff { right: auto; left: 15% }
+	#wrapper header .planet.info { right: 15% }
+
+	#wrapper header .words.cre { left: 19.2% }
+	#wrapper header .words.pro { left: auto; right: 17.5% }
+	#wrapper header .words.eff {  left: 19.5%; right: auto }
+	#wrapper header .words.info { right: 17.7% }
+
+	#banner h2.over1000 .words { margin: 0 5px }
+	#banner h2.lets { font-size: 1.6em }
+	#logIn input { padding: 17px 10px }
+	#banner h3:first-child { margin-right: 80px }
+
+}
+
+@media only screen and (max-width: 550px) {
+
+	
+
+	#wrapper header .planet.cre { left: 15%; }
+	#wrapper header .planet.pro { left: auto; right: 15% }
+	#wrapper header .planet.eff { right: auto; left: 15% }
+	#wrapper header .planet.info { right: 15% }
+
+	#wrapper header .words.cre { left: 19.7% }
+	#wrapper header .words.pro { left: auto; right: 17.5% }
+	#wrapper header .words.eff {  left: 19.9%; right: auto }
+	#wrapper header .words.info { right: 17.7% }
+
+	#banner h3:first-child { margin-bottom: 10px }
+	#banner h3 { width: 100%; margin-right: 0 }
+	#logIn input { width: 120px; }	
+	#banner .dottedLine { width: 30px }
+	#banner h2.lets { margin-top: 30px }
+	#banner .groupping { margin-top: 25px }
+}
+
+@media only screen and (max-width: 490px) {
+	#wrapper { height: 950px; max-height: 950px; }
+	body, html { height: 950px; max-height: 950px; }
+
+	#wrapper #banner h2.over1000 { margin-top: 505px }
+
+
+	/*#wrapper header .planet.cre { top: 100px; left: 35.5%; }
+	#wrapper header .planet.pro { top: 500px; left: 35.5%; right: auto }
+	#wrapper header .planet.eff { top: 300px; right: auto; left: 35.5% }
+	#wrapper header .planet.info { top: 700px; left: 35.5%; right: auto }
+
+	#wrapper header .words { top: 160px; width: 100%; text-align: center; left: 0 !important; right: auto !important }
+
+	#wrapper header .words.pro { top: 560px; }
+	#wrapper header .words.eff { top: 360px; }
+	#wrapper header .words.info { top: 760px; }*/
+
+	#wrapper header .planet { width: 110px; height: 110px }
+	#wrapper header .planet.cre { top: 550px; left: 15%; }
+	#wrapper header .planet.pro { top: 550px; left: auto; right: 15% }
+	#wrapper header .planet.eff { top: 730px; right: auto; left: 15% }
+	#wrapper header .planet.info { top: 730px; right: 15% }
+
+	#wrapper header .words { top: 600px }
+	#wrapper header .words.cre { left: 19.4% }
+	#wrapper header .words.pro { left: auto; right: 16.6% }
+	#wrapper header .words.eff { top: 780px; left: 19.5%; right: auto }
+	#wrapper header .words.info { top: 780px;right: 16.7% }
+	
+	#logIn input { width: 36% }
+	#banner h2.lets { font-size: 1.7em; width: 70%; padding-left: 15% }
+	#banner .dottedLine { display: none }
+	#logIn input { padding-left: 2%; padding-right: 2%; display: block;width: 70%; margin-left: 13%; border-radius: 5px }
+	#logIn input[type=password] {  margin-left: 13%; margin-top: 5px;}
+    #logIn input[type=submit] {  padding-left: 2%; padding-right: 2%; width: 74%; margin-top: 10px; /*margin-right: 42%*/ }
+
+    #banner h2.over1000 .words { font-size: 0.7em }
+    #wrapper #banner h2.over1000 {  margin-top: 100px }
+
+}
+
+@media only screen and (max-width: 360px) {
+	#banner h2.over1000 .words { letter-spacing: 0.02em} 
+
+	#wrapper header .planet.cre { left: 13%; }
+	#wrapper header .planet.pro { right: 13% }
+	#wrapper header .planet.eff { left: 13% }
+	#wrapper header .planet.info { right: 13% }
+
+	#wrapper header .words.cre { left: 18% }
+	#wrapper header .words.pro { right: 14.6% }
+	#wrapper header .words.eff { left: 18%; }
+	#wrapper header .words.info { right: 15.3% }
+}
+
+
+
+
+

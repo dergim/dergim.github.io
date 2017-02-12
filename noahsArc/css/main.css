@@ -1,0 +1,774 @@
+/*  */
+html, body{  width: 100%; height: auto; margin: 0; overflow: hidden; overflow-y: auto;}
+
+
+input[type=text], select, option, input[type=submit], input[type=reset],input[type=password] { background: none; border: 0 none; appearance: none; -moz-appearance: none; -webkit-appearance: none; border-radius: 0; -webkit-border-radius: 0; -moz-border-radius: 0; box-shadow: 0 0 0 0; -moz-box-shadow: 0 0 0 0; -webkit-box-shadow: 0 0 0 0; font-family: 'Poppins', sans-serif }
+body input,input[type=text], select, option,input[type=submit], input[type=reset],input[type=password] { margin: 0; appearance: none; -moz-appearance: none; -webkit-appearance: none; border-radius: 0; -webkit-border-radius: 0; -moz-border-radius: 0; box-shadow: 0 0 0 0; -moz-box-shadow: 0 0 0 0; -webkit-box-shadow: 0 0 0 0;   }
+body input[type=submit], input[type=reset] { cursor: pointer; }
+body input:focus, select:focus { box-shadow: none; outline: 0; border-color: none }
+
+input[type=text], input[type=submit], input[type=reset],input[type=password], textarea { background: none; border: 0 none; appearance: none; -moz-appearance: none; -webkit-appearance: none; border-radius: 0; -webkit-border-radius: 0; -moz-border-radius: 0; box-shadow: 0 0 0 0; -moz-box-shadow: 0 0 0 0; -webkit-box-shadow: 0 0 0 0; }
+
+
+
+.loadingPage { width: 100%; height: 100%; text-align: center; }
+.loadingPage span { transition: 0; z-index: 1000000; position: absolute; top: 0; left: 0; display: inline-block; width: 50%; height: 100%; background-color: #fff }
+.loadingPage span:nth-child(2) { left: auto; right: 0; }
+.loadingPage p { z-index: 100000000; top: 0; left: 0; position: absolute; line-height: 31; color: #210e20; width: 100%; height: 100%; text-align: center; font-size: 30px;  }
+
+
+
+/* js */
+
+.blur { -webkit-transition: 0.4s; transition: 0.4s; -webkit-transform: scale(1.1,1.1); -ms-transform: scale(1.1,1.1); transform: scale(1.1,1.1); filter: blure(10px);-webkit-filter: blur(10px); -moz-filter: blur(10px); -o-filter: blur(10px); -ms-filter: blur(5px); }
+
+.scaleBigger { -webkit-transition: 0.5s; transition: 0.5s; -webkit-transform: scale(1.1,1.1); -ms-transform: scale(1.1,1.1); transform: scale(1.1,1.1); }
+
+#wrapper .right { right: -50%; -webkit-transition: 1s; transition: 1s; }
+#wrapper .left { left: -50%; -webkit-transition: 1s; transition: 1s; }
+
+#wrapper .zIndex { z-index: 1; }
+#wrapper .zIndexMinus { z-index: -1 }
+
+#wrapper .fontSize { font-size: 0 !important; -webkit-transition: 0s; transition: 0s; }
+#wrapper .heightZero { height: 0 !important; -webkit-transition: 0s;transition: 0s; }
+
+#wrapper .opa { opacity: 0 !important; -webkit-transition: 0s; transition: 0s; }
+
+.left70 { left: 70% !important }
+.left40 { left: 40% !important }
+.left10 { left: 10% !important }
+.leftM20 { left: -20% !important }
+
+
+
+/* #wrapper  */
+#wrapper { position: relative; border-right: 50px solid #fff; border-left: 50px solid #fff; border-bottom: 50px solid #fff; }
+
+/* header */
+
+header { z-index: 300; position: fixed; width: 100%; height: 70px; background-color: #fff; left: 0; }
+header h1 a { z-index: 1000; position: fixed; top: 22px; left: 100px;  opacity: 0.8; display: block; line-height: 31px; border: 1px solid #e6e6e6; letter-spacing: 1.5px; width: 133px; height: 31px; text-align: center; }
+header h1 a:hover { opacity: 1; }
+
+header h2 { z-index: 1000; position: fixed; top: 23px; left: 50px }
+header h2 .groupping { opacity: 0.5; position: relative; cursor: pointer; height: 29px; width: 29px; -webkit-transition: 0.3s; transition: 0.3s;  }
+header h2 .groupping:hover { opacity: 1;  -webkit-transition: 0.3s; transition: 0.3s; }
+header h2 .groupping:hover span { top: auto; left: auto; right: auto; bottom: auto; top: 12px; left: 12px; -webkit-transition: 0.3s; transition: 0.3s;  }
+header h2 .groupping:hover span:nth-child(5) { width: 29px; left: 0 }
+header h2 span { position: absolute; display: inline-block; width: 5px; height: 5px;  background-color: #210e20;  -webkit-transition: 0.3s; transition: 0.3s;  }
+header h2 span:nth-child(3), header h2 span:nth-child(6), header h2 span:nth-child(9) { right: 0 }
+header h2 span:nth-child(9), header h2 span:nth-child(8), header h2 span:nth-child(7) { bottom: 0 }
+header h2 span:nth-child(8),header h2 span:nth-child(2), header h2 span:nth-child(5) { left: 12px }
+header h2 span:nth-child(5), header h2 span:nth-child(4), header h2 span:nth-child(6) { top: 12px }
+nav { display: none; position: fixed; left: 0; top: 0;}
+
+header ul  { z-index: 500; position: fixed; width: 100%; text-align: center; left: 0; top: 25px; height: 31px; line-height: 31px }
+header ul li { display: inline-block; margin: 0 25px }
+header ul li a { font-size: 14px; font-weight: 600; letter-spacing: 3px; opacity: 0.7 }
+header ul li a:hover { opacity: 1; }
+
+header .lang { z-index: 1000; position: fixed; right: 50px; top: 33px; }
+header .lang a { opacity: 0.7; font-weight: 500; display: inline-block; margin-left: 5px }
+header .lang a:first-child { margin-right: 5px }
+header .lang a:hover { opacity: 1 }
+
+
+
+/* #banner */
+
+#banner { padding-top: 70px; background-attachment: scroll; position: fixed; z-index: 1; width: 100%; border-right: 50px solid #fff; left: 0; border-left: 50px solid #fff; box-sizing: border-box; }
+#banner > ul { overflow: hidden; width: 100%; }
+#banner > ul > li { -webkit-transition: 0.4s; }
+#banner > ul > li > a { transition: 0.8s; line-height: 12px; top: 410px; text-align:right; right: 100px; z-index: 100; font-size: 14px; position: absolute; color: #fff; font-family: Playfair Display, serif; font-style: italic; letter-spacing: 1px }
+#banner > ul > li > a .break { display: block; }
+#banner > ul > li > a .underline { width: 100%; display: inline-block; background-color: #fff; height: 2px; margin-top: 5px;-webkit-transition: 0.3s; transition: 0.3s;  }
+#banner > ul > li:nth-child(2) > a { opacity: 0.5; top: 475px; padding-top: 10px;  -webkit-transition: 0.3s; transition: 0.3s; } 
+#banner > ul > li:nth-child(3) > a { opacity: 0.5; top: 540px; padding-top: 10px;  -webkit-transition: 0.3s; transition: 0.3s; } 
+#banner > ul > li:nth-child(3) > a:hover, #banner > ul > li:nth-child(2) > a:hover { opacity: 1; text-indent: 0; -webkit-transition: 0.3s; transition: 0.3s; }
+#banner > ul > li:nth-child(3) > a:hover .underline, #banner > ul > li:nth-child(2) > a:hover .underline { width: 100%; -webkit-transition: 0.3s; transition: 0.3s; }
+#banner > ul > li:nth-child(2) > a .underline, #banner > ul > li:nth-child(3) > a .underline { width: 0px; -webkit-transition: 0.3s; transition: 0.3s;  } 
+#banner ul li .groupping { -webkit-transition: 1s; transition: 1s; color: #fff; position: relative; width: 100%; height: 750px; background: url('../imgs/banner1.jpg') no-repeat top center; background-size: cover }
+#banner ul li h3 { -webkit-transition: 0.8s; transition: 0.8s; padding-top: 380px; font-size: 55px; letter-spacing: 4px; padding-left: 100px; line-height: 70px; } 
+#banner ul li h3 .break { display: block; }
+#banner ul li p.descript { -webkit-transition: 0.8s; transition: 0.8s; letter-spacing: 0.4px; padding-top: 10px; width: 680px; text-transform: uppercase; padding-left: 100px; font-size: 14px }
+#banner ul li .gradi { opacity: 0.5; position: absolute; top: 0; display: block; width: 100%; height: 277px; background: url('../imgs/gradiTop.png') repeat-x; }
+#banner ul li .gradi.btm { background-image: url('../imgs/gradiBtm.png'); top: auto; bottom: 0 }
+#banner ul li p a { position: absolute; top: 315px; left: 100px; display: block; text-align: center; line-height: 50px; color: #fff; background-color: #ff4d3f; letter-spacing: 3px; font-size: 14px; font-weight: 500; width: 180px; height: 50px; border-radius: 30px  }
+#banner ul li p a:hover { background-color: #e0291b }
+
+#banner .scroll { -webkit-animation: upAndDown 1.5s infinite; animation: upAndDown 1.5s infinite; top: 710px; left: 49%; opacity: 0.7; position: absolute; width: 36px; height: 19px; display: block; background: url('../imgs/arrowDown.png') no-repeat; }
+
+@-webkit-keyframes upAndDown {
+    0%   {margin-top: 0; transform: scale(0, 0);}
+    50% { margin-top: 20px; transform: scale(1,1); }
+    100% { margin-top: 0; transform: scale(0, 0); }
+}
+
+@keyframes upAndDown {
+    0%   {margin-top: 0; transform: scale(0, 0);}
+    50% { margin-top: 20px; transform: scale(1,1); }
+    100% { margin-top: 0; transform: scale(0, 0); }
+}
+
+
+
+#content { padding-top: 821px }
+
+/* #about */
+
+#about {  width: 100%; background-color: #fff; text-align: center; padding-top: 100px; }
+
+#about h2 { margin-top: -137px; text-align: left; display: inline-block; width: 700px; height: 176px; line-height: 42px; padding-top: 114px; padding-left: 90px; background-color: #2c1a2b; color: #fff; font-weight: 700; font-size: 35px;  letter-spacing: 2px}
+#about h2 .break { display: block }
+#about .est { font-weight: 500; opacity: 0.3; font-size: 14px; }
+
+#about p {font-weight: 300; opacity: 0.7; font-size: 14px; width: 790px; margin-top: 30px; text-align: left; display: inline-block; margin-bottom: 20px }
+#about p .break { display: block; margin: 10px 0 }
+
+#about ol { margin-top: 40px; width: 790px; text-align: center; display: inline-block; margin-bottom: 40px; }
+#about li { float: right; text-align: right;  height: 70px; width: 400px; margin-bottom: 60px; }
+#about .num { font-weight: 300; font-size: 25px; float: left; width: 50px; height: 60px; line-height: 60px; }
+#about li .break  { display: block; margin: 5px 0 }
+#about .seper { display: block; width: 1px; height: 100%; background-color: #ffc000; float: left; margin-left: 20px; margin-right: 30px;}
+#about .descript {font-weight: 300; font-size: 14px; opacity: 0.7; display: block; text-align: left; padding-left: 10px; line-height: 18px; }
+
+#about .deco { -webkit-transition: 2s; transition: 2s; display: inline-block; margin-top: 127px; text-align: center; width: 1180px; height: 800px; border: 10px solid #e8e6e8  }
+
+
+
+/* #services */
+
+#services { padding-top: 70px;width: 100%; background-color: #fff }
+#services .bg {  width: 1200px; margin: 0 auto;padding-bottom: 70px; border-bottom: 7px solid #e8e6e8 }
+#services h2 { font-size: 25px; letter-spacing: 1px; font-weight: 600 }
+#services .words { margin: 20px 0 40px 0 }
+#services .words p { font-weight: 300; width: 49%; display: inline-block; font-size: 14px; opacity: 0.7 }
+#services .words p:nth-child(2) { float: right }
+#services .words p .break { display: block; margin: 10px 0 }
+#services .words p .bolder { font-size: 15px; font-weight: 500; display: block; margin-top: 22px; font-style: italic }
+
+#services .imgs { -webkit-transition: 0.5s; transition: 0.5s; position: relative; height: 435px; margin-top: 70px }
+#services .imgs ul { position: relative; }
+#services .imgs ul li { position: relative; display: inline-block; }
+#services .imgs ul li:first-child { left: 133px; height: 431px }
+#services .imgs ul li:nth-child(2) { left: 290px; height: 431px }
+#services .imgs ul li:nth-child(2) .img { background-image: url('../imgs/testi2.jpg'); }
+#services .imgs .line, #services .imgs .deco { display: block; width: 2px; height: 70%; margin-top: 5%; background-color: #ff6600; float: left }
+#services .imgs .img { -webkit-transition: 1s; transition: 1s;text-indent: -999999px; width: 312px; height: 431px; background: url('../imgs/testi1.jpg') no-repeat; }
+#services .imgs .quote { top: 0; font-weight: 500; position: absolute; -webkit-transform: rotate(90deg); -ms-transform: rotate(90deg); transform: rotate(90deg); width: 330px; left: -210px; top: auto; bottom: 140px; letter-spacing: 1.5px; font-size: 17px; text-align: right; }
+#services .imgs h3 { position: absolute; width: 100%; text-align: center; color: #fff; bottom: 20px; font-size: 14px; font-weight: 300; letter-spacing: 2px }
+#services .imgs ul li:last-child { z-index: 50; position: absolute; right: 50px; top: 45%  }
+#services .imgs ul li:last-child a { font-size: 14px; letter-spacing: 2px; font-weight: 500; color: #210e20 }
+#services .imgs ul li:last-child a .underline { width: 0; display: block; height: 0; background-color: #210e20; -webkit-transition: 0.3s; transition: 0.3s; }
+#services .imgs ul li:last-child a:hover .underline { width: 100%; height: 2px; -webkit-transition: 0.3s; transition: 0.3s; }
+#services .imgs .deco { -webkit-transition: 0.7s; transition: 0.7s; z-index: 3; width: 100px; position: absolute; right: 59px; top: 0 }
+
+
+
+
+/* #work */
+
+#work { position: relative; width: 100%; background-color: #fff; padding-top: 70px; }
+#work .groupping1 { width: 1200px; margin: 0 auto; }
+#work h2 { font-weight: 600; font-size: 25px; letter-spacing: 1px; margin-bottom: 20px }
+#work .groupping { position: relative; height: 140px }
+#work .groupping p { font-weight: 300; opacity: 0.8; font-size: 14px; display: inline-block; width: 48%; padding-right: 2%; border-right: 2px solid #e8e6e8 }
+#work .groupping .break { display: block; margin: 10px 0 }
+#work ul.firstUl { display: inline-block; position: absolute; top: -53px; right: 0; width: 49%; text-align: right  }
+#work ul.firstUl > li  { display: inline-block; margin-left: 20px }
+#work ul.firstUl > li > a { -webkit-transition: 0.3s; transition: 0.3s; font-weight: 500; position: relative;  padding: 0 5px;font-size: 16px; letter-spacing: 1px }
+#work ul.firstUl li a:hover .line, #work ul.firstUl li a.active .line { position: absolute; left: 0; top: 49%; display: inline-block; height: 1px; width: 100%; background-color: #210e20; -webkit-transition: 0.3s; transition: 0.3s; }
+#work ul.secondUl { top: 61px; position: absolute; width: 100%; text-align: left; left: 0 }
+#work ul.secondUl li { width: 45%; margin-left: 3%; display: inline-block; margin-bottom: 17px; letter-spacing: 1px; font-size: 14px;  }
+#work ul.secondUl li a { font-weight: 300; opacity: 0.5; margin-left: 15px; line-height: 20px;  }
+#work ul.secondUl li a .dot { opacity: 0.5; display: inline-block; width: 5px; height: 5px; background-color: #210e20; border-radius: 50%; float: left; margin-top: 10px }
+#work ul.secondUl li a:hover, #work ul.secondUl li a.active, #work ul.secondUl li a.active .dot, #work ul.secondUl li a:hover .dot { opacity: 1 }
+#work ul.secondUl li:nth-child(5), #work ul.secondUl li:nth-child(6) { margin-bottom: 0 }
+
+#work .groupping2Bg { /*bottom: 0; z-index: -1; position: absolute; */ margin-top: 400px; width: 100%; height: 1044px; background-color: #e8e6e8 }
+#work .groupping2 { position: relative; width: 1200px; margin: 0 auto; padding-top: 30px }
+#work h3 { position: absolute; top: -354px; left: 0; width: 230px; height: 50px; line-height: 50px; background-color: #fff; text-align: center; letter-spacing: 1.5px; font-weight: 500 }
+#work .biggerImg { margin-top: -384px; width: 100%; height: 676px; background: url('../imgs/houseImg1.jpg') no-repeat; text-indent: -9999999px; }
+#work .groupping2 ul { position: relative; width: 100%; height: 210px; overflow: hidden }
+#work .groupping2 li { -webkit-transition: 0.3s; transition: 0.3s; cursor: pointer; z-index: 100; position: absolute; top: 0;left: 0;background: url('../imgs/selImg1_col.jpg') no-repeat; background-size: cover;  height: 100%; font-size: 0; display: inline-block; width: 30%}
+#work .groupping2 li:nth-child(2) { left: 30%; background-image: url('../imgs/selImg2_col.jpg'); }
+#work .groupping2 li:nth-child(3) { left: 60%; background-image: url('../imgs/selImg3_col.jpg');  }
+#work .groupping2 li:nth-child(4) { left: 90%; background-image: url('../imgs/selImg4_col.jpg');  }
+
+#work .groupping2 li:hover .monoImg { opacity: 0;-webkit-transition: 0.3s; transition: 0.3s; }
+#work .groupping2 li:hover { -webkit-transition: 0.3s; transition: 0.3s; }
+#work .groupping2 li:hover .gradi { opacity: 0 }
+
+#work .groupping2 li .rel { width: 100%; height: 100%; position: relative; }
+
+#work .groupping2 li .monoImg {-webkit-transition: 0.3s; transition: 0.3s; display: inline-block; width: 100%; height: 100%; background: url('../imgs/selImg1.jpg') no-repeat; background-size: cover; }
+#work .groupping2 li:nth-child(2) .monoImg { background-image: url('../imgs/selImg2.jpg'); }
+#work .groupping2 li:nth-child(3) .monoImg { background-image: url('../imgs/selImg3.jpg'); }
+#work .groupping2 li:nth-child(4) .monoImg { background-image: url('../imgs/selImg4.jpg'); }
+#work .groupping2 .gradi { position: absolute; top: 0; left: 0; opacity: 0.3; width: 152px; height: 100%; background: url('../imgs/gradi_sel.png') repeat-y; }
+
+#work .groupping2 p { margin-top: 30px; margin-bottom: 160px; padding-bottom: 70px; border-bottom: 5px solid #d4d0d4; width: 48%; display: inline-block; font-size: 14px; font-weight: 300 }
+#work .groupping2 p.secondP { float: right;  border-bottom: 0 none; }
+#work .groupping2 .break { display: block; margin: 15px 0; }
+#work .back { opacity: 0.7; position: absolute; right: -100px; bottom: 160px; display: block; width: 60px; height: 60px; font-size: 0; border-radius: 50%; background: #fff url('../imgs/arrowUp.png') no-repeat center center; background-size: 25px }
+#work .back:hover { opacity: 1; bottom: 170px }
+
+
+
+
+
+/* #people */
+#people {  padding: 150px 0 100px; width: 100%; background-color: #fff }
+#people .bg {/* overflow: hidden;*/ position: relative; width: 1200px; margin: 0 auto; }
+#people h2 { font-size: 25px; letter-spacing: 2px; text-align: center; margin-bottom: 40px; }
+#people .watchUs { position: absolute; top: -25px; text-align: center; width: 100%; font-size: 14px; font-weight: 300; letter-spacing: 1px; opacity: 0.5 }
+#people .vid { -webkit-transition: 0.5s; transition: 0.5s; position: relative; width: 100%; text-align: center; height: 530px; background: url('../imgs/peopleVid.jpg') no-repeat; font-size: 0}
+#people .vid a { opacity: 0.5; top: 32%; left: 530px; position: absolute; display: inline-block; width: 200px; height: 200px; background: url('../imgs/play.png') no-repeat; }
+#people .vid a:hover { opacity: 0.8 }
+
+#people .descript { font-weight: 300; opacity: 0.7; font-size: 14px; margin: 40px 0 100px; width: 48%; display: inline-block; }
+#people .descript2 { font-weight: 300; opacity: 0.7; position: relative; font-size: 14px;  margin: 40px 0 0 0; width: 48%; display: inline-block; float: right }
+#people .descript .break { display: block; margin: 10px 0 }
+#people .descript2 a { position: absolute; right: 0; top: 185px; display: block; letter-spacing: 1px; font-weight: 500; width: auto; }
+#people .descript2 a .underline { display: block; width: 100%; height: 2px; background-color:#210e20 }
+
+#people ul { text-align: center }
+#people ul li { cursor: pointer; display: inline-block; position: relative; width: 308px; height: auto;}
+#people ul li .groupping { margin-top: 0px; position: relative; width: 308px; height: 380px; text-align: center; }
+#people ul li .img {-webkit-transition: 0.3s; transition: 0.3s; font-size: 0; display: block; width: 100%; height: 100%; background: url('../imgs/ceo_col.jpg') no-repeat center center; background-size: cover }
+#people ul li:nth-child(2) .img { background-image: url('../imgs/cfo1_col.jpg'); }
+#people ul li:nth-child(3) .img { background-image: url('../imgs/cfo2_col.jpg'); }
+#people ul li .img .monoImg { -webkit-transition: 0.3s; transition: 0.3s; z-index: 100; position: absolute; display: inline-block; width: 100%; height: 100%; left: 0; background: url('../imgs/ceo.jpg') no-repeat; }
+#people ul li:nth-child(2) .img .monoImg { background-image: url('../imgs/cfo1.jpg'); }
+#people ul li:nth-child(3) .img .monoImg { background-image: url('../imgs/cfo2.jpg'); }
+#people ul li .break { display: block; width: 100%; margin: -5px 0  }
+#people li h3 { opacity: 0; -webkit-transition: 0.3s; transition: 0.3s; position: absolute; top: 0; letter-spacing: 1px; width: 100%; text-align: center; font-weight: 500; font-size: 14px }
+
+#people ul li:nth-child(2) { float: left; margin-left: 50px; }
+#people ul li:nth-child(3) { float: right; margin-right: 50px }
+
+#people li.active .monoImg, #people li:hover .monoImg { opacity: 0; -webkit-transition: 0.3s; transition: 0.3s; }
+#people li.active .img, #people li:hover .img { margin-top: 70px; -webkit-transition: 0.3s; transition: 0.3s;}
+#people li.active h3, #people li:hover h3 { opacity: 1; -webkit-transition: 0.3s; transition: 0.3s; }
+
+#people .quote {  position: relative; width: 900px; margin: 0 auto; padding: 80px 0 90px; }
+#people .quote .aLittle { padding-left: 20px; font-family: Playfair Display, serif; font-size: 37px; margin: 10px 0 20px 0; display: block; letter-spacing: 4px; font-weight: 500; font-style: italic }
+#people .quote .quoteMark { left: -80px; top: 60px; position: absolute; display: block; background: url('../imgs/quoteTop.jpg') no-repeat; width: 54px; height: 41px; font-size: 0}
+#people .quote .continue { font-weight: 300; display: block; font-size: 14px;  width: 80%; padding-left: 15%; margin-top: -5px; opacity: 0.6;  }
+#people .quote .quoteMark.btm { top: auto; left: auto; right: -52px; background-image: url('../imgs/quoteBtm.jpg'); }
+
+
+
+
+/* #contact */
+
+#contact {  }
+#contact .map { position: relative; width: 100%; height: 600px; background: url('../imgs/map.jpg') no-repeat center center; background-size: cover;  }
+#contact .map a { position: absolute; font-size: 0; width: 40px; height: 40px; border: 5px solid red; left: 53%; top: 280px; }
+#contact .contactBg { background-color: #e8e6e8; width: 100%; padding: 70px 0 }
+#contact .contactBg .groupping { overflow: hidden; width: 800px; margin: 0 auto; text-align: center }
+#contact dl { width: 360px; display: inline-block; text-align: left; letter-spacing: 1px }
+#contact dl.hours { float: left; background-color: #f4f3f4; width: 260px; padding: 40px 0 40px 100px; }
+#contact dl dt { font-weight: 500; font-size: 14px; margin-bottom: 5px }
+#contact dl dd { font-weight: 300; margin-left: 10px; margin-bottom: 10px } 
+#contact dl dd:last-child { margin-bottom: 0 }
+#contact dl dd a { font-weight: 300 }
+#contact .add { float: right; height: 184px }
+#contact dl .break { display: block; margin-left: 10px }
+
+
+
+
+
+
+/* footer */
+
+.footerBg { width: 100%; background-color: #210e20; }
+footer { font-weight: 300; overflow: hidden; padding: 100px 0 130px; width: 1200px; margin: 0 auto; color: #fff }
+footer a { color: #fff }
+footer h1 a { display: block; color: #210e20; width: 193px; height: 50px; line-height: 52px; text-align: center; letter-spacing: 2px; font-size: 16px; font-weight: 500; background-color: #fff; opacity: 0.5 }
+footer .groupping1 ul { margin: 18px 0 25px }
+footer .groupping1 ul li { display: inline-block; }
+footer .groupping1 ul li a { opacity: 0.5; display: block; width: 32px; margin-right: 18px; height: 32px; background: url('../imgs/facebook.png') no-repeat; font-size: 0 }
+footer .groupping1 ul li:nth-child(2) a { background-image: url('../imgs/twitter.png');}
+footer .groupping1 ul li:nth-child(3) a { background-image: url('../imgs/hangouts.png');}
+footer .groupping1 ul li:nth-child(4) a { background-image: url('../imgs/insta.png');}
+footer .groupping1 ul li a:hover { opacity: 0.7 }
+footer .groupping1 dl dt { font-size: 0 }
+footer .groupping1 dl dd { width: 193px; font-size: 14px; opacity: 0.5; padding: 17px 0; }
+footer .groupping1 dl dd.border { border-top: 1px solid #fff; border-bottom: 1px solid #fff }
+
+
+footer .groupping2 { float: right; overflow: hidden; width: 870px; display: inline-block; text-align: right; letter-spacing: 1px }
+footer .groupping1 { width: 250px; display: inline-block; }
+
+footer .groupping2 p { opacity: 0.7; text-align: left; margin-bottom: 30px; font-size: 14px;  }
+footer .groupping2 > ul { text-align: left }
+footer .groupping2 > ul > li { width: 27%; float: left }
+footer .groupping2 > ul > li > a { opacity: 0.7; font-size: 20px; font-weight: 500 }
+footer .groupping2 > ul > li > a .underline { width: 40px; height: 2px; background-color: red; display: block; opacity: 0.5; margin: 10px 0 20px }
+footer .groupping2 > ul > li { display: inline-block; margin-right: 20px; }
+footer .groupping2 ul ul > li > a {font-weight: 300; opacity: 0.7; display: block; margin-bottom: 5px }
+footer .groupping2 ul ul > li > a:hover { opacity: 1; margin-left: 10px }
+
+
+
+
+
+
+
+@media only screen and (min-width: 1800px) {
+	#content { padding-top: 900px }
+	#banner ul li .groupping { height: 832px }
+	#banner ul li h3 { font-size: 65px; line-height: 83px; padding-top: 393px }
+	#banner ul li p.descript { font-size: 16px; width: 820px }
+	#banner .scroll { top: 790px }
+	#banner > ul > li > a { font-size: 16px }
+	#banner > ul > li:nth-child(2) > a { top: 486px }
+	#banner > ul > li:nth-child(3) > a { top: 557px }
+	#banner ul li p a { width: 200px; height: 60px; line-height: 60px; top: 302px; font-size: 16px }
+
+	#contact .map { height: 650px }
+
+}
+
+
+
+
+@media only screen and (max-width: 1600px) {
+	#work .back { right: 0 }
+}
+
+
+@media only screen and (max-width: 1366px) {
+	header h2 { left: 30px }
+	header h1 a { left: 75px }
+	header .lang { right: 30px }
+	#banner > ul > li > a { right: 50px }
+	#banner ul li h3, #banner ul li p.descript { padding-left: 50px }
+	#banner ul li p a { left: 50px }
+
+	#banner ul li .groupping { height: 700px }
+	#content { padding-top: 770px }
+	#banner ul li h3 { padding-top: 340px; font-size: 45px }
+	#banner ul li p.descript { width: 640px }
+	#banner .scroll { top: 650px }
+	#banner ul li p a { top: 274px }
+	#banner > ul > li > a { top: 363px }
+	#banner > ul > li:nth-child(2) > a { top: 434px }
+	#banner > ul > li:nth-child(3) > a { top: 513px }
+
+	#wrapper { border-right: 30px solid #fff; border-left: 30px solid #fff; }
+	#banner {border-right: 30px solid #fff; border-left: 30px solid #fff; }
+
+
+	#about h2 { padding-top: 88px }
+	
+	
+	/* main width */
+
+	header ul li { margin: 0 19px }
+
+	#about .deco { width: 880px; border: 10px solid #e8e6e8; }
+	#about h2 { width: 500px; font-size: 30px; height: 165px }
+	#about p { width: 600px }
+	#about ol { width: 600px; text-align: center }
+	#about li { width: 500px; margin-bottom: 40px; display: inline-block; float: none }
+	#about li .break { margin: 10px 0 }
+
+	#services .bg { width: 900px }
+	#services .imgs .img { width: 226px; height: 357px; background-size: cover; }
+	#services .imgs ul li:first-child, #services .imgs ul li:nth-child(2) { height: 357px }
+
+	#services .imgs .quote { font-size: 14px; width: 282px; bottom: 117px; left: -181px; }
+	#services .imgs ul li:nth-child(2) { left: 250px }
+	#services .imgs ul li:last-child { right: 0 }
+	#services .imgs .deco { right: 9px }
+	#services .imgs { height: 365px }
+
+	#work .groupping1 { width: 900px }
+	#work .groupping2 { width: 900px }
+	#work .biggerImg { background-size: cover; height: 507px }
+	#work .groupping2 ul { height: 160px }
+
+	#work .groupping2Bg { height: 930px }
+
+	#people { padding-top: 130px }
+
+	#people .bg { width: 900px }
+	#people .vid { height: 397px; background-size: cover }
+	#people .vid a  { left: 390px; width: 150px; height: 150px; background-size: cover }
+	
+	#people ul li { width: 150px }
+	#people ul li .groupping { width: 238px; height: 293px }
+	#people ul li .img .monoImg { background-size: cover }
+	#people ul li:nth-child(2) { margin-left: 30px }
+	#people ul li:nth-child(3) { margin-right: 30px }
+	#people ul li { width: 238px }
+
+	#people .quote .aLittle { font-size: 30px }
+	#people .quote { width: 800px }
+	#people .quote .quoteMark { width: 38px; height: 29px; background-size: cover; left: -44px }
+	#people .quote .quoteMark.btm { right: -27px }
+	
+	#contact .map { height: 490px }
+	#contact .map a { top: 229px }
+
+	footer { width: 900px }
+	footer .groupping2 { width: 645px }
+}
+
+@media only screen and (max-width: 1024px) {
+	#wrapper .right, #wrapper .left { display: none; }
+
+	#banner { padding-top: 50px }
+	#banner ul li .groupping { height: 600px; }
+	header { height: 50px }
+	header .lang { top: 18px }
+	header ul li { margin: 0 13px }
+	header ul { top: 12px }
+	header ul li a { font-size: 12px }
+	header h2 { top: 15px }
+	header h1 a { width: 120px; height: 26px; line-height: 28px; top: 12px; left: 64px; font-size: 11px }
+	header h2 span { width: 4px; height: 4px }
+	header h2 .groupping { width: 22px; height: 22px }
+	header h2 span:nth-child(5), header h2 span:nth-child(4), header h2 span:nth-child(6) { top: 9px }
+	header h2 span:nth-child(8), header h2 span:nth-child(2), header h2 span:nth-child(5) { left: 9px }
+
+	#banner ul li .groupping { height: 520px }
+	#banner ul li .gradi { height: 185px }
+	#banner ul li p a { width: 160px; height: 42px; line-height: 42px; font-size: 13px; top: 179px; z-index: 5 }
+	#banner ul li h3 { line-height: 42px; padding-top: 240px; font-size: 34px; }
+	#banner ul li p.descript {width: 450px }
+	#banner > ul > li > a { top: 234px; font-size: 12px }
+	#banner > ul > li:nth-child(2) > a { top: 304px }
+	#banner > ul > li:nth-child(3) > a { top: 378px }
+
+	#content { padding-top: 570px }
+	
+	#about { padding-top: 70px }
+	#about h2 { padding-top: 65px; font-size: 24px; width: 400px; height: 135px; line-height: 33px; }
+	#about p { width: 500px }
+	#about .deco { height: 688px; width: 700px }
+
+	#banner .scroll { display: none }
+
+
+	#services .bg { width: 700px; padding-bottom: 30px }
+
+	#services .words p { width: 100%; display: block; margin-bottom: 20px}
+
+	#services .imgs ul li:first-child, #services .imgs ul li:nth-child(2) { height: 288px }
+	#services .imgs .img { height: 100%; width: 209px }
+	#services .words p:nth-child(2) { float: none }
+	#services .imgs .quote { font-size: 12px }
+	#services .imgs ul li:first-child { left: 100px }
+	#services .imgs ul li:nth-child(2) { left: 190px }
+	#services .imgs .quote { left: -168px }
+	
+	#services .imgs .deco { display: none }
+	#services .imgs ul li:last-child { right: -55px; -webkit-transform: rotate(90deg); -ms-transform: rotate(90deg); transform: rotate(90deg); }
+	
+	#work .groupping1 { width: 700px }
+
+	#work .groupping2 { width: 700px }
+	#work .biggerImg { height: 394px }
+	#work .groupping2 ul { height: 125px }
+	#work .groupping p { width: 100%; border-right: 0 none }
+	
+	#work ul.firstUl { width: 100%; text-align: center }
+	#work .biggerImg { margin-top: -290px }
+	#work ul.secondUl li { width: 29% }
+	#work h3 { top: -260px }
+	#work ul.firstUl { top: 134px }
+
+	#work .groupping2Bg { height: 880px }
+
+	#people .bg { width: 700px }
+	#people .vid { height: 309px }
+	#people .vid a { width: 100px; height: 100px; left: 325px; top: 35% }
+	#people .descript, #people .descript2 { margin-top: 30px }
+	#people .descript { margin-bottom: 80px }
+	#people .descript2 a { top: 275px }
+	#people ul li .groupping { width: 185px; height: 229px; }
+	#people ul li { width: 185px }
+	#people li h3 { font-size: 12px }
+
+	#people .quote { width: 600px }
+	#people .quote .aLittle { font-size: 25px }
+	#people .quote .continue { font-size: 12px }
+	#people .quote { padding-bottom: 48px }
+	footer { width: 700px; }
+
+	#contact .map { height: 352px }
+	#contact .map a { width: 30px; height: 30px; left: 52%; top: 162px }
+
+	#contact dl { width: 390px }
+	#contact dl.hours { padding-left: 68px; width: 220px; margin-left: 70px }
+	footer .groupping1 { overflow: hidden; display: block; margin: 0 auto; width: 700px; padding-bottom: 20px; margin-bottom: 30px; border-bottom: 1px solid #90868f }
+	footer .groupping2 { width: 700px; margin: 0 auto; display: block; float: none}
+	footer .groupping1 ul { margin-top: 0; float: right; }
+	footer h1 { float: left }
+	footer .groupping1 dl { display: none }
+	footer .groupping2 > ul > li { width: 33%; margin-right: 0 }
+}
+
+
+@media only screen and (max-width: 900px) {
+
+	header ul li a { letter-spacing: 1px }
+	#services .words p .bolder, #services .imgs { display: none }
+	#banner ul li .groupping { height: 460px }
+	#banner ul li h3 { padding-top: 200px }
+	#banner ul li p a { top: 143px }
+	#banner > ul > li:nth-child(2) > a {  top: 295px }
+	#banner > ul > li:nth-child(3) > a { top: 359px }
+	#content { padding-top: 510px }
+	
+	#about { padding-top: 45px }
+	#about ol { margin-top: 30px ; margin-bottom: 0}
+	#about p { font-size: 12px }
+
+	#about h2 { padding-top: 49px; font-size: 22px; width: 385px; height: 125px;  }
+	#about .descript { font-size: 12px }
+	#about li { margin-bottom: 33px }
+	#about li .break { margin: 6px 0 }
+	#about .num { font-size: 20px }
+	#about .deco { height: 604px; width: 600px }
+	#about p { width: 475px }
+	#about ol { width: 475px }
+	#about li { width: 100% }
+
+	#services .bg { width: 600px }
+	#services h2, #work h2, #people h2{ font-size: 20px }
+	#work .groupping p { font-size: 12px }
+	#work .groupping1, #work .groupping2 { width: 600px }
+	#services .words p { font-size: 12px }
+	#work .biggerImg { height: 338px }
+	#work .groupping2 ul { height: 107px }
+	#work .groupping2 p { font-size: 12px; padding-bottom: 45px }
+	#work .groupping2Bg { height: 736px }
+	#work ul.secondUl li { font-size: 12px }
+
+	#people .bg { width: 600px }
+	#people .vid { height: 265px }
+	#people .vid a { left: 271px }
+	#people .descript, #people .descript2 { font-size: 12px }
+	#people .descript2 a { top: 231px }
+
+	#people ul li:nth-child(2) { margin-left: 10px }
+	#people ul li:nth-child(3) { margin-right: 10px }
+
+
+	#people li.active .img, #people li:hover .img { margin-top: 60px; -webkit-transition: 0.3s; transition: 0.3s;}
+	#people .quote { width: 500px; padding-top: 50px }
+	#people .quote .aLittle { font-size: 20px }
+	#people .quote .continue { width: 85%; padding-left: 9% }
+	#people .quote .quoteMark { width: 29px; height: 21px; left: -29px; top: 40px }
+	#people { padding-bottom: 50px; padding-top: 100px }
+	#people h2 { margin-bottom: 30px }
+
+	#contact dl.hours { float: none; padding: 30px 0 30px; display: block; margin: 0 auto; width: 500px; text-align: center; padding-left: 0 }
+	#contact .add { float: none; width: 500px; margin: 0 auto; text-align: center; padding-top: 30px; }
+	
+	footer { width: 600px; padding-top: 70px }
+	footer .groupping1 { width: 100% }
+	footer .groupping2 { width: 100% }
+	footer .groupping2 p { font-size: 12px }
+	footer h1 a { width: 170px; height: 40px; line-height: 42px; font-size: 14px }
+	footer .groupping1 ul li a { margin-right: 0; margin-left: 15px; }
+	footer .groupping1 ul { margin-top: -12px }
+	footer .groupping2 > ul > li > a { font-size: 15px }
+
+	#contact .contactBg .groupping { width: 600px }
+	
+	.scaleBigger { -webkit-transition: 0.5s; transition: 0.5s; -webkit-transform: scale(1,1); -ms-transform: scale(1,1); transform: scale(1,1); }
+
+}
+
+
+@media only screen and (max-width: 766px) {
+	header .lang { display: none }
+	#banner, #wrapper { border: 0 none }
+	header ul { text-align: right; }
+	#banner ul li p a { left: 30px }
+	#banner ul li h3 { padding-left: 30px }
+	#banner ul li p.descript { padding-left: 30px }
+
+	#services, #work { padding-top: 50px }
+	#banner > ul > li > a { right: 30px }
+	header h2 { left: 10px }
+	header h1 a { left: 41px }
+	header .lang {  right: 10px }
+
+	#banner ul li .groupping { height: 375px }
+	#banner ul li h3 { font-size: 29px; padding-top: 150px }
+	#banner ul li p.descript { width: 400px; font-size: 12px }
+	#banner ul li p a { top: 92px; font-size: 12px }
+
+	#wrapper #banner > ul > li > a { left: 45%; top: 69px; width: 10px; border-radius: 50%; height: 10px; background-color: #fff; text-indent: -999999px; font-size: 0; padding-top: 0 }
+	#banner > ul > li > a .underline { display: none  }
+	#wrapper #banner > ul > li:nth-child(2) > a { left: 49.35%; }
+	#wrapper #banner > ul > li:nth-child(3) > a { left: auto; right: 45% }
+	#content { padding-top: 424px }
+	footer { padding-bottom: 100px }
+}
+
+
+
+@media only screen and (max-width: 666px) {
+
+	header ul li { margin: 0 10px; }
+	#wrapper #about .deco { height: auto !important; border: 0 none; width: 475px }
+	#about { padding-top: 20px }
+	#about h2 { font-size: 19px; width: 375px; line-height: 24px; padding-left: 98px; height: 102px }
+	#about .est { font-size: 12px }
+
+	#banner ul li .gradi { opacity: 0.2; height: 91px; background-size: 1px 91px }
+	#banner ul li .groupping { height: 450px; text-align: center }
+	#banner ul li h3 { width: 100%; line-height: 35px; padding-left: 0; text-align: center; padding-top: 140px }
+	#banner ul li p.descript { width: 420px; padding-top: 15px; padding-left: 0; text-align: center; display: inline-block;}
+	#banner ul li p a {  margin-top: 30px; width: 140px; height: 40px; line-height: 40px; letter-spacing: 2px; display: inline-block; position: static; }
+	#banner ul li p.btn { width: 100%; text-align: center }
+
+	#content { padding-top: 500px }
+
+	#services .bg, #work .groupping1, #work .groupping2, #people .bg { width: 475px }
+
+	#work ul.secondUl li { margin-left: 0; width: 49% }
+	#work .biggerImg { margin-top: -250px; height: 268px }
+	#work h3 { top: -220px; width: 200px; height: 38px; line-height: 38px }
+	#work .groupping2 ul { height: 84px }
+	
+	#work .back { width: 50px; height: 50px; background-size: 18px }
+	
+	#people h2 { font-size: 19px; font-weight: 600 }
+	#people .vid { height: 210px }
+	#people .vid a { left: 206px; top: 28% }
+	#people .descript2 a { top: 306px }
+
+	#people ul li { width: 132px }
+	#people ul li .groupping { width: 132px; height: 161px }
+	#people li h3 { font-size: 11px }
+	#people ul li:nth-child(2) { margin-left: 0 }
+	#people ul li:nth-child(3) { margin-right: 0 }
+
+	#people .quote .aLittle { font-size: 14px; padding-left: 0 }
+	#people .quote .continue { width: 91% }
+	#people .quote { width: 400px }
+
+	#people .quote .quoteMark { width: 21px; height: 17px; left: -38px }
+	#people .quote .quoteMark.btm  { right: -39px }
+	#people .descript { margin-bottom: 50px }
+
+	#contact .map { height: 270px }
+	#contact .map a { width: 25px; height: 25px; top: 124px }
+
+	#contact dl dt { font-size: 12px }
+	#contact .contactBg { padding: 40px 0 }
+	footer { padding-top: 40px; width: 475px }
+	footer .groupping2 p { margin-bottom: 20px }
+	footer .groupping1 { padding-bottom: 10px }
+
+	#contact .contactBg .groupping { width: 475px }
+	#contact dl.hours { width: auto; }
+	#contact .add { width: auto }
+}
+
+
+@media only screen and (max-width: 566px) {
+	header ul { display: none }
+	header h2 { right: 10px; left: auto }
+	header h1 a { left: 10px; background-color: #fff; opacity: 1 }
+	header h2 .groupping { opacity: 1 }
+
+	#banner { padding-top: 0 }
+	header { background-color: transparent; }
+	#content { padding-top: 450px }
+	#banner ul li p.descript { width: 381px }
+	#wrapper #banner > ul > li > a { bottom: 40px; top: auto }
+
+	#wrapper #about .deco { width: 90% }
+	#about h2 { padding-left: 20%; width: 80%; }
+	#about p { width: 100% }
+	#about ol { width: 100% }
+	#about .descript { padding-left: 0 }
+	#work .back { display: none }
+	#people .quote { width: 90% }
+	#people .quote .quoteMark {  left: -23px }
+	#people .quote .quoteMark.btm { right: -21px }
+	#people { padding-bottom: 20px }
+	#people .vid { background-position: center center }
+	#people .vid a { left: 40% }
+	#contact .contactBg .groupping  { width: 90% }
+	footer { width: 90% }
+
+	#services .bg, #work .groupping1, #work .groupping2, #people .bg { width: 90% }
+	
+	footer h1 { width: 100%; text-align: center; float: none }
+	footer .groupping1 ul { width: 100%; float: none; text-align: center; margin-top: 20px; }
+	footer .groupping1 ul li a { margin: 0 5px }
+	footer .groupping2 > ul { display: none }
+	footer { padding-bottom: 50px }
+	footer h1 a { display: inline-block; }
+	#work .groupping2 p { border: 0 none }
+}
+
+
+@media only screen and (max-width: 460px) {
+	#banner ul li .groupping { height: 640px }
+	#content { padding-top: 660px }
+	#banner ul li h3 { font-size: 23px; line-height: 30px; letter-spacing: 3px; padding-top: 206px }
+	#banner ul li p.descript { width: 300px }
+	#wrapper #banner > ul > li > a { left: 42%; }
+	#wrapper #banner > ul > li:nth-child(3) > a { right: 42% }
+	#wrapper #banner > ul > li:nth-child(2) > a { left: 49.05% }
+	#work .biggerImg { height: 216px }
+	#people .vid { height: 179px }
+
+	#people ul, #people .quote { display: none }
+	#contact .map { background-size: 1200px }
+	#contact .map a { left: 57% }
+	
+	#about h2 { font-size: 16px; padding-left: 15%; width: 85% }
+
+}
+
+@media only screen and (max-width: 420px) { 
+	#about .seper { margin-left: 15px; margin-right: 22px }
+	#about .num { width: 34px; height: 77px; }
+	#about li { height: 86px }
+	#work ul.firstUl { top: 165px }
+	#work ul.secondUl li a .dot { display: none }
+	#work ul.firstUl > li > a { font-size: 14px }
+	#work ul.secondUl li a { margin-left: 0; font-size: 11px }
+	#work .groupping2Bg { margin-top: 440px; height: 812px }
+	#people .descript2 a { top: 386px }
+
+	#banner ul li .groupping { height: 555px }
+	#content { padding-top: 555px }
+}
+
+@media only screen and (max-width: 360px) { 
+	#banner ul li .groupping { height: 555px }
+	#content { padding-top: 555px }
+
+	#banner ul li h3 { font-size: 17px }
+	#banner ul li p.descript { width: 270px }
+
+	#about h2 { font-size: 16px; padding-left: 10%; width: 90% }
+
+	#work ul.firstUl { top: 175px }
+	#work .groupping2Bg { height: 843px }
+
+	#contact dl { letter-spacing: 0.5px }
+}
+
+@media only screen and (max-width: 340px) { 
+	#work .groupping2Bg { height: 863px }
+}
+
+@media only screen and (max-width: 320px) { 
+	
+}

@@ -1,0 +1,444 @@
+input[type=text], input[type=submit], input[type=buttom], input[type=reset],input[type=password], textarea  { background: none; border: 0 none; appearance: none; -moz-appearance: none; -webkit-appearance: none; border-radius: 0; -webkit-border-radius: 0; -moz-border-radius: 0; box-shadow: 0 0 0 0; -moz-box-shadow: 0 0 0 0; -webkit-box-shadow: 0 0 0 0; }
+select { background: none; border: 0 none;-webkit-appearance: none; appearance: none; -moz-appearance: none; border-radius: 0; -webkit-border-radius: 0; -moz-border-radius: 0; box-shadow: 0 0 0 0; -moz-box-shadow: 0 0 0 0; -webkit-box-shadow: 0 0 0 0;  }
+
+#contents { 
+
+	background-image: url('../imgs/info.jpg'); 
+
+	background-image: radial-gradient(at 39% 135% , #09a077 -67%, #181528 80%);
+	background-image: -webkit-radial-gradient(at 39% 135% , #09a077 -67%, #181528 80%);
+	background-image: -moz-radial-gradient(at 39% 135% , #09a077 -67%, #181528 80%);
+	background-image: -o-radial-gradient(at 39% 135% , #09a077 -67%, #181528 80%); 
+
+	/*margin-top: -15px;*/
+}
+
+.filterBar { background-color: #277262; width: 50%; margin-right: 50% }
+header ul li:first-child .planet { margin-left: 31px; margin-right: 17px; }
+#contents ul li { border-right: 1px solid #364946; border-bottom: 1px solid #364946;}
+
+header span.userImg { margin-left: 21px }
+header ul li:first-child .planet { margin-left: 22px; margin-right: 18px }
+
+.filterBar h2 a { opacity: 0.5; margin-left: 20px; margin-top: 15px; line-height: 64px; display: inline-block; float: left; background: #00312C url('../imgs/write.png') no-repeat center center; width: 35px; height: 35px; border-radius: 50%; text-indent: -999999px}
+.filterBar h2 a:hover { opacity: 0.8; }
+
+#contents ul { width: 50%; transiton: 0.3s ease-in-out; -moz-transition: 0.3s ease-in-out; -webkit-transition: 0.3s ease-in-out; }
+#contents ul li { width: 100%; text-align: left; height: 150px; transiton: 0.3s ease-in-out; -moz-transition: 0.3s ease-in-out; -webkit-transition: 0.3s ease-in-out; }
+
+#contents ul li .articleImg { left: 13px; position: absolute; display: inline-block; width: 95px; height: 95px; float: left; margin: 27px 25px;  background: url('../imgs/creCover_1.jpg') no-repeat; background-size: cover; border-radius: 50%; transiton: 0.3s ease-in-out; -moz-transition: 0.3s ease-in-out; -webkit-transition: 0.3s ease-in-out; }
+#contents ul li a:hover .articleImg { box-shadow: #11F5B0 0px 0px 20px; transiton: 0.3s ease-in-out; -moz-transition: 0.3s ease-in-out; -webkit-transition: 0.3s ease-in-out;}
+
+
+.dateSave { position: absolute; top: 25px; right: 25px }
+#contents ul li .save { position: relative; top: auto !important; left: auto !important; }
+.dateSave p { float: left; margin-right: 10px; margin-top: 6px; font-style: italic; opacity: 0.7; font-size: 0.9em }
+
+#contents ul li:nth-child(1) .articleImg { background-image: url('../imgs/infoCover_1.jpg'); }
+#contents ul li:nth-child(2) .articleImg { background-image: url('../imgs/infoCover_2.jpg'); }
+#contents ul li:nth-child(3) .articleImg { background-image: url('../imgs/infoCover_3.jpg'); }
+#contents ul li:nth-child(4) .articleImg { background-image: url('../imgs/infoCover_4.jpg'); }
+#contents ul li:nth-child(5) .articleImg { background-image: url('../imgs/infoCover_5.jpg'); }
+#contents ul li:nth-child(6) .articleImg { background-image: url('../imgs/infoCover_6.jpg'); }
+#contents ul li:nth-child(7) .articleImg { background-image: url('../imgs/infoCover_7.jpg'); }
+#contents ul li:nth-child(8) .articleImg { background-image: url('../imgs/infoCover_8.jpg'); }
+#contents ul li:nth-child(9) .articleImg { background-image: url('../imgs/infoCover_9.jpg'); }
+#contents ul li:nth-child(10) .articleImg { background-image: url('../imgs/infoCover_10.jpg'); }
+#contents ul li:nth-child(11) .articleImg { background-image: url('../imgs/infoCover_11.jpg'); }
+#contents ul li:nth-child(12) .articleImg { background-image: url('../imgs/infoCover_12.jpg'); }
+#contents ul li:nth-child(13) .articleImg { background-image: url('../imgs/infoCover_13.jpg'); }
+#contents ul li:nth-child(14) .articleImg { background-image: url('../imgs/infoCover_14.jpg'); }
+#contents ul li:nth-child(15) .articleImg { background-image: url('../imgs/infoCover_15.jpg'); }
+#contents ul li:nth-child(16) .articleImg { background-image: url('../imgs/infoCover_16.jpg'); }
+
+
+#contents > ul > li > a { width: 100%; border-left: 10px solid #0e191e; height: 100%; box-sizing:border-box; opacity: 0.7; }
+#contents > ul > li > a:hover { border-left: 10px solid #970c52; opacity: 1; }
+
+
+#contents ul li.loadMore { text-align: center; }
+#contents ul li.loadMore a { padding-left: 0; border-left: 0 none;  }
+
+#contents .breakLine { display: block; margin: 7px 0; width: 7px; height: 1px; background-color: #fff; opacity: 0.5; }
+
+#contents .wording { margin-top: 25px; float: left; padding-left: 150px; box-sizing: border-box; width: 98%; overflow: hidden; }
+#contents .wording h1 { font-size: 0.9em; font-style: italic }
+#contents .wording h2 { font-size: 1.2em; font-weight: 400; margin-bottom: 10px; }
+#contents .wording p { line-height: 20px; height: 40px }
+
+
+#talkSection ul li { height: auto; border-right: 0 none; border-bottom: 0 none; }
+
+#talkSection { z-index: 100; position: fixed; width: 50%; right: 0; top: 61px; height: 100%; border-right: 86px solid transparent; box-sizing: border-box; overflow: hidden }
+.talkBg {  position: relative; z-index: -1; width: 100%; height: 100%; background-color: #19192b; opacity: 0.5; }
+
+#talkSection .firstBg { z-index: 200; position: fixed; top: 81px; right: 0;border-top: 42px solid #19192b; border-bottom:1px solid #313247; border-left: 30px solid #19192b; border-right: 151px solid #19192b; box-sizing: border-box; width: 50%; height: 232px; background-color: #19192b }
+
+#talkSection ul#firstUl { padding-left: 43px; width: 1300px }
+#talkSection ul#firstUl > li { position: static; width: 190px; padding: 0 30px; border-left: 1px solid #313247; box-sizing: inherit; overflow: hidden }
+#talkSection ul#firstUl > li .icon { text-indent: -999999px; float: left; width: 33px; height: 33px; margin-right: 15px; display: inline-block; background: url('../imgs/cre.png') no-repeat; }
+#talkSection ul#firstUl > li:nth-child(2) .icon { background-image: url('../imgs/pro.png'); } 
+#talkSection ul#firstUl > li:nth-child(3) .icon { background-image: url('../imgs/eff.png'); } 
+
+#talkSection ul#firstUl > li > a { opacity: 0.3; }
+#talkSection ul#firstUl > li:first-child { opacity: 1; padding: 0 30px 0 0; border-left: 0 none }
+#talkSection ul#firstUl > li:first-child > a { opacity: 1; }
+#talkSection ul#firstUl > li > a:hover{ opacity: 1; }
+
+#talkSection ul#firstUl > li:last-child { padding: 0; width: 50px; height: 40px; text-align: right; position: absolute; z-index: 100; font-size: 0; background-color: #19192b; right: 0;top: 0 }
+#talkSection ul#firstUl > li:last-child a { margin-left: -1px }
+#talkSection ul#firstUl > li:last-child a .addIcon { vertical-align: middle; position: relative; display: inline-block; width: 26px; height: 26px; margin-top: 3px; border: 3px solid #00e29e; border-radius: 50% }
+.addIcon span:first-child { position: absolute; top: 11.5px; left: 6px; display: inline-block; width: 14px; height: 2px; background-color: #00e29e; }
+.addIcon span:last-child { position: absolute; top: 6px; left: 11.5px; display: inline-block; width: 2px; height: 14px; background-color: #00e29e; }
+
+#talk a { background-color: #19192b; }
+
+#talkSection .prevNext a { display: inline-block; z-index: 900; top: 42px; left: 30px; position: absolute; background-color: #19192b; width: 60px; height: 40px; background: #19192b url('../imgs/left.png') no-repeat left center; text-indent: -9999999px; background-size: 8px 15px;  }
+#talkSection .prevNext a.prev { width: 42px }
+#talkSection a.next { background-image: url('../imgs/right.png'); background-position: 33px center; right: 75px; top: 42px; left: auto }
+
+#talkSection { top: 81px; border-right: 120px solid transparent; }
+#talk a { width: 121px }
+
+.seperLine { width: 100%; height: 1px; background-color: #313247; margin-top: 40px }
+
+#talkSection ul#firstUl > li > ul#users { z-index: 200; width: 1350px; position: absolute; top: 120px; left: 43px; }
+#talkSection ul#firstUl > li > ul#users > li { position: static; display: inline-block; width: auto; margin-right: 15px; }
+#talkSection ul#firstUl > li > ul#users > li > a { display: inline-block; width: auto; width: 120px; opacity: 1; font-weight: 300 }
+#talkSection ul#firstUl > li > ul#users > li > a:hover { opacity: 1; }
+#talkSection ul#firstUl > li > ul#users > li > a.off { opacity: 0.3; }
+
+#talkSection ul#firstUl > li > ul#users > li .userImg { display: inline-block; width: 25px; height: 25px; margin-right: 10px; vertical-align: middle; background: #efefef url('../imgs/per1.jpg') no-repeat; border-radius: 50%; background-size: cover; }
+#talkSection ul#firstUl > li > ul#users > li:nth-child(2) .userImg { background-image: url('../imgs/per2.jpg'); }
+#talkSection ul#firstUl > li > ul#users > li:nth-child(3) .userImg { background-image: url('../imgs/per3.jpg'); }
+#talkSection ul#firstUl > li > ul#users > li:nth-child(4) .userImg { background-image: url('../imgs/per4.jpg'); }
+#talkSection ul#firstUl > li > ul#users > li:nth-child(5) .userImg { background-image: url('../imgs/per5.jpg'); }
+#talkSection ul#firstUl > li > ul#users > li:nth-child(6) .userImg { background-image: url('../imgs/per6.jpg'); }
+#talkSection ul#firstUl > li > ul#users > li:nth-child(7) .userImg { background-image: url('../imgs/per7.jpg'); }
+#talkSection ul#firstUl > li > ul#users > li:nth-child(8) .userImg { background-image: url('../imgs/per8.jpg'); }
+#talkSection ul#firstUl > li > ul#users > li:nth-child(9) .userImg { background-image: url('../imgs/per9.jpg'); }
+#talkSection ul#firstUl > li > ul#users > li:nth-child(10) .userImg { background-image: url('../imgs/per10.jpg'); }
+
+
+
+#talkSection .prevNext.user a.prev { top: 154px; left: 30px; }
+#talkSection .prevNext.user a.next { top: 154px; right: 28px; }
+/*#talkSection  { overflow-y: auto; }*/
+
+#contents ul li .save { opacity: 0.3 }
+
+.chatBg { -ms-overflow-style: none; z-index: 0; position: fixed; top: 0; border-top: 313px solid transparent; border-bottom: 130px solid transparent; right: 0; width: 50%; height: 100%; padding: 0 0px;overflow: hidden; overflow-y: auto; -webkit-overflow-scrolling: touch; border-left: 30px solid transparent; border-right: 148px solid transparent; box-sizing: border-box;  }
+.chatBg #chatroom { position: static; width: 100%; height: auto; }
+::-webkit-scrollbar { display: none; }
+#chatroom > li > ul { width: 100%; height: auto }
+#chatroom > li > ul > li { position: relative; width: 100%; padding-bottom: 15px; margin-bottom: 15px; }
+.recieved .groupping1 { text-align: left; position: relative; display: inline-block; padding: 10px 20px; padding-left: 30px; max-width: 70%;}
+.recieved .groupping1 .bg { opacity: 0.3; z-index: -1; left: 0; top: 0; position: absolute; width: 100%;  height: 100%; background-color: #000;  border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; }
+.recieved .endtip { opacity: 0.3; position: absolute; bottom: 0; left: 0; display: inline-block; width: 14px; height: 15px; background: url('../imgs/leftBtmTalk.png') no-repeat; }
+.recieved .time { position: absolute; bottom: 0; left: 16px; font-size: 0.8em; font-style: italic; opacity: 0.7; }
+.recieved .userFace { display: inline-block; float: left; margin-left: -15px; margin-right: 10px; width: 20px; height: 20px; background-color: yellow; border-radius: 50% }
+
+.recieved .userFace.per1 { background: url('../imgs/per1.jpg') no-repeat; background-size: cover; }
+.recieved .userFace.per2 { background: url('../imgs/per2.jpg') no-repeat; background-size: cover; }
+.recieved .userFace.per3 { background: url('../imgs/per3.jpg') no-repeat; background-size: cover; }
+.recieved .userFace.per4 { background: url('../imgs/per4.jpg') no-repeat; background-size: cover; }
+.recieved .userFace.per5 { background: url('../imgs/per5.jpg') no-repeat; background-size: cover; }
+.recieved .userFace.per6 { background: url('../imgs/per6.jpg') no-repeat; background-size: cover; }
+.recieved .userFace.per7 { background: url('../imgs/per7.jpg') no-repeat; background-size: cover; }
+.recieved .userFace.per8 { background: url('../imgs/per8.jpg') no-repeat; background-size: cover; }
+.recieved .userFace.per9 { background: url('../imgs/per9.jpg') no-repeat; background-size: cover; }
+.recieved .userFace.per10 { background: url('../imgs/per10.jpg') no-repeat; background-size: cover; }
+
+
+
+#chatroom > li { height: auto }
+#chatroom > li > ul { height: auto; padding: 50px 0; border-bottom: 1px solid #313247 }
+
+.sent .groupping2 { float: right; text-align: right; position: relative; display: inline-block; padding: 10px 20px; padding-right: 45px; max-width: 70%;}
+.sent .groupping2 .bg { opacity: 0.04; z-index: -1; left: 0; top: 0; position: absolute; width: 100%;  height: 100%; background-color: #fff;  border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-left-radius: 10px; }
+.sent .endtip { opacity: 0.04; position: absolute; bottom: 0; right: 0; display: inline-block; width: 14px; height: 15px; background: url('../imgs/rightBtmTalk.png') no-repeat; }
+.sent .time { position: absolute; bottom: 0; right: 16px; font-size: 0.8em; font-style: italic; opacity: 0.7; }
+.sent .userFace { position: absolute; top: 11px; display: inline-block; float: right; margin-right: -34px; margin-left: 10px; width: 20px; height: 20px; background: url('../imgs/userImg.jpg') no-repeat; background-size: cover; border-radius: 50% }
+
+.lastchat { text-align: center; width: 100%; display: inline-block; margin-top: 10px; margin-bottom: 20px; opacity: 0.5}
+
+
+.rel { position: relative; width: 100%; height: 100%; }
+
+.hideRightTop { z-index: 1000; position: fixed; width: 30px; height: 50px; top: 115px; right: 120px; background-color: #19192b }
+.hideRightBtm { z-index: 1000; position: fixed; width: 30px; height: 50px; top: 226px; right: 120px; background-color: #19192b }
+
+
+.chat1Bg { z-index: 1000; width: 50%; height: 100px; padding: 15px 30px; border-right: 120px solid transparent; box-sizing: border-box; position: fixed; bottom: 15px; right: 0; }
+.chatRel { position: relative; }
+.chat2Bg { width: 100%; height: 70px; background-color: #fff; opacity: 0.05; position: absolute; z-index: -1; border-radius: 10px }
+.chat1Bg textarea { resize: none; margin-top: 13px; color: #fff;outline: none; width: 100%; height: 45px; max-width: 100%; max-height: 45px;  border-right: 70px solid transparent; border-left: 20px solid transparent; box-sizing: border-box; }
+
+#send, #file { position: fixed; padding: 0; margin: 0; width: 20px; height: 20px; border-radius: 50%; text-indent: -99999999px; opacity: 0.8; }
+#file { background: url('../imgs/addImg.png') no-repeat center center; right: 0; bottom: 70px; right: 162px; background-size: 16px }
+#send { background: #277262 url('../imgs/right.png') no-repeat center center; bottom: 40px; right: 162px; background-size: 6px }
+#send:hover, #file:hover { opacity: 1; }
+
+@media only screen and (min-width: 1500px) {
+	.hideRightTop, .hideRightBtm { display: block !important; }
+}
+
+@media only screen and (max-width: 2000px) {
+	header ul li:first-child .planet { margin-left: 23px; margin-right: 17px; }
+	header ul li:first-child a { width: 239px; }
+	header ul li:nth-child(2) a { left: 547px }
+	header ul li:nth-child(3) a { left: 612px }
+	header ul li:nth-child(4) a { left: 677px }
+
+	.filterBar h2 a { width: 30px; height: 30px; margin-top: 9px }
+	.filterBar h2 a { background-size: 20px 20px; }
+	select { padding: 0 8px }
+	#searchBy input[type=submit] { margin-right: 0  }
+	#searchBy .verLine { margin-right: 0 }
+	#talk a { width: 86px }
+	#talkSection { top: 61px; border-right: 86px solid transparent; }
+
+	#talkSection .firstBg { height: 163px; top: 61px; border-right: 116px solid #19192b; border-top: 24px solid transparent }
+	#talkSection a.next, #talkSection a.prev { top: 20px; height: 46px }
+
+	.seperLine  {margin-top: 25px  }
+
+	#talkSection ul#firstUl > li > ul#users { top: 87px }
+	#talkSection .prevNext.user a.prev { top: 100px; }
+	#talkSection .prevNext.user a.next { top: 100px; }
+	
+	.hideRightTop { top: 79px; right: 86px }
+	.hideRightBtm { top: 162px; right: 86px }
+ 	
+ 	.chatBg { border-top: 225px solid transparent; border-right: 120px solid transparent; }
+	
+	.chat1Bg { border-right: 86px solid transparent; }
+/*	.chat2Bg { width: 100%; height: 70px; background-color: #fff; opacity: 0.05; position: absolute; z-index: -1; border-radius: 15px }
+	.chat1Bg textarea { margin-top: 13px; color: #fff;outline: none; width: 100%; height: 40px; max-width: 100%; max-height: 40px;  border-right: 70px solid transparent; border-left: 20px solid transparent; box-sizing: border-box; }
+*/
+	#file, #send { right: 130px }
+
+
+}
+
+@media only screen and (max-width: 1500px)  {
+	#contents ul { width: 100% }
+	.filterBar { width: 100%; margin-right: 0 }
+	#searchBy input[type=submit] { margin-right: 10px; }
+	#contents ul li .save { width: 20px; height: 20px; }
+	.save .cross1 { top: 6px; left: 9.5px; width: 1px; height: 9px  }
+	.save .cross2 { left: 6px; top: 9.5px; height: 1px; width: 9px }
+
+	.dateSave p { margin-top: 3px }
+	#talk a { background-color: #1f1f38; width: 85px }
+	#talkSection { right: 100%; width: 100%; top: 61px; border-right: 86px solid transparent; border-left: 86px solid transparent; }
+
+	.hideRightBtm, .hideRightTop { right: 86px; top: 79px}
+	.hideRightTop  { width: 34px }
+	.hideRightBtm { top: 156px }
+	#talkSection a.next, #talkSection a.prev { right: 67px; top: 30px }
+	.chatBg { width: 100%; border-top: 225px solid transparent; border-right: 101px solid transparent; border-left: 101px solid transparent; }
+	.talkBg { opacity: 0.95; background-color: #121223}
+
+	#talkSection { top: 51px; right: 0; border-left: 86px solid transparent; border-right: 86px solid transparent; }
+	#talkSection .firstBg { width: 100%; border-left: 120px solid #19192b; border-right: 120px solid #19192b; top: 61px }
+
+	#talkSection .prevNext.user a.next { top: 110px }
+	#talkSection .prevNext.user a.prev { top: 110px }
+
+	#chatroom > li > ul { padding: 20px 0; }
+
+	.chat1Bg { width: 100%; border-left: 86px solid transparent; }
+
+	#talkSection, .hideRightBtm, .hideRightTop { display: none }
+
+	#contents .showNow { display: block !important; }
+	#contents #quickLinks .changeBg { background-color: #19192b !important; }
+}
+
+
+@media only screen and (max-width: 1300px)  {
+	header ul li:first-child a { width: 239px; }
+	header ul li:nth-child(2) a { left: 512px }
+	header ul li:nth-child(3) a { left: 562px }
+	header ul li:nth-child(4) a { left: 612px }
+	#talk a { width: 70px; }
+	
+
+	#talkSection .firstBg { top: 51px;  border-top: 17px solid transparent;    height: 133px; }
+	.seperLine { margin-top: 17px }
+	#talkSection { border-left: 71px solid transparent; border-right: 71px solid transparent; }
+	.hideRightBtm, .hideRightTop { right: 71px }
+	#talkSection a.next, #talkSection a.prev { right: 82px; top: 10px }
+	#talkSection .prevNext.user a.next { top: 75px }
+	#talkSection .prevNext.user a.prev { top: 75px }
+	.hideRightTop { width: 49px }
+	.hideRightBtm, .hideRightTop { right: 71px; top: 62px}
+	.hideRightBtm { top: 125px }
+	#talkSection ul#firstUl > li > ul#users { top: 71px; left: 24px } 
+	#talkSection ul#firstUl { padding-left: 24px }
+	.chat1Bg { border-left: 71px  solid transparent; border-right: 71px solid transparent }
+}
+
+@media only screen and (max-width: 1024px) {
+	#contents { 
+
+	background-image: radial-gradient(at 47% 199% , #09a077 -56%, #181528 99%);
+	background-image: -webkit-radial-gradient(at 47% 199% , #09a077 -56%, #181528 99%);
+	background-image: -moz-radial-gradient(at 47% 199% , #09a077 -56%, #181528 99%);
+	background-image: -o-radial-gradient(at 47% 199% , #09a077 -56%, #181528 99%); 
+}
+
+
+	#contents ul li .articleImg { left: 0 }
+	header ul li:first-child a {width: 50px; }
+	header ul li:first-child .planet { margin-left: 12.5px; margin-right: 15px; margin-top: 8px; }
+	header ul li:first-child a { left: 242px; background-color: #1f1f38 }
+	header ul li:nth-child(2) a { left: 292px }
+	header ul li:nth-child(3) a { left: 342px }
+	header ul li:nth-child(4) a { left: 392px }
+	header ul li:nth-child(4) a:hover .words, header ul li:nth-child(3) a:hover .words, header ul li:nth-child(2) a:hover .words { display: none !important }
+	.chat1Bg { border-left: 0 none; border-right: 0 none }
+
+	.dateSave p { margin-top: 3px; }
+
+	#contents ul li a, #contents ul li a:hover { border-right: 0 none; border-left: 0 none }
+	#contents ul li { border-right: 0 none }
+
+	#contents ul li a { opacity: 0.9; }
+	#contents .wording { opacity: 0.8; }
+
+	#talk a { width: 50px; }
+
+	.hideRightBtm, .hideRightTop { right: 0; top: 111px}
+
+	.hideRightBtm { top: 176px }
+	#talkSection a.next, #talkSection a.prev { right: 69px; top: 10px }
+	#talkSection ul#firstUl > li:last-child a { background-color: #19192b }
+	.chatBg { width: 100%; border-top: 236px solid transparent;border-right: 30px solid transparent; border-left: 30px solid transparent; }
+	.talkBg { opacity: 0.95; background-color: #121223}
+
+	#talkSection { top: 101px; right: 0; border-top: 1px solid #313247; border-left: 0 none; border-right: 0 none; }
+	#talkSection .firstBg { width: 100%; top: 102px; border-left: 30px solid #19192b; border-right: 30px solid #19192b; } 
+	.hideRightTop { width: 30px }
+	#talkSection .prevNext.user a.next { top: 80px;  }
+	#talkSection .prevNext.user a.prev { top: 80px }
+	#talkSection ul#firstUl { padding-left: 31px }
+	#talkSection ul#firstUl > li > ul#users { left: 31px }
+	#send, #file { right: 50px }
+	
+	#talkSection { z-index: 100000; top: 0}
+	#talkSection .firstBg { top: 0; height: 100px }
+	.chatBg { border-top: 100px solid transparent; }
+	#talkSection ul#firstUl > li:last-child a .addIcon { border: 3px solid #b10000; }
+	#talkSection ul#firstUl > li > a { font-size: 0.9em }
+	#talkSection ul#firstUl > li .icon { width: 25px; height: 25px; background-size: 25px 25px }
+	#talkSection ul#firstUl > li > ul#users { font-size: 0.9em; top: 52px }
+	#talkSection .firstBg { border-top: 13px solid transparent; }
+	#talkSection ul#firstUl > li > ul#users > li .userImg { width: 20px; height: 20px }
+	.seperLine { margin-top: 13px }
+	#talkSection a.next, #talkSection a.prev { top: 0 }
+	#talkSection ul#firstUl > li:last-child { top: 0px; height: 30px }
+	#talkSection ul#firstUl > li:last-child a .addIcon { width: 20px; height: 20px; border: 2px solid #b10000; margin-top: 1px }
+	
+	#talkSection .prevNext a.prev { width: 30px }
+	#talkSection .prevNext.user a.prev, #talkSection .prevNext.user a.next { top: 51px; }
+	#talkSection .prevNext.user a.next { background-position: 19px center; width: 30px }
+	.addIcon span:first-child { width: 10px; left: 5px; top: 8.5px; background-color: #b10000; transform: rotate(45deg); -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg);  }
+	.addIcon span:last-child { height: 10px; top: 5px; left: 8.5px; background-color: #b10000; transform: rotate(45deg); -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg);   }
+
+	.hideRightBtm { z-index: 100000; top: 0; right: 0; height: 99px }
+	#talkSection ul#firstUl > li:last-child a  { opacity: 0.9; }
+
+	#talkSection .prevNext.user a.prev, #talkSection .prevNext.user a.next, #talkSection a.next, #talkSection a.prev { background-size: 7px }
+	
+	#talkSection ul#firstUl > li > a { line-height: 11px }
+
+	.chatBg { border-bottom: 90px solid transparent }
+	.chat1Bg { bottom: 0; height: 86px; padding: 15px 15px; }
+	.chat2Bg { height: 55px }
+	.chat1Bg textarea { margin-top: 5px; border-left: 10px solid transparent;  }
+	#send { bottom: 22px }
+	#file { bottom: 47px }
+	.hideRightTop { top: 43px }
+	#send, #file { right: 27px }
+}	
+
+
+@media only screen and (max-width: 800px) {
+
+	#talkSection ul#firstUl > li > ul#users > li > a { width: 100px }
+	#talkSection ul#firstUl > li { width: 170px }
+
+	.chatBg, #talkSection .firstBg { border-right: 10px solid transparent; border-left: 10px solid transparent }
+	#talkSection .prevNext a.prev, #talkSection .prevNext.user a.prev { left: 10px }
+	#talkSection .prevNext a.next { right: 40px }
+	#talkSection .prevNext.user a.next { right: 0; background-position: 10px center; }
+	.hideRightBtm { height: 49px }
+	
+	#talkSection ul#firstUl > li:last-child a .addIcon { margin-right: 10px }
+	#talkSection ul#firstUl > li:last-child { right: -10px }
+
+	#wrapper .hideRightBtm { right: -30px }
+
+}
+
+
+
+@media only screen and (max-width: 650px) {
+
+	header ul li:first-child a { left: 102px }
+	header ul li:nth-child(2) a { left: 153px }
+	header ul li:nth-child(3) a { left: 203px }
+	header ul li:nth-child(4) a { left: 254px }
+	header span.userImg { margin-left: 13px }
+	
+
+	#contents ul li .articleImg { width: 80px; height: 80px; margin: 32px 20px }
+	#contents .wording { padding-left: 122px }
+	#contents .wording p { font-size: 0.9em }
+	.filterBar h2 a { display: none; }
+
+	.dateSave { top: 21px; right: 15px }
+}
+
+@media only screen and (max-width: 560px) {
+	.sent .groupping2 { width: 55%; }
+	.sent .groupping1 { width: 55% }
+
+}
+
+@media only screen and (max-width: 430px) {
+	header ul li:first-child a { display: none }
+	header ul li:nth-child(2) a { left: 102px }
+	header ul li:nth-child(3) a { left: 153px }
+	header ul li:nth-child(4) a {left: 203px  }
+	
+	#contents > ul > li { height: 140px }
+	#contents ul li .articleImg { width: 60px; height: 60px; margin: 40px 15px;  }
+	
+	#contents .wording { padding-left: 90px; margin-top: 21px; }
+	#contents .wording p { font-size: 0.9em }
+}
+
+@media only screen and (max-width: 370px) {
+
+	header ul li:nth-child(2) a { left: 102px }
+	header ul li:nth-child(3) a { left: 143px }
+	header ul li:nth-child(4) a {left: 188px  }
+
+}
+
+
+@media only screen and (max-width: 340px) {
+	header ul li:nth-child(2) a { left: 102px }
+	header ul li:nth-child(3) a { left: 138px }
+	header ul li:nth-child(4) a {left: 176px  }
+	header ul li .planet svg { width: 23px; height: 23px }
+}
+@media only screen and (max-width: 330px) {
+	header ul li:nth-child(2) a { left: 100px }
+	header ul li:nth-child(3) a { left: 133px }
+	header ul li:nth-child(4) a {left: 168px  }
+	header ul li .planet svg { width: 23px; height: 23px }
+}

@@ -1,0 +1,49 @@
+#contents ul li .cover { display: inline-block; width: 200px; height: 200px; margin: 13px 0; background: url('../imgs/creCover_1.jpg') no-repeat; background-size: cover; border-radius: 50%; transiton: 0.3s ease-in-out; -moz-transition: 0.3s ease-in-out; -webkit-transition: 0.3s ease-in-out; }
+.mid a:hover .cover { box-shadow: #F32651 0px 0px 30px; transiton: 0.3s ease-in-out; -moz-transition: 0.3s ease-in-out; -webkit-transition: 0.3s ease-in-out;}
+
+#contents ul li { border-right: 1px solid #473143; border-bottom: 1px solid #473143; }
+
+#contents ul li:nth-child(2) .cover { background-image: url('../imgs/creCover_2.jpg'); }
+#contents ul li:nth-child(3) .cover { background-image: url('../imgs/creCover_3.jpg'); }
+#contents ul li:nth-child(4) .cover { background-image: url('../imgs/creCover_4.jpg'); }
+#contents ul li:nth-child(5) .cover { background-image: url('../imgs/creCover_5.jpg'); }
+#contents ul li:nth-child(6) .cover { background-image: url('../imgs/creCover_6.jpg'); }
+#contents ul li:nth-child(7) .cover { background-image: url('../imgs/creCover_7.jpg'); }
+#contents ul li:nth-child(8) .cover { background-image: url('../imgs/creCover_8.jpg'); }
+#contents ul li:nth-child(9) .cover { background-image: url('../imgs/creCover_9.jpg'); }
+#contents ul li:nth-child(10) .cover { background-image: url('../imgs/creCover_10.jpg'); }
+#contents ul li:nth-child(11) .cover { background-image: url('../imgs/creCover_11.jpg'); }
+#contents ul li:nth-child(12) .cover { background-image: url('../imgs/creCover_12.jpg'); }
+#contents ul li:nth-child(13) .cover { background-image: url('../imgs/creCover_13.jpg'); }
+#contents ul li:nth-child(14) .cover { background-image: url('../imgs/creCover_14.jpg'); }
+#contents ul li:nth-child(15) .cover { background-image: url('../imgs/creCover_15.jpg'); }
+
+
+
+@media only screen and (max-width: 2000px) {
+	#contents ul li .cover { width: 170px; height: 170px; }
+
+	#contents ul li:nth-child(13), #contents ul li:nth-child(14), #contents ul li:nth-child(15) { display: none }
+
+
+}
+
+@media only screen and (max-width: 1300px) {
+	#contents ul li .cover { width: 150px; height: 150px; }
+	#contents ul li .mid p { height: 80px }
+}
+
+@media only screen and (max-width: 1120px) {
+	#contents ul li .cover { width: 130px; height: 130px; }
+}
+
+@media only screen and (max-width: 1024px) {
+	#contents ul li .mid p { height: 47px }
+
+}
+
+
+@media only screen and (max-width: 430px) {
+	#contents ul li { border-right: 0 none; }
+
+}

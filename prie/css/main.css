@@ -1,0 +1,1015 @@
+/*  */
+html, body{  width: 100%; height: auto; margin: 0; overflow: hidden; overflow-y: auto;}
+
+
+input[type=text], select, option, input[type=submit], input[type=reset],input[type=password] { background: none; border: 0 none; appearance: none; -moz-appearance: none; -webkit-appearance: none; border-radius: 0; -webkit-border-radius: 0; -moz-border-radius: 0; box-shadow: 0 0 0 0; -moz-box-shadow: 0 0 0 0; -webkit-box-shadow: 0 0 0 0; font-family: 'Poppins', sans-serif }
+body input,input[type=text], select, option,input[type=submit], input[type=reset],input[type=password] { margin: 0; appearance: none; -moz-appearance: none; -webkit-appearance: none; border-radius: 0; -webkit-border-radius: 0; -moz-border-radius: 0; box-shadow: 0 0 0 0; -moz-box-shadow: 0 0 0 0; -webkit-box-shadow: 0 0 0 0;   }
+body input[type=submit], input[type=reset] { cursor: pointer; }
+body input:focus, select:focus { box-shadow: none; outline: 0; border-color: none }
+
+input[type=text], input[type=submit], input[type=reset],input[type=password], textarea { background: none; border: 0 none; appearance: none; -moz-appearance: none; -webkit-appearance: none; border-radius: 0; -webkit-border-radius: 0; -moz-border-radius: 0; box-shadow: 0 0 0 0; -moz-box-shadow: 0 0 0 0; -webkit-box-shadow: 0 0 0 0; }
+
+
+/* for js */
+
+#wrapper .opa0 { opacity: 0 !important; -moz-transform: translate(0, 50px) rotate(0, 0); -webkit-transform: translate(0, 50px) rotate(0, 0); transform: translate(0, 50px) rotate(0, 0); transition: -webkit-transform 2000ms cubic-bezier(0.19, 1, 0.22, 1) 0ms, opacity 2000ms cubic-bezier(0.19, 1, 0.22, 1) 0ms; transition: transform 2000ms cubic-bezier(0.19, 1, 0.22, 1) 0ms, opacity 2000ms cubic-bezier(0.19, 1, 0.22, 1) 0ms; }
+#wrapper .opa1 { opacity: 1 !important; -moz-transform: translate(0, 0) rotate(0, 0); -webkit-transform: translate(0, 0) rotate(0, 0); transform: translate(0, 0) rotate(0, 0); transition: -webkit-transform 2000ms cubic-bezier(0.19, 1, 0.22, 1) 0ms, opacity 2000ms cubic-bezier(0.19, 1, 0.22, 1) 0ms; transition: transform 2000ms cubic-bezier(0.19, 1, 0.22, 1) 0ms, opacity 2000ms cubic-bezier(0.19, 1, 0.22, 1) 0ms; }
+
+
+
+
+.deco {  background-color: #fff; opacity: 0.6  }
+.deco.first { z-index: -1; position: absolute; top: 0; left: 0; width: 100%; height: 467px;}
+
+body { margin: 0 auto; overflow: hidden }
+
+
+/* header */
+
+.headerBg { position: fixed; width: 100%; height: 90px; margin: 0 auto; background-color: #f5f5f5; z-index: 1000; }
+header { z-index: 10000; position: fixed; right: 0; left: 0; width: 1750px; margin: 0 auto }
+header h1 {  margin-top: 37px; display: inline-block; }
+header #subNav { z-index: 2000; position: fixed; left: 0; right: 0; margin: 0 auto; width: 1000px; top: 36px;  font-size: 18px; text-align: center }
+header #subNav a { margin: 0 10px; font-weight: 600; opacity: 0.3; letter-spacing: 0.1em }
+header #subNav a:hover { opacity: 0.6; }
+
+header h2 { position: fixed; display: block; right: 0; width: 1750px; text-align: right; left: 0; right: 0; margin: 0 auto }
+header h2 span.groupping { opacity: 0.7; cursor: pointer; margin-top: -20px; display: block; width: 34px; height: 25px; float: right; }
+header h2 span.groupping span { width: 100%; height: 3px; display: block; background-color: #000; margin-bottom: 5px }
+header h2 span.groupping:hover { opacity: 1; }
+
+header #mainNav { display: none; position: fixed; right: 0; width: 400px; height: 100%; top: 0;}
+header #mainNav a { color: #fff; font-size: 20px; text-align: left; display: block }
+header #mainNav a:first-child { margin-top: 20px;  }
+header #mainNav .bg { position: fixed; z-index: -1; width: 100%; height: 100%; background-color: #000; opacity: 0.5; }
+
+
+
+
+/* #banner */
+
+#banner { padding-top: 90px; }
+#banner .width1750 { position: relative; width: 1750px; height: 670px; margin: 0 auto }
+#banner ul { position: relative; }
+#banner ul li { z-index: 300; background-color: #f5f5f5; display: none; position: absolute; display: block; width: 100%; height: 670px }
+#banner  .bannerImg { width: 50%; float: left; height: 100%; background: url('../imgs/banner_one.jpg') no-repeat top left; background-size: cover }
+#banner .descript { width: 50%; height: 100%; float: right; background-color: #ffc74f; text-align: center; }
+#banner .descript p { opacity: 0.8; text-align: left; width: 66%; margin: 0 auto; font-size: 13px }
+#banner .descript h2 { font-size: 36px; margin: 172px 0 45px; letter-spacing: 0.3em }
+#banner .descript .break { display: block; margin: 10px 0; }
+#banner .descript a { display: inline-block; margin-top: 45px; font-size: 24px; letter-spacing: 0.1em; font-weight: 700; opacity: 0.5; }
+#banner .descript a .line { display: block; width: 50%; height: 3px; float: right; margin-right: -18px;background-color: #000; transition: 0.3s; }
+#banner .descript a:hover .line { width: 100%; margin-right: 0;  transition: 0.3s;}
+#banner .descript a:hover { opacity: 0.6; }
+#banner ul li.show { z-index: 400; display: block }
+
+#banner .pagination { position: absolute; z-index: 500; bottom: 70px; width: 50%; right: 0; text-align: center; }
+#banner .pagination a { display: inline-block; width: 15px; height: 15px; font-size: 0; background-color: #000; opacity: 0.2; margin: 0 15px; transform: rotate(135deg); -webkit-transform: rotate(135deg); -moz-transform: rotate(135deg) }
+#banner .pagination a:hover, #banner .pagination a.show { opacity: 0.7;}
+/*#banner .pagination a:hover { transform: rotate(270deg); -webkit-transform: rotate(270deg); -moz-transform: rotate(270deg)  }
+*/
+
+
+
+
+
+/* #strategy */
+
+#strategy { padding-top: 130px; height: 770px; }
+#strategy h2 { margin: 0 auto; font-size: 30px; text-align: center; letter-spacing: 0.3em; margin-bottom: 50px; }
+#strategy ol { margin: 0 auto; width: 1100px; }
+#strategy ol li { position: absolute; width: 1100px; left: 0; right: 0; margin: 0 auto }
+#strategy .img { display: none; width: 100%; height: 467px; margin-bottom: 80px; font-size: 0; background: url('../imgs/focus_one.jpg') no-repeat; background-size: cover }
+#strategy ol li h3 { font-size: 24px; position: absolute; top: 496px; left: 0; color:#808080 }
+#strategy ol li:first-child h3 { color: #505050 }
+#strategy ol li p { display: none; font-size: 14px; opacity: 0.8; }
+#strategy ol li p .break { display: block; margin: 10px 0 }
+#strategy li.show p, #strategy li.show .img  { display: block; }
+
+#strategy ol li.left h3 { transition: 1.7s; cursor: pointer; opacity: 0.5;top: 220px; left: -230px; width: 130px; overflow: hidden; height: 40px; }
+#strategy ol li.right h3 { transition: 1.3s; cursor: pointer; opacity: 0.5;top: 220px; left: auto; right: -230px; width: 128px; overflow: hidden; height: 40px; }
+
+
+#strategy ol li.left h3:hover .width { width: 275px; margin-left: -160px; transition: 1.7s; }
+#strategy ol li.right h3:hover .width { width: 200px; margin-left: -80px; transition: 1.3s; }
+
+
+#strategy ol li.left h3:hover, #strategy ol li.right h3:hover{ opacity: 0.7; transition: 0.5s; }
+ 
+
+#strategy ol li.left h3 span.line {  width: 4px; display: inline-block; height: 100%; background-color: #808080; position: absolute; top: 0; right: 0; }
+#strategy ol li.right h3 span.line {  width: 4px; display: inline-block; height: 100%; background-color: #808080; position: absolute; top: 0; left: 0; }
+
+
+
+/* #work */
+
+
+
+
+#work { padding-top: 90px; }
+#work .work1.width1750 {overflow: hidden; width: 1750px; padding-top: 100px; background-color: #f5f5f5; margin: 0 auto; }
+#work h2 { width: 36%; text-align: center; font-size: 30px; letter-spacing: 0.3em;  }
+#work h3 { font-size: 21px; color: #505050; letter-spacing: 0.1em; text-align: center;	 }
+
+#work ul a ol { position: relative; width: 36%; height: 427px; float: left; }
+#work ul a ol li { display: none; position: absolute; width: 60%; padding-left: 20%;  }
+#work ul a ol li p { opacity: 1; color: #808080 }
+#work ul a ol li h3 { margin: 70px 0 30px 0; color: #808080; opacity: 0.8; }
+#work ul a ol li .break { display: block; margin: 10px 0 }
+#work .firstLi { position: relative; }
+#work .firstLi .img { position: relative; width: 64%; height: 477px; float: right; margin-top: -50px; }
+#work .firstLi .actImg { width: 100%; height: 100%; background: url('../imgs/work_1.jpg') no-repeat; background-size: cover }
+#work ul li .img .foreBg {  transition: 0.3s; position: absolute; width: 100%; height: 100%; background-color: #000; opacity: 0.3; }
+#work .firstLi .img .groupping { top: 0; position: absolute; width: 100%; height: 100%; color: #fff; text-align: center; }
+#work .firstLi .img .groupping .title { font-size: 36px; font-weight: 700; letter-spacing: 0.3em; margin-top: 160px; display: inline-block; }
+#work .firstLi .img .groupping .with { font-size: 18px; display: block; letter-spacing: 0.1em; font-style: italic  }
+#work .firstLi .img .groupping .whom { font-size: 24px;  letter-spacing: 0.3em; font-weight: 600 }
+#work ul li:hover .foreBg { opacity: 0.4; transition: 0.3s; }
+#work .firstLi .prevNext { top: 0; width: 64%; position: absolute;right: 0; }
+#work .firstLi .prevNext a { opacity: 0.3; margin-top: 140px; display: block; margin-right: 40px; width: 45px; height: 86px; float: right; background: url('../imgs/next.png') no-repeat; font-size: 0 }
+#work .firstLi .prevNext a:first-child { float: left; margin-left: 40px; margin-right: 0; background-image: url('../imgs/prev.png'); }
+#work .firstLi .prevNext a:hover { opacity: 0.6; }
+
+#work ul li:nth-child(2) { float: left; width: 75%; height: 300px; }
+#work ul li:nth-child(2) .img {  width: 48%; height: 100%; float: left;  }
+#work ul li:nth-child(2) .actImg {  width: 100%; height: 100%; background: url('../imgs/work_2.jpg') no-repeat; background-size: cover }
+#work ul li:nth-child(2) .groupping { transition: 0.3s;  text-align: center; color: #fff; float: right; width: 52%; height: 100%; background-color: #e3659b }
+#work ul li:nth-child(2) .groupping h3 { color: #fff; margin-top: 60px; font-size: 24px }
+#work ul li:nth-child(2) .groupping .time { margin: 10px 0; font-size: 15px }
+#work ul li:nth-child(2) .groupping .descript { width: 60%; padding-left: 20%; text-align: left; }
+#work ul li:nth-child(2) > a:hover .groupping { transition: 0.3s;  background-color: #df4a8a; }
+
+#work ul li:nth-child(3) { position: relative; float: right; width: 25%; height: 300px; }
+#work ul li:nth-child(3) .img, #work ul li:nth-child(5) .img, #work ul li:nth-child(6) .img { position: relative; width: 100%; height: 100%;  }
+#work ul li:nth-child(3) .actImg, #work ul li:nth-child(5) .actImg, #work ul li:nth-child(6) .actImg {  width: 100%; height: 100%; background: url('../imgs/work_3.jpg') no-repeat; background-size: cover;background-position: center center;   }
+#work ul li:nth-child(3) .groupping, #work ul li:nth-child(5) .groupping, #work ul li:nth-child(6) .groupping { position: absolute; top: 0; left: 0; width: 100%; height: 100%; color: #fff; text-align: center;  }
+#work ul li:nth-child(3) .groupping h3,#work ul li:nth-child(5) .groupping h3, #work ul li:nth-child(6) .groupping h3 { color: #fff; margin-top: 125px }
+
+#work ul li  a .img { overflow: hidden }
+#work ul li a .actImg { background-position: center center;  transition: 0.5s; }
+#work ul li > a:hover .actImg { transform: scale(1.05); -webkit-transform: scale(1.05);  -moz-transform: scale(1.05);  transition: 0.5s;}
+
+#work ul li:nth-child(4) { width: 50%; height: 300px; float: left;}
+#work ul li:nth-child(4) .img { float: right; width: 50%; height: 100%; }
+#work ul li:nth-child(4) .actImg {background-position: center center;   width: 100%; height: 100%; background: url('../imgs/work_4.jpg') no-repeat; background-size: cover }
+
+#work ul li:nth-child(4) .groupping { transition: 0.3s; text-align: center; background-color: #758b92; float: left; width: 50%; height: 100%; color: #fff }
+#work ul li:nth-child(4) > a:hover .groupping {  transition: 0.3s; background-color: #677c82 } 
+#work ul li:nth-child(4) h3 { color: #fff; margin-top: 60px; font-size: 24px; }
+#work ul li:nth-child(4) p { width: 70%; padding-left: 15%; text-align: left }
+#work ul li:nth-child(4) p.time { text-align: center; margin: 10px 0; font-size: 15px }
+#work ul li:nth-child(5) { float: left; }
+#work ul li:nth-child(6) { float: right; }
+#work ul li:nth-child(5), #work ul li:nth-child(6) { position: relative; width: 25%; height: 300px;}
+#work ul li:nth-child(5) .actImg { background-position: center center;  background-image: url('../imgs/work_5.jpg'); }
+#work ul li:nth-child(6) .actImg { background-position: center center;  background-image: url('../imgs/work_6.jpg'); }
+
+
+#work ul a ol li.show { display: block }
+
+
+#work .work2.width1750 { width: 1750px; height: 90px; margin: 0 auto; }
+#work .work2.width1750 h3 {display: none;}
+#work .work2.width1750 ol { width: 50%; margin-left: 25%; height: 100%; text-align: center; float: left; background-color: #f5f5f5; line-height: 90px; }
+#work .work2.width1750 ol li { display: inline-block; margin: 0 3.5%; font-size: 18px; letter-spacing: 0.2em; }
+#work .work2.width1750 ol li a { font-weight: 600; color: #ababab }
+#work .work2.width1750 ol li a.show, #work .work2.width1750 ol li a:hover { color: #505050 }
+#work .work2.width1750 h4 { width: 25%;  float: right; height: 100%; text-align: center; line-height: 90px; font-size: 18px; background-color: #ffc74f;  }
+#work .work2.width1750 h4 a { position: relative; width: 100%; height: 100%;opacity: 0.5; display: inline-block; letter-spacing: 0.1em }
+#work .work2.width1750 h4 a:hover { opacity: 0.7; }
+#work .work2.width1750 h4 a .line {transition: 0.3s; position: absolute; width: 19%; display: block; height: 2px; background-color: #000; margin-top: -30px; left: 58% }
+#work .work2.width1750 h4 a:hover .line { transition: 0.3s; width: 44%; left: 28%; }
+
+/* #quote */
+
+#quote { padding-top: 150px;  width: 1750px; margin: 0 auto }
+#quote .width1750 { position: relative; width: 1750px; margin: 0 auto }
+form#quoteForm { position: relative; width: 75%; padding-left: 25% }
+#quote h2 { padding-left: 25%; font-size: 30px; letter-spacing: 0.3em }
+#quote dl { margin-top: 50px; width: 100%;  position: relative; }
+#quote dl dt {font-size: 14px; width: 30%; margin-bottom: 40px; padding-right: 30px; box-sizing: border-box; float: left; height: 140px; }
+#quote dl .step { display: block; font-size: 18px; margin-bottom: 10px; font-weight: 600 }
+#quote dl dd { overflow: hidden; width: 70%; padding: 15px 25px; box-sizing: border-box; margin-bottom: 40px; float: right; background-color: #f5f5f5; height: 140px; }
+#quote dl dd:last-child { margin-top: -15px; padding-top: 0; padding-right: 0; background-color: transparent; width: auto; height: auto; font-size: 18px; letter-spacing: 0.2em;  }
+#quote dl dd:last-child input { background: transparent; }
+#quote dl dd textarea { width: 100%; height: 100%; max-width: 100%; max-height: 100%; font-size: 14px;letter-spacing: 0.2em  }
+#quote dl dd input { font-size: 14px }
+#quote dl dd input#projectTitle { margin-top: 10px; width: 100%; display: block; }
+#quote dl dd input#number, #quote dl dd input#userName, #quote dl dd input#email { width: 30.1% }
+#quote dl dd input#userName, #quote dl dd input#number { margin-right: 4% }
+#quote dl dd input#projectTitle, #quote dl dd input#number, #quote dl dd input#userName, #quote dl dd input#email{ border-bottom: 3px solid #e3e3e3; letter-spacing: 0.1em; height: 30px; height: 40px; }
+#quote dd ul { text-align: center;}
+#quote dd ul li { position: relative; display: inline-block; margin-right: 20px; width: 100px; height: 100px; border: 3px dotted #e3e3e3; }
+#quote dd ul li a { opacity: 0.5; width: 100%; height: 100%; top: 0; left: 0; background: url('../imgs/addFile.png') no-repeat center center; position: absolute; font-size: 0; display: inline-block; }
+#quote dd ul li a:hover { opacity: 1; }
+#quote dd ul li:nth-child(6) { margin-right: 0 }
+#quote dl dd.uploadDd { position: relative;  padding: 15px 90px; } 
+#quote dl dd.uploadDd .prevNext a { opacity: 0.1; right: 30px; top: 30%; display: block; position: absolute; width: 25px; height: 50px; font-size: 0; background: url('../imgs/nextBlack.png') no-repeat; background-size: cover; }
+#quote dl dd.uploadDd .prevNext a:first-child {background-image: url('../imgs/prevBlack.png'); right: auto; left: 30px; }
+#quote dl dd.uploadDd .prevNext a:hover { opacity: 0.4; }
+
+#quote dl dd:last-child input { cursor: pointer; opacity: 0.5; font-size: 18px; letter-spacing: 0.3em; font-weight: 600; line-height: auto }
+#quote dl dd:last-child .line { margin-top: -5px;transition: 0.3s; width: 50%; height: 2px; display: block; background-color: #000; margin-left: 52px; opacity: 0.4 }
+#quote dl dd:last-child:hover input, #quote dl dd:last-child:hover .line { transition: 0.3s; opacity: 0.8; }
+#quote dl dd:last-child:hover .line {  width: 100%; margin-left: 0;  }
+
+
+#quote input { }
+
+
+
+/* .testimonials */
+.testi { position: absolute;top: -18px; right: 100px; }
+.testi .img { width: 80px; height: 80px; background: url('../imgs/client_1.jpg') no-repeat; border-radius: 50%; font-size: 0; float: left }
+.testi h4 { width: 100px; height: 80px; text-align: center; line-height: 80px;font-size: 20px; float: left; }
+.testi li { display: none; position: absolute; right: 0; width: 500px; height: 80px }
+.testi h5 { font-size: 15px; float: left; margin-top: 10px; margin-bottom: 5px }
+.testi h5 span { font-size: 12px; font-weight: 300; }
+.testi p { font-size: 20px; font-weight: 600 }
+.testi .prevNext a { opacity: 0.2; position: absolute; top: 16px; right: -93px; width: 25px; height: 50px; font-size: 0; background: url('../imgs/nextBlack.png') no-repeat; background-size: cover;}
+.testi .prevNext a:first-child { background-image: url('../imgs/prevBlack.png'); right: 650px;}
+.testi .prevNext a:hover { opacity: 0.4; }
+.testi li.show { display: block }
+
+/* #partners */
+#partners { position: relative; }
+.partnerBg { z-index: -1; top: 50px; left: 67%; position: absolute; width: 100%; height: 245px; background-color: #f5f5f5 }
+#partners .width1750 { width: 1750px; margin: 0 auto; padding-top: 50px; }
+#partners h2 { letter-spacing: 0.2em; width: 25%; font-size: 24px; line-height: 245px; text-align: center; float: left; height: 245px }
+#partners .width1750 > ul { position: relative; background-color: #f5f5f5; float: right; width: 75%; box-sizing: border-box; padding-left: 30px; height: 245px } 
+#partners .width1750 > ul > li { color: #d0d0d0; font-weight: 600; display: inline-block; letter-spacing: 0.2em; padding: 0 70px; margin: 74px 0; border-right: 3px solid #e3e3e3; font-size: 19px }
+#partners .width1750 > ul > li:last-child { position: absolute; top: 103px; margin: 0; border-right: 0 none }
+#partners .width1750 > ul > li:last-child a { opacity: 0.6; font-weight: 600 }
+#partners .width1750 > ul > li:last-child a:hover { opacity: 0.9; }
+#partners .width1750 > ul > li:last-child a .line {transition: 0.3s; display: block; width: 39%; height: 2px; background-color: #000; opacity: 0.6; margin-left: 152px; margin-top: 2px }
+#partners .width1750 > ul > li:last-child a:hover .line {transition: 0.3s; margin-left: 0; width: 100%; }
+
+
+
+
+/* #people */
+
+#people { clear: both; padding-top: 150px; position: relative; }
+
+#people .width1460 { position: relative; width: 1460px; margin: 0 auto; }
+#people .width1460 h2 { font-size: 30px; letter-spacing: 0.3em }
+#people .width1460 h2 .break { display: block; margin-top: -10px }
+#people .width1460 .groupping p a { margin-top: 10px; opacity: 0.6; display: inline-block; font-size: 18px; letter-spacing: 0.2em; font-weight: 600 }
+#people .width1460 .groupping p a:hover { opacity: 0.8; }
+#people .width1460 .groupping p a .line {transition: 0.3s;  display: block; width: 35%; margin-left: 71%; height: 2px; background-color: #000; opacity: 0.7; }
+#people .width1460 .groupping p a:hover .line {transition: 0.3s;  width: 100%; margin-left: 0 }
+
+#people .width1460 .groupping { position: absolute; right: 150px; top: 165px }
+#people ul li { position: relative; width: 46%; display: inline-block; }
+#people ul li:first-child { margin-right: 65%; margin-bottom: 80px; }
+#people ul li:last-child { float: right; }
+#people .img { width: 100%; height: 330px; margin-bottom: 10px; font-size: 0; background: url('../imgs/person_1.jpg') no-repeat; background-size: cover }
+#people ul li:nth-child(2) .img { background-image: url('../imgs/person_2.jpg'); }
+#people ul li:nth-child(3) .img { background-image: url('../imgs/person_3.jpg'); }
+
+#people ul li h3 { font-size: 20px; margin-bottom: -5px }
+#people ul li .status { font-size: 14px; margin-bottom: -8px }
+#people ul li .descript { position: absolute; right: 0; top: 350px; width: 71%; line-height:27px; font-size: 14px; }
+
+#people .social a { opacity: 0.3; font-size: 0; display: inline-block; margin-right: 5px; width: 23px; height: 23px; background: url('../imgs/sns.png') no-repeat; }
+#people .social a:nth-child(2) { background-position: -25px 0 }
+#people .social a:nth-child(3) { background-position: -49px 0 }
+#people .social a:hover { opacity: 0.5; }
+
+#people .peopleBg1 { z-index: -1; position: absolute; top: 116px; left: 0; width: 1360px; background-color: #95e2d5; height: 505px; }
+#people .peopleBg { z-index: -1; position: absolute; width: 100%; right: 40%; top: 116px; background-color: #95e2d5;height: 505px; top: 266px;}  
+
+
+
+
+
+
+/* #contact */
+#contact { padding-top: 150px; }
+#contact .width1655 { position: relative; width: 1655px; margin: 0 auto }
+#contact h2 { font-size: 30px; letter-spacing: 0.3em; width: 60%; height: 170px; line-height: 170px; text-align: center; }
+#contact ul { text-align: center; width: 60%; height: 380px; background-color: #f5f5f5 }
+#contact ul li { font-size: 18px; }
+#contact ul li:first-child { padding: 100px 0 30px; font-weight: 600 }
+#contact ul li:nth-child(3) { padding: 10px 0 }
+#contact ul li a { font-weight: 600; opacity: 0.5; }
+#contact ul li a:hover { opacity: 0.8 }
+#contact ul li.sns { margin-top: 20px; font-size: 0 }
+#contact ul li.sns a { opacity: 0.3; font-size: 0; display: inline-block; margin: 0  10px; width: 23px; height: 23px; background: url('../imgs/sns.png') no-repeat; }
+#contact ul li.sns a:nth-child(2) { background-position: -25px 0 }
+#contact ul li.sns a:nth-child(3) { background-position: -49px 0 }
+#contact ul li.sns a:hover { opacity: 0.6; }
+
+
+#contact .img { font-size: 0; position: absolute;right: 0; top: 0; width: 40%; height: 550px; background: url('../imgs/contactImg.jpg') no-repeat; background-size: cover; }
+
+
+
+
+/* subscribe */
+#subscribe { padding-top: 100px; }
+#subscribe .width1750 { width: 1750px; margin: 0 auto; padding: 80px 0; background-color: #f5f5f5; text-align: center; }
+#subscribe .width1750 h3 { font-size: 30px; letter-spacing: 0.3em; margin-bottom: 40px; }
+#subscribe input[type=text] {transition: 0.3s; letter-spacing: 0.1em; width: 40%; height: 60px; line-height: 60px;font-size: 16px;  padding: 0 20px; color: #fff; background-color: #484848 }
+#subscribe input[type=submit] {transition: 0.3s; letter-spacing: 0.1em; font-weight: 600; width: 200px; height: 60px; line-height: 60px; font-size: 16px; color: #fff; background-color: #484848 }
+
+#subscribe input:hover {transition: 0.3s; background-color: #363636 }
+
+
+
+
+/* footer */
+
+
+footer { padding-top: 60px; position: relative; padding-bottom: 160px; }
+footer .footerBg { z-index: -1; top: -140px; position: absolute; width: 100%; height: 450px; background-color: #d3d3d3;  }
+footer .width1750 { width: 1500px; margin: 0 auto;  }
+footer h1 { opacity: 0.4; height: 100px; float: left; text-align: right; width: 30%; box-sizing: border-box; padding-right: 40px;}
+footer nav { margin-bottom: 15px;  }
+footer nav a { opacity: 0.4;text-transform: uppercase; font-size: 18px; margin-right: 20px;  font-weight: 600}
+footer nav a:hover { opacity: 0.7;  }
+footer p { width: 84%; opacity: 0.7; }
+
+
+
+
+
+
+
+
+
+/* media query  */
+
+@media only screen and (max-width: 1900px) {
+
+#quote dd ul li { width: 79px; height: 79px; margin-top: 10px; }
+#wrapper .width1750, header, header h2 { width: 100%; padding-right: 50px; padding-left: 50px; box-sizing: border-box; }
+#work .work1.width1750, /*#work .work2.width1750*/, #partners .width1750 { width: 100%; padding-left: 0; padding-right: 0 }
+.partnerBg { display: none }
+#quote .width1750 { padding-right: 50px; padding-left: 0  }
+#work .work1.width1750 { width: 100%;  padding-right: 0; padding-left: 0 }
+#work .work2.width1750 { width: 100%; padding-right: 0; padding-left: 0 }
+
+#work { padding-left: 50px; padding-right:50px; width: 100%; box-sizing: border-box; }
+#quote .width1750 { padding-right: 0 }
+
+#subscribe .width1750 { width: 1600px; padding-right: 0; padding-left: 0 }
+}
+
+
+@media only screen and (max-width: 1700px) {
+/*	#banner .width1750 { padding-left: 0; padding-right: 0 }*/
+	header #subNav { font-size: 15px; top: 22px }
+	.headerBg { height: 65px }
+	header h1 { margin-top: 34px }
+	#banner { padding-top: 65px }
+	#banner ul li, #banner .width1750 { height: 630px }
+	#banner .descript h2 { margin-top: 145px; font-size: 30px }
+	#strategy ol li.right h3 { right: -175px; }
+	#strategy ol li.left h3 { left: -175px }
+	#strategy ol li { width: 1000px }
+
+	header h1 { width: 86px; margin-top: 25px; }
+	header h1 img { width: 100% }
+	header h2 span.groupping { width: 25px }
+
+	#strategy ol li p { font-size: 13px }
+	#strategy ol li h3 { font-size: 18px }
+	#strategy .img { margin-bottom: 67px }
+	#strategy ol li.left h3 { height: 26px; width: 100px; left: -155px }
+	#strategy ol li.right h3 { height: 26px }
+	#strategy ol li.left h3:hover .width { width: 200px; margin-left: -120px; transition: 1.7s; }
+	#strategy ol li.right h3:hover .width { width: 150px; margin-left: -60px; transition: 1.3s; }
+	
+	#work .firstLi .img .groupping .title { font-size: 30px; margin-top: 179px }
+	#work .firstLi .img .groupping .whom { font-size: 20px }
+	#work .work2.width1750 { height: 75px }
+	#work .work2.width1750 ol, #work .work2.width1750 h4 { line-height: 75px }
+	#work .work2.width1750 h4 a .line { width: 22%; margin-top: -23px }
+
+	#contact .width1655 { width: 100%; }
+
+	#wrapper h2, #people .width1460 h2 { font-size: 24px }
+	#people .width1460 .groupping p a { font-size: 15px }
+	#people ul li .descript { font-size: 13px }
+	#people .img { height: 270px }
+	#people .width1460 { width: 1200px }
+	#people ul li .status { font-size: 12px }
+	#people ul li .descript { top: 284px; line-height: 22px }
+	#people .peopleBg1 { width: 910px }
+
+	#banner .descript a { font-size: 20px }
+	#quote { width: 100%; padding-left: 50px; padding-right: 50px; box-sizing: border-box; }
+	#quote dl dd input#number, #quote dl dd input#userName, #quote dl dd input#email { width: 30% }
+	#quote dd ul li { width: 60px; height: 60px; margin-top: 21px; margin-right: 4% }
+	#quote dl dt { font-size: 12px }
+	#partners h2 { font-size: 20px; }
+	#partners .width1750 > ul > li { font-size: 14px }
+	#partners h2 { height: 200px; line-height: 200px }
+	#partners .width1750 > ul { height: 200px; }
+	#partners .width1750 > ul > li { margin: 65px 0 }
+	#partners .width1750 > ul > li:last-child { top: 87px }
+	#partners .width1750 > ul > li:last-child a .line { width: 31%; margin-left: 135px }
+	.partnerBg { display: block; height: 200px; }
+	#contact .width1655 { width: 1300px }
+	#contact ul { height: 310px; }
+	#contact ul li:first-child { padding-top: 77px; }
+	#contact .img { height: 480px }
+	#contact ul li { font-size: 15px }
+
+	#subscribe .width1750 { width: 1400px; padding-left: 0; padding-right: 0; padding: 50px 0  }
+	#subscribe .width1750 h3 { font-size:20px }
+	#subscribe input[type=text] { font-size: 13px; line-height: 40px; height: 40px }
+	#subscribe input[type=submit] { font-size: 14px; height: 40px; line-height: 40px; width: 150px; }
+	#people ul li h3 { font-size: 17px }
+	footer nav a { font-size: 15px; }
+	footer p { width: 78% }
+	footer h1 img { width: 86px }
+	
+	#contact h2 { font-size: 20px; }
+
+	#banner .pagination { padding-right: 50px; box-sizing: border-box; }
+
+
+	.testi .prevNext a:first-child { right: 613px }
+	.testi { right: 58px }
+	.testi .prevNext a { right: -58px }
+}
+
+
+
+@media only screen and (max-width: 1500px) {
+	#work ul a ol { height: 380px; }
+	#work .firstLi .img { height: 430px }
+	#work ul a ol li h3 { margin-top: 30px; }
+	#work ul a ol li { width: 70%; padding-left: 15% }
+
+	#work ul li:nth-child(2) .groupping .descript { padding-left: 15%; width: 70% }
+
+	#work ul li:nth-child(2),#work ul li:nth-child(3),#work ul li:nth-child(4),#work ul li:nth-child(5),#work ul li:nth-child(6) { height: 260px; }
+	#work ul li:nth-child(2) .groupping h3 { margin-top: 50px; font-size: 20px }
+	#work ul li:nth-child(2) .groupping .time { margin: 5px 0; font-size: 12px }
+	#work ul li:nth-child(4) h3 { margin-top: 50px; font-size: 20px }
+	#work ul li:nth-child(4) p.time { font-size: 12px; margin: 5px 0 }
+	#work ul li:nth-child(4) p { font-size: 11px }
+	#work ul li:nth-child(3) .groupping h3, #work ul li:nth-child(5) .groupping h3, #work ul li:nth-child(6) .groupping h3 { margin-top: 100px }
+
+	#work .work2.width1750 h4 { font-size: 14px }
+	#work .work2.width1750 ol li { font-size: 15px }
+
+	#quote dl dd input#projectTitle, #quote dl dd input#number, #quote dl dd input#userName, #quote dl dd input#email { font-size: 12px }
+	#quote dl dd textarea { font-size: 12px  }
+	#quote dl dd { padding: 15px 15px }
+	#quote dl dd:last-child input { font-size: 14px }
+	#partners .width1750 > ul > li:last-child a { font-size: 12px }
+	#partners .width1750 > ul > li:last-child a .line { margin-left: 119px }
+	#subscribe .width1750 { width: 1200px }
+	#contact .width1655 { width: 1000px }
+	#partners .width1750 > ul > li:last-child { padding: 0 37px; }
+
+	#quote { padding-top: 100px }
+
+	#strategy ol li { width: 800px; }
+	#strategy .img { height: 400px; margin-bottom: 60px }
+	#strategy ol li h3 { top: 428px; }
+
+	#strategy ol li.left h3, #strategy ol li.right h3 { top: 189px }
+
+	#strategy { height: 682px; padding-top: 100px; }
+
+	footer { padding-top: 40px; padding-bottom: 110px }
+	footer .footerBg { height: 395px }
+
+	#banner .descript h2 { font-size: 24px }
+	#banner .descript p { font-size: 12px }
+
+	#wrapper #banner ul li, #banner .width1750 { height: 520px }
+	#banner .descript h2 { margin-top: 100px }
+	#banner .pagination { bottom: 57px }
+
+	#banner .descript a { margin-top: 25px; font-size: 15px }
+	#banner .descript a .line { margin-right: -10px }
+	#people .width1460 { width: 1000px }
+	#people ul li .descript { opacity: 0.7; top: 325px; left: 0; width: 100%; font-size: 12px; line-height: 17px; }
+
+	#people .social { position: absolute; bottom: 5px; right: 0; }
+	#people .social a { margin-right: 0;  margin-left: 10px; }
+	#people { padding-top: 100px }
+
+
+	#partners .width1750 { padding-top: 0 }
+	.partnerBg { top: 0 }
+
+	#people .peopleBg { height: 387px; top: 216px }
+	#people .peopleBg1 { height: 387px }
+	#people .width1460 .groupping { right: 116px; top: 137px }
+	#people ul li:first-child { margin-bottom: 92px; }
+
+	#partners h2 { height: 165px; line-height: 165px;  }
+	#partners .width1750 > ul { height: 165px }
+	#partners .width1750 > ul > li { margin: 48px 0 }
+	.partnerBg { height: 164px }
+	#partners .width1750 > ul > li:last-child { top: 69px }
+
+	#partners h2 { font-size: 17px }
+
+	#work ul a ol li h3 { font-size: 15px }
+
+	#wrapper h2, #people .width1460 h2 { font-size: 20px }
+
+	.testi .prevNext a { width: 18px; height: 35px }
+	.testi .img { width: 60px; height: 60px; background-size: cover }
+	.testi h4 { width: 80px; height: 60px; line-height: 60px; font-size: 17px }
+	.testi li { width: 437px }
+	.testi h5 { font-size: 13px; margin-top: 5px; margin-bottom: 0 }
+	.testi p { font-size: 17px }
+
+	.testi .prevNext a:first-child { right: 552px }
+
+	#quote dl dd.uploadDd { padding: 15px 40px }
+	#quote dl dd.uploadDd .prevNext a:first-child { left: 15px; }
+	#quote dl dd.uploadDd .prevNext a { right: 15px }
+	
+	#wrapper #quote dl dd { text-align:center; }
+	#wrapper #quote dl dd input { text-align:left; display: inline-block; }
+	#quote dl dd input#projectTitle { width: 96% }
+	#quote dl dd input#number, #quote dl dd input#userName, #quote dl dd input#email { width: 29% }
+
+	#partners .width1750 > ul > li { padding: 0 60px; font-size: 12px }
+	#partners .width1750 > ul { height: 150px }
+	#partners h2 { height: 150px; line-height: 150px; font-size: 15px }
+	.partnerBg { height: 150px }
+	#partners .width1750 > ul > li:last-child { padding-right: 0 }
+
+
+	#contact ul li { font-size: 13px }
+	#contact ul li:first-child { padding-top: 65px }
+	#contact ul { height: 286px }
+	#contact .img { height: 457px }
+	#contact h2 { font-size: 18px }
+}
+
+
+
+@media only screen and (max-width: 1330px) {
+	#quote dd ul li { width: 51px; height: 51px; margin-top: 25px; }
+	.testi .prevNext a:first-child { right: 453px }
+	.testi li { width: 400px; right: -16px; top: 5px }
+
+	#subscribe .width1750 { width: 1000px }
+
+	.deco.first { height: 350px }
+
+
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+	#work .work2.width1750 ol { margin-left: 0; width: 75% }
+	#quote h2 { padding-left: 0 }
+	form#quoteForm { padding-left: 0; width: 100% }
+
+	#wrapper #banner ul li, #banner .width1750 { height: 460px }
+	#banner .descript h2 { margin-top: 67px; font-size: 20px; margin-bottom: 25px; }
+	#banner .descript a { margin-top: 5px }
+	#banner .pagination { bottom: 42px; }
+
+	#strategy { padding-top: 70px; height: 572px }
+	#strategy ol li { width: 650px }
+	#strategy .img { height: 312px; margin-bottom: 52px }
+	#strategy ol li h3 { top: 327px }
+
+	#strategy ol li p { font-size: 12px }
+	#strategy ol li.left h3, #strategy ol li.right h3 { top: 138px }
+
+	#work ul a ol li h3 { margin-bottom: 14px }
+	#work ul li:nth-child(2) .groupping h3 { margin-top: 43px; font-size: 17px }
+	#work ul li:nth-child(4) h3 { margin-top: 40px; font-size: 15px }
+
+	#work h3 { font-size: 17px }
+	#work ul li:nth-child(3) .groupping h3, #work ul li:nth-child(5) .groupping h3, #work ul li:nth-child(6) .groupping h3 { margin-top: 107px }
+
+	#subscribe .width1750 h3 { font-size: 17px }
+
+
+	footer h1 { width: 26% }
+	footer nav a { font-size: 13px }
+	footer p { width: 87% }
+
+
+/*	#work ul a ol li p { font-size: 11px }
+*/
+	#partners .width1750 > ul > li { padding: 0 42px; }
+	#work ul a ol li { padding-left: 10%; width: 80% }
+	#partners .width1750 > ul > li:last-child { padding-left: 20px }
+
+}	
+
+
+
+
+/* from tablet to phone */
+
+@media only screen and (max-width: 1024px) {
+	#wrapper .opa0 { opacity: 1 !important; }
+	#wrapper #work ul li:nth-child(2) .groupping { opacity: 0.8 !important; }
+	#work ul li:nth-child(4) .groupping { opacity: 0.8 !important }
+	#wrapper .width1750, header, header h2 { padding-right: 25px; padding-left: 25px }
+	
+	#banner  .bannerImg { width: 100% }
+	/*#wrapper #banner ul li { position: relative; }*/
+	#banner .descript { width: 100%; opacity: 0.7; position: absolute; float: none; top: 0; left: 0; color: #000 }
+	#banner .descript h2 { opacity: 1; color: #000 }
+	#banner .descript a { color: #000; opacity: 1; }
+	
+	#banner .width1750 { padding: 0 }
+	#banner .pagination { width: 100%; padding: 0 }
+	#wrapper #banner ul li, #banner .width1750 { height: 400px }
+
+	header #subNav { font-size: 13px; width: 500px; top: 14px }
+	header h1 { width: 60px; margin-top: 17px }
+	header h2 span.groupping span { margin-bottom: 3px; height: 2px }
+	header h2 span.groupping { margin-top: -17px }
+	.headerBg { height: 48px }
+
+	#banner { padding-top: 48px; }
+	
+	#work .work1.width1750 { padding-top: 60px }
+
+	#work { padding-left: 0; padding-right: 0 }
+	#work h2 { width: 100%; }
+	#work .firstLi { position: relative; }
+	#work .firstLi .img { margin-top: 35px; width: 100%; height: 300px; }
+	#work .firstLi .prevNext a { margin-top: 43px; width: 29px; height: 55px; background-size: cover }
+	#work .firstLi .img .groupping {  }
+	#work .firstLi p { width: 100%; height: 100%; }
+	#work ul a ol { color: #fff; position: absolute; width: 80%; box-sizing: border-box; padding-left: 10%; padding-right: 10%; z-index: 1000; height: 300px; top: 35px }
+	#work ul a ol li { padding-left: 0; width: 100%; }
+	#work ul a ol li h3 { color: #fff; margin-top: 120px }
+	#work .firstLi .prevNext { width: 100%; z-index: 1000; top: 160px; }
+	#work .firstLi p { opacity: 0.7; line-height: 17px }
+	#work ul li.firstLi .img .foreBg { opacity: 0.7 }
+
+	#work .firstLi .img .groupping .with { display: inline-block; margin-right: 5px }
+	#work .firstLi .img .groupping .title { margin-top: 57px }
+
+	#work ul li:nth-child(2) .img { width: 100%; }
+	#work ul li:nth-child(2) { position: relative; width: 70% }
+	#work ul li:nth-child(3), #work ul li:nth-child(6), #work ul li:nth-child(5) { width: 30% }
+	#work ul li:nth-child(4) { width: 40%; position: relative; }
+	#work ul li:nth-child(4) .groupping { z-index: 500; opacity: 0.7; background-color: #526b73; width: 100%; position: absolute; left: 0; top: 0; }
+	#work ul li:nth-child(4) .img { width: 100%; }
+	#work ul li:nth-child(2) .groupping { position: absolute; top: 0; left: 0; width: 100%; opacity: 0.8; background-color: #df4a8a }
+	#work ul li:nth-child(2) .groupping .time { margin: 13px 0 }
+	#work ul li:nth-child(2) .groupping h3 { margin-top: 59px }
+
+	#quote { padding-left: 25px; padding-right: 25px }
+	#quote .width1750 { padding: 0 }
+
+	#quote dl dd { width: 65% }
+	#quote dl dt { width: 35% }
+
+	#people .width1460 { width: 700px }
+	#people .img { height: 227px }
+	#people ul li .descript { top: 285px }
+	#people .width1460 .groupping { right: 0; top: 109px }
+	#people .peopleBg1 { width: 599px }
+	#people .peopleBg { right: 54% }
+
+	#contact .width1655 { width: 800px }
+	#contact ul { height: 245px }
+	#contact ul li:first-child { padding-bottom: 20px; padding-top: 60px }
+	#contact .img { height: 378px }
+	#contact h2 { height: 132px }
+
+	#contact ul li { font-size: 12px }
+ 	#contact ul li.sns { margin-top: 10px }
+
+ 	#work .work2.width1750 ol { width: 70%; }
+ 	#work .work2.width1750 h4 {width: 30% }
+
+ 	#subscribe .width1750 { width: 800px }
+	
+	footer h1 { width: 22% }
+	footer nav a { margin-right: 15px }
+ 	footer h1 img { width: 60px }
+
+ 	#quote dl dd:last-child { margin-bottom: 0 }
+
+ 	#partners h2 { float: none; width: 100%; height: 103px; line-height: 103px; text-align: center; }
+ 	.partnerBg { display: none }
+ 	#partners .width1750 > ul { text-align: center; float: none; margin: 0 auto; width: 85%;  padding-right: 30px; }
+ 	#partners .width1750 > ul > li:nth-child(3) {  border-right: 0 none }
+ 	#partners .width1750 > ul > li:last-child { z-index: 500; padding-right: 30px; width: 177px; top: 170px; right: -42px; }
+ 	#partners .width1750 > ul > li:last-child a .line { margin-left: 52px; width: 55%; }
+
+	#strategy ol li h3 { font-size: 15px }
+	#strategy ol li.left h3, #strategy ol li.right h3 { top: -24px; width: auto; }
+	#strategy ol li.left h3 span.line, #strategy ol li.right h3 span.line { display: none }
+	#strategy ol li.left h3:hover .width { width: auto; margin-left: 0; left: 0; }
+	#strategy ol li.right h3:hover .width{ width: auto; margin-left: 0; right: 0 }
+	#strategy ol li.right h3 { right: 0 }
+ 	#strategy ol li.left h3 { left: 0 }
+ 	#strategy .img { margin-top: 10px; margin-bottom: 42px; }
+ 	#strategy ol li h3 { top: 336px  }
+
+ 	#work ul li:nth-child(4) p.time { margin: 11px 0 }
+
+ 	#banner .descript a { margin-top: 17px } 
+ 	#banner .descript h2 { margin-top: 72px; }
+
+ 	#partners .width1750 > ul > li:last-child a .line { width: 35%; margin-left: 100px }
+
+	#quote dl dd input#userName {  float: left; margin-left: 2%;  width: 28%; margin-right: 1% }
+	#quote dl dd input#email { float: right; margin-right: 2%; width: 28% }
+}
+
+
+@media only screen and (max-width: 920px) {
+	#quote dl dt { width: 100%; height: auto; margin-bottom: 10px }
+	#wrapper #quote dl dd { width: 100% }
+	#wrapper #quote dl dd:last-child { width: auto; }
+
+	.testi li { width: 380px }
+ 	.testi .prevNext a:first-child { right: 415px }
+
+ 	#work .firstLi .img .groupping .title { font-size: 24px; margin-top: 45px }
+ 	#work .firstLi .prevNext a { margin-right: 25px; }
+ 	#work .firstLi .prevNext a:first-child { margin-left: 25px }
+ 	#work ul a ol li h3 { margin-top: 100px }
+	
+	footer { padding-bottom: 78px }
+
+	#wrapper h2, #people .width1460 h2 { font-size: 17px }
+	#partners h2 { font-size: 15px }
+	#people .width1460 .groupping p a { font-size: 13px }
+	#contact h2 { font-size: 14px }
+
+	#quote { padding-top: 75px }
+	#work { padding-top: 65px }
+
+	#contact h2 { line-height: 100px; height: 100px; }
+	#contact .img { height: 346px }
+
+	#subscribe { padding-top: 75px }
+}
+
+
+@media only screen and (max-width: 800px) {
+	#wrapper #banner ul li, #banner .width1750 { height: 360px; }
+	#banner .descript h2 { margin-top: 65px; margin-bottom: 15px }
+	#banner .descript p { width: 75%; }
+	#banner .pagination { bottom: 33px }
+	#banner .descript a { margin-top: 13px; }
+
+	#strategy ol li { width: 91% }
+
+	#people .width1460 { width: 600px }
+	#people .img { height: 153px; margin-bottom: 5px }
+	#people ul li .descript { line-height: 15px; top: 205px }
+	#people ul li:first-child { margin-bottom: 107px }
+
+	#people .peopleBg1 { height: 300px }
+	#people .peopleBg { height: 300px }
+
+	.testi, #contact .img { display: none; }
+	#quote h2 { width: 100%; text-align: center }
+	#quote dl { margin-top: 30px }
+	#quote { padding-left: 50px; padding-right: 50px }
+	#quote dl dd { margin-bottom: 25px }
+
+	#contact .width1655 { width: 600px }
+	#contact ul { width: 100%; }
+	#contact h2 { width: 100%; text-align: center; }
+	#contact { padding-top: 107px }
+	#partners .width1750 > ul { padding-left: 0; padding-right: 0 }
+
+	#subscribe .width1750 { width: 600px }
+
+	footer h1 { width: 100%; text-align: center; height: auto; margin-bottom: 20px }
+	footer nav, footer p { width: 70%; margin: 0 auto; text-align: center }
+	footer p  { margin-top: 10px }
+
+	footer { padding-top: 35px }
+
+	footer .footerBg { top: -91px }
+}
+
+
+@media only screen and (max-width: 680px) {
+	#wrapper #banner ul li, #banner .width1750 { height: 320px }
+
+	#banner .descript h2 { margin-top: 45px; margin-bottom: 11px }
+	#banner .pagination { bottom: 19px }
+	#strategy { padding-top: 50px }
+	#work { padding-top: 50px }
+	#work .work1.width1750 { padding-top: 50px }
+
+	#work ul li:nth-child(2) { width: 100%; height: 200px }
+	#work ul li:nth-child(2) .groupping h3 { margin-top: 35px }
+	#work ul li:nth-child(2) .groupping .time { margin: 5px 0 }
+	#work ul li:nth-child(3) { float: left; width: 40%; height: 200px }
+	#work ul li:nth-child(4) { width: 60%; height: 200px }
+	#work ul li:nth-child(4) h3 { margin-top: 28px }
+	#work ul li:nth-child(4) p.time { margin: 5px 0 }
+	#work ul li:nth-child(5),#work ul li:nth-child(6) { width: 50%; height: 200px }
+	#work .work2.width1750 h4 { font-size: 12px }
+	#work .work2.width1750 ol li { font-size: 13px }
+	#work .work2.width1750 ol li { margin: 0 2.1%; }
+
+	#quote { padding: 50px 25px 0 25px }
+	#partners .width1750 > ul { width: 100% }
+	#partners .width1750 > ul > li { margin: 33px 0 }
+	#partners .width1750 > ul { height: 127px }
+	#partners .width1750 > ul > li:last-child { top: 143px }
+
+	#work ul li:nth-child(3) .groupping h3, #work ul li:nth-child(5) .groupping h3, #work ul li:nth-child(6) .groupping h3 { margin-top: 78px }
+	
+	#people { position: relative; }
+	#people .width1460 .groupping { position: static; text-align: center; }
+	#people .width1460 h2 .break { display: inline-block; }
+	#people ul li { width: 100% }
+	#people ul li:first-child { margin-right: 0 }
+	#people ul li:nth-child(2) { float: none }
+	#people ul li:last-child { float: none; }
+	#wrapper h2, #people .width1460 h2  { margin-bottom: 30px }
+	#people .width1460 > .groupping > p { position: absolute; right: 0; bottom: -30px }
+
+	#people .img { height: 200px; background-position: center center }
+	#people ul li .descript { top: 256px }
+	#wrapper #people ul li { margin-bottom: 83px }
+
+	#contact { clear: both; padding-top: 100px; }
+	#contact h2 { height: 30px; line-height: 20px; margin-bottom: 20px } 
+	#contact ul li:first-child { padding-top: 40px }
+	#contact ul { height: 225px }
+
+	#banner .descript p { width: 84% }
+	#banner .descript h2 { margin-top: 56px }
+
+	header #subNav a { margin: 0 5px }
+	header #subNav {font-size: 12px }
+
+	#banner .pagination a { width: 10px; height: 10px; }
+	#strategy ol li h3 { font-size: 13px }
+	#strategy ol li.left h3, #strategy ol li.right h3 { top: -14px }
+	#work .firstLi .img .groupping .title { font-size: 17px }
+	#work .firstLi .img .groupping .with {font-size: 12px }
+	#work .firstLi .img .groupping .whom { font-size: 14px }
+	#work ul a ol li h3 { margin-top: 86px; font-size: 13px }
+
+	#work .firstLi .prevNext a { margin-top: 28px; width: 18px; height: 35px }
+	#wrapper h2, #people .width1460 h2 { margin-bottom: 0px }
+
+	#quote dd ul li { margin-right: 2% }
+
+	#quote dl dd { height: 118px; }
+	#quote dd ul li { margin-top: 14px }
+	#quote dl dd input#projectTitle, #quote dl dd input#number, #quote dl dd input#userName, #quote dl dd input#email { height: 30px; line-height: 30px }
+
+	#quote dl dd.uploadDd .prevNext a { width: 16px; height: 30px }
+	#partners h2 { height: 66px; line-height: 66px }
+
+	#people .width1460 { width: 90% }
+	#contact .width1655 { width: 90% }
+
+	#wrapper h2, #people .width1460 h2 { margin-bottom: 30px }
+	#work h2,#quote h2, #partners h2 { margin-bottom: 0 }
+
+	#subscribe .width1750 h3 { font-size: 14px }
+	#subscribe input[type=text] { width: 50%; font-size: 12px }
+	#subscribe input[type=submit] { width: 125px }
+	#subscribe .width1750 { width: 90% }
+	#subscribe .width1750 h3 { margin-bottom: 25px }
+
+}
+
+
+
+
+@media only screen and (max-width: 570px) {
+	#work ul li:nth-child(2) .groupping .descript, #work ul li:nth-child(4) p { width: 80%; padding-left: 10% }
+
+	#work .work2.width1750 h4 { width: 100%; float: none }
+	#work .work2.width1750 ol { width: 100%; float: none; }
+
+	#quote { padding-top: 106px }
+	#work .work2.width1750 h4 a .line { left: 55%; width: 10% }
+
+	#work .work2.width1750 ol, #work .work2.width1750 h4 { line-height: 65px; height: 65px }
+	#quote dl .step { font-size: 15px; margin-bottom: 5px }
+	#quote dl dt { margin-bottom: 15px }
+	#quote dl dd.uploadDd .prevNext a { top: 36% }
+	#partners .width1750 > ul > li { padding: 0 22px }
+
+	header #subNav { height: 40px; width: 100%; line-height: 40px; top: 48px; background-color: #f5f5f5 }
+	.headerBg { background-color: #fff }
+
+	#banner { padding-top: 88px }
+
+	#banner .descript p { height: 89px; overflow: hidden }
+
+	#banner .descript a { margin-top: 6px }
+	#banner .descript h2 { margin-top: 45px; margin-bottom: 13px }
+
+	#wrapper #banner ul li, #banner .width1750 { height: 285px }
+
+	#strategy .img { height: 211px }
+	#strategy ol li h3 {top: 236px }
+	#quote dd ul li:nth-child(6) { display: none }
+	#quote dd ul li:nth-child(5) { margin-right: 0 } 
+	#people ul li .descript { top: 253px }
+	
+	#work .firstLi p { height: 79px; overflow: hidden }
+	#work ul a ol li h3 { margin-top: 97px; margin-bottom: 20px }
+	#work .firstLi .img { height: 275px }
+	#strategy { height: 494px }
+	#wrapper #quote dl dd.inputDd { height: 150px }
+	#quote dl dd input#number, #quote dl dd input#userName { width: 43%; }
+	#quote dl dd input#userName  { margin-right: 8% }
+	#quote dl dd input#number { margin-right: 0 }
+	#quote dl dd input#email { width: 96%; margin-top: 5px;}
+	#quote dl dd input#projectTitle { margin-top: 5px }
+
+	#quote dd ul li { width: 40px; height: 40px; margin-right: 4% }
+	#quote dd ul li a { background-size: 20px }
+	#quote dd ul li { margin-top: 21px }
+	#work ul a ol { width: 70%; padding-left: 15% }
+	#work .firstLi .prevNext a { margin-right: 15px; }
+	#work .firstLi .prevNext a:first-child { margin-left: 15px }
+
+	#quote dl dd input#userName {  width: 43%; margin-right: 0 }
+	#quote dl dd input#number { float: right;width: 43%; margin-right: 2%  }
+	#quote dl dd input#email { float: none; width: 96%; margin-right: 0 }
+ }
+
+@media only screen and (max-width: 480px) { 
+	#banner .descript a { margin-top: 10px }
+
+	#people .img { height: 160px }
+	#people ul li .descript { top: 209px }
+	#contact ul { padding: 0 20px; box-sizing: border-box; }
+	#work ul li:nth-child(3) { width: 100%; }
+	#work ul li:nth-child(4) { width: 100% }
+	#work ul li:nth-child(2) .groupping .descript { font-size: 11px }
+	#work ul li:nth-child(2) .groupping h3 { margin-top: 31px }	
+	
+	#quote dd.uploadDd { height: 100px }
+	#quote dd ul li { width: 30px; height: 30px; margin-right: 4% }
+	#quote dd ul li a { background-size: 10px }
+	#quote dd ul li { margin-top: 17px }
+
+	#partners .width1750 > ul > li { font-size: 10px; padding: 0 7px; }	
+	#partners .width1750 > ul { height: 107px }
+	#partners .width1750 > ul > li { margin: 29px 0 }
+	#partners .width1750 > ul > li:last-child { top: 124px }
+
+	#wrapper #people ul li { margin-bottom: 95px }
+
+	#subscribe .width1750 h3 { font-size: 13px }
+	#wrapper #subscribe input[type=text] { width: 70%; padding-left: 10px; padding-right: 10px; margin-bottom: 10px}
+	#wrapper #subscribe input[type=submit] { font-size: 12px; width: 75%; padding-left: 10px; padding-right: 10px}
+	#subscribe .width1750 { padding: 40px 0 }
+	#subscribe .width1750 h3 { margin-bottom: 10px }
+
+	#wrapper #banner ul li, #banner .width1750 { height: 215px }
+	#banner .descript p { display: none }
+	#banner .descript h2 { margin-top: 76px; margin-bottom: 0; font-size: 17px }
+
+	#wrapper h2, #people .width1460 h2 { font-size: 14px }
+
+	.deco.first { display: none }
+
+	footer nav a { font-size: 11px }
+	footer nav, footer p { width: 100% }
+	footer h1 { margin-bottom: 10px }
+
+	header #subNav a { margin: 0 4px }
+}
+
+
+
+@media only screen and (max-width: 440px) { 
+	
+	#strategy .img { height: 176px }
+	#strategy ol li h3 { top: 206px }
+	#work ul li:nth-child(2) .groupping h3 { margin-top: 22px }
+}
+
+
+@media only screen and (max-width: 370px) { 
+	#strategy { height: 544px }
+	header #subNav { font-size: 11px }
+	header #subNav a { margin: 0 2px }
+	#work ul li:nth-child(2) .groupping .descript, #work ul li:nth-child(4) p { line-height: 15px }
+	#work ul li:nth-child(2) .groupping .time { margin: 8px 0 }
+	#work .work2.width1750 ol li { margin: 0 1.3% }
+	#quote dd ul li:nth-child(5) { display: none }
+	#quote dd ul li:nth-child(4) { margin-right: 0 }
+	#wrapper #people ul li { margin-bottom: 105px }
+	footer { padding-bottom: 52px }
+	#wrapper #subscribe input[type=submit] { width: 77% }
+
+}

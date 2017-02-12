@@ -1,0 +1,3 @@
+#work .groupping1 ul ul li { }
+#work .groupping2 ul li .serif { font-family: "돋움", Dotum, AppleGothic, 'arial', sans-serif; font-style: normal }
+#work .groupping1 > ul > li:first-child ul li { font-family: "돋움", Dotum, AppleGothic, 'arial', sans-serif;  }
