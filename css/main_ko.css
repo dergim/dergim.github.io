@@ -1,3 +1,23 @@
 #work .groupping1 ul ul li { }
 #work .groupping2 ul li .serif { font-family: "돋움", Dotum, AppleGothic, 'arial', sans-serif; font-style: normal }
 #work .groupping1 > ul > li:first-child ul li { font-family: "돋움", Dotum, AppleGothic, 'arial', sans-serif;  }
+
+
+
+
+@media only screen and (min-width: 1600px) {
+	 #wrapper #content #contact .biggerFont { font-size: 25px }
+	#wrapper #contact .groupping2 p { font-size: 17px }
+}
+
+@media only screen and (min-width: 1600px) and (max-height: 700px) {
+	#wrapper #contact .groupping2 p { font-size: 14px }
+	#contact .groupping2 { margin-left: -116px }
+
+
+
+}
+
+@media only screen and (max-height: 700px) and (min-width: 1024px) {
+	#contact .groupping2 { margin-top: 73px; }
+}

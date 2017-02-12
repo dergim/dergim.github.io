@@ -574,7 +574,8 @@ footer { z-index: 100000000; text-align: center; opacity: 0.5; letter-spacing: 0
   #work .groupping1 { top: 22% }
   #work .groupping2 .bg { margin-top: 267px }
   #work .groupping2 ul { top: 6%; }
-  #work .groupping1 > ul > li { margin-bottom: 25px }
+  #work .groupping1 > ul > li { margin-bottom: 25px;  }
+  #work .groupping1 ul ul li { font-size: 12px }
   #work .groupping1 ul ul { margin: 14px 0 }
 
   #contact .groupping1 h3 { font-size: 65px; line-height: 70px; top: 127px }
