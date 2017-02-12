@@ -438,6 +438,81 @@ footer { z-index: 100000000; text-align: center; opacity: 0.5; letter-spacing: 0
 
 /* media query */
 
+
+@media only screen and (min-width: 1440px) {
+  #intro .groupping h2 { font-size: 150px; height: 113px; line-height: 129px }
+  #intro .first { font-size: 17px }
+  #intro .second { font-size: 29px }
+  #intro .groupping { margin-left: -231.5px; margin-top: -96.5px }
+
+  #intro .groupping.default { margin-left: -467.5px }
+}
+
+
+@media only screen and (min-width: 1600px) {
+  .greyBg p.smaller { font-size: 120px }
+  #intro .groupping h2 { font-size: 180px; height: 128px; line-height: 155px }
+  #intro .first { font-size: 20.5px; margin-top: 16px }
+  #intro .second { font-size: 35.3px }
+  #intro .groupping { margin-left: -277.3px; margin-top: -115.5px }
+
+  #intro .groupping.default { margin-left: -528.5px; transform: scale(1.3, 1.3); -ms-transform: scale(1.3, 1.3); -webkit-transform: scale(1.3, 1.3); }
+  
+  #contact .groupping1 .inside span { height: 100% }
+  #contact .groupping1 .inside { height: 300px }
+  #contact .groupping1 h3 { top: 135px; line-height: 96px; font-size: 85px }
+  #contact .groupping2 p { font-size: 14px }
+  #contact .groupping2 { margin-left: -137px; margin-top: 138px }
+  #contact .groupping { margin-top: -284px }
+  
+  header h3 { font-size: 14px; margin-top: -39.5px }
+  header nav { width: 29% }
+  header .mainBg .seper { margin-left: 40% }
+
+  #work .groupping2 ul li.active .screen, #work .groupping2 ul li:hover .screen { right: 11% }
+  #work .groupping2 ul li .screen { right: 29% }
+
+  #work .groupping1 ul li h3 { font-size: 16px; height: 45px }
+  #work .groupping1 ul ul li { font-size: 15px }
+
+  #work .groupping2 .description { font-size: 13px }
+}
+
+
+
+@media only screen and (min-width: 1900px) {
+  #intro .groupping h2 { font-size: 210px; height: 152px; line-height: 179px }
+  #intro .first { font-size: 23.9px; }
+  #intro .second { font-size: 41.1px }
+  #intro .groupping { margin-left: -323.6px; margin-top: -135.5px }
+
+  #intro .groupping.default { margin-left: -635.5px; margin-top: -124.5px; transform: scale(1.3, 1.3); -ms-transform: scale(1.3, 1.3); -webkit-transform: scale(1.3, 1.3); }
+  
+  #contact .groupping1 .inside span { height: 100% }
+  #contact .groupping1 .inside { height: 300px }
+  #contact .groupping1 h3 { top: 135px; line-height: 96px; font-size: 85px }
+  #contact .groupping2 p { font-size: 14px }
+  #contact .groupping2 { margin-left: -137px; margin-top: 138px }
+  #contact .groupping { margin-top: -284px }
+  
+  header h3 { font-size: 16px; margin-top: -46.5px }
+
+
+  #work .groupping2 ul li .screen { right: 31% }
+  #work .groupping2 .description { font-size: 14px }
+
+  #work .groupping2 .links a { width: 230px; letter-spacing: 0.15em; }
+
+}
+
+@media only screen and (min-width: 2000px) {
+  #work .groupping1 { width: 23% }
+  #work h2 { font-size: 90px }
+  #work .groupping2 { width: 79% }
+  #work .groupping2 ul li.active .screen, #work .groupping2 ul li:hover .screen { right: 14% }
+  #work .groupping2 ul li .screen { right: 33% }
+}
+
 @media only screen and (max-width: 1260px) {
   #work h2 { font-size: 60px; }
   #work .groupping1 { width: 22% }
