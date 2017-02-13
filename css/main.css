@@ -1,14 +1,13 @@
 /*  */
 html, body{ overflow: hidden; width: 100%; height: 100%; margin: 0; }
 .break { display: block }
-
+body { position: relative; }
 
 #wrapper, #content, section { width: 100%; height: 100%; }
 section { z-index: 100; position: absolute; top: 0; left: 0;  }
 
 section.active { z-index: 10000; }
 
-#content { position: relative; }
 #work { overflow: hidden; }
 
 
@@ -128,7 +127,7 @@ header .aniForMenu {-moz-animation:aniForMenu 1.5s cubic-bezier(0.7,-0.1, 0.25, 
 
 body #wrapper #contact .smallerFont { font-size: 0 }
 #wrapper #contact .biggerFont { font-size: 20px }
-#contact p.default { transform: translate(-74px, -217px); -webkit-transform: translate(-74px, -217px); -ms-transform: translate(-74px, -217px); }
+#wrapper #contact p.default { transform: translate(-74px, -217px); -webkit-transform: translate(-74px, -217px); -ms-transform: translate(-74px, -217px); font-size: 23px !important; }
 #contact .translateMinus { transform: translate(-3000px); -webkit-transform: translate(-3000px); -ms-transform: translate(-3000px); }
 
 /* header */
@@ -187,7 +186,7 @@ header .sns li:last-child { margin-bottom: 0 }
 /* #intro */
 #intro { overflow: hidden }
 #intro .mainBg { z-index: 10000; overflow: hidden; top: 0; left: 0; position: absolute; text-align: center; width: 100%; height: 100%; background-color: #ffcc00 }
-#intro .shadow {transition: 2s; display: inline-block; margin-left: 73px; width: 73px; height: 100%; background: url('../imgs/shadow_yell.png') no-repeat center center; margin-top: -20px; }
+#intro .shadow {transition: 2s; display: inline-block; margin-left: 73px; width: 73px; height: 100%; background: url('../imgs/shadow_yell.png') no-repeat center center;  }
 #intro .groupping h2 { display: block; font-size: 123px; height: 91px; line-height: 109px; font-weight: 700 }
 #intro .groupping {transition: 1.5s; overflow: hidden; position: absolute; margin-top: -75px; top: 50%; left: 50%; margin-left: -189.5px; text-align: center; }
 #intro .groupping1 { transition: 0.9s; }
@@ -287,7 +286,7 @@ header .mainBg h4.leftMinus100 { transform: translate(200%); -webkit-transform: 
 #about .groupping2 h3 { transition: 0.3s; -webkit-transition: 0.3s; -ms-transition: 0.3s; -moz-transition: 0.3s; }
 .greyBg p { transition: 0.4s; -webkit-transition: 0.4s; -ms-transition: 0.4s; -moz-transition: 0.4s; }
  
-#about .groupping { position: absolute; top: 50%; margin-top: -262px; left: 50%; margin-left: -300px }
+#about .groupping { position: absolute; top: 50%; margin-top: -246px; left: 50%; margin-left: -300px }
 
 /* #work */
 
@@ -307,7 +306,7 @@ box-shadow: -23px -17px 64px -5px rgba(0,90,104,0.23); }
 
 #work .groupping2 ul { z-index: 1000; position: absolute; top: 10%; right: 0; width: 84%; text-align: left }
 #work .groupping2 ul li:first-child { margin-top: 20px !important; }
-#work .groupping2 ul li .screen { position: absolute; right: 24%; display: block; background: url('../imgs/noah.png') no-repeat; width: 369px; height: 180px; background-size: 369px 180px;transition: 0.3s; -webkit-transition: 0.3s; -ms-transition: 0.3s; -moz-transition: 0.3s;  }
+#work .groupping2 ul li .screen { position: absolute; right: 24%; bottom: 0; display: block; background: url('../imgs/noah.png') no-repeat; width: 369px; height: 176px; background-size: 369px 176px;transition: 0.3s; -webkit-transition: 0.3s; -ms-transition: 0.3s; -moz-transition: 0.3s;  }
 #work .groupping2 ul li .description { z-index: 100; position: absolute; left: 0; top: 0; width: 100%; text-align: center;transition: 0.3s; -webkit-transition: 0.3s; -ms-transition: 0.3s; -moz-transition: 0.3s;  }
 #work .groupping2 ul li .links { display: none; z-index: 300; position: absolute; width: 50%; height: 100%; top: 0; right: 35px;transition: 0.3s; -webkit-transition: 0.3s; -ms-transition: 0.3s; -moz-transition: 0.3s;  }
 #work .groupping2 ul li .serif { display: none; font-family: 'Old Standard TT', serif; font-style: italic; font-size: 12px; margin: 0 0 8px 0; transition: 0.3s; -webkit-transition: 0.3s; -ms-transition: 0.3s; -moz-transition: 0.3s; }
@@ -356,7 +355,7 @@ box-shadow: -23px -17px 64px -5px rgba(0,90,104,0.23); }
 #work .groupping2 ul li .description:hover { cursor: pointer }
 
 #work .groupping2 ul li.active p, #work .groupping2 ul li:hover p { display: block; transition: 0.3s; -webkit-transition: 0.3s; -ms-transition: 0.3s; -moz-transition: 0.3s;  }
-#work .groupping2 ul li.active .screen, #work .groupping2 ul li:hover .screen { right: 9%; width: 417px; height: 200px; background-size: 417px 200px; transition: 0.3s; -webkit-transition: 0.3s; -ms-transition: 0.3s; -moz-transition: 0.3s;  }
+#work .groupping2 ul li.active .screen, #work .groupping2 ul li:hover .screen { right: 9%; bottom: 0;  width: 417px; height: 200px; background-size: 417px 200px; transition: 0.3s; -webkit-transition: 0.3s; -ms-transition: 0.3s; -moz-transition: 0.3s;  }
 #work .groupping2 ul li.active .description, #work .groupping2 ul li:hover .description { text-align: left; left: 0; top: 0; width: 44%; height: 69%; padding: 35px 53px; transition: 0.3s; -webkit-transition: 0.3s; -ms-transition: 0.3s; -moz-transition: 0.3s;  }
 #work .groupping2 ul li.active .links, #work .groupping2 ul li:hover .links { display: block; width: 50%; height: 100%; top: 0; right: 35px; transition: 0.3s; -webkit-transition: 0.3s; -ms-transition: 0.3s; -moz-transition: 0.3s;  }
 #work .groupping2 ul li.active .serif, #work .groupping2 ul li:hover .serif { display: block;  transition: 0.3s; -webkit-transition: 0.3s; -ms-transition: 0.3s; -moz-transition: 0.3s; }
@@ -373,7 +372,7 @@ box-shadow: -23px -17px 64px -5px rgba(0,90,104,0.23); }
 
 #contact .break { display: block }
 #contact h3 { font-size: 80px; font-weight: 700; }
-#contact .groupping { z-index: 100; position: absolute; top: 50%; left: 50%; margin-top: -254px; margin-left: -340px }
+#contact .groupping { z-index: 100; position: absolute; top: 50%; left: 50%; margin-top: -250px; margin-left: -340px }
 #contact .groupping1 { position: relative; }
 #contact .groupping1 h3 { position: absolute; top: 124px; line-height: 88px; width: 681px; }
 #contact .groupping2 p { color: #767395; font-size: 12px; }
@@ -530,11 +529,27 @@ footer { z-index: 100000000; text-align: center; opacity: 0.5; letter-spacing: 0
   header nav a:nth-child(1).active .line, header nav a:nth-child(1):hover .line { width: 190px }
   header nav a:nth-child(2).active .line, header nav a:nth-child(2):hover .line { width: 180px }
   header nav a:nth-child(3).active .line, header nav a:nth-child(3):hover .line { width: 250px }
+
+  #work .groupping2 ul li .screen { right: 20% }
+  #work .groupping2 ul li.active .screen, #work .groupping2 ul li:hover .screen { right: 6% }
+}
+
+
+@media only screen and (max-width: 1200px) {
+  #work h2 { font-size: 50px; }
+  #work .groupping2 ul li.active .description, #work .groupping2 ul li:hover .description { padding-top: 30px }
+  #work .groupping2 ul li .screen { right: 18% }
+  #work .groupping2 ul li.active .screen, #work .groupping2 ul li:hover .screen { right: 4%; bottom: 0; width: 369px; background-size: 369px 176px; height: 176px; }
+  #work .groupping2 ul li.active .description, #work .groupping2 ul li:hover .description { padding-left: 41px }
+  #work .groupping2 ul li.active .links, #work .groupping2 ul li:hover .links { width: 45% }
 }
 
 
 
 @media only screen and (max-height: 700px) and (min-width: 1024px) {
+
+  #work .groupping2 ul li.active .description, #work .groupping2 ul li:hover .description { padding-top: 30px }
+ 
   .greyBg p.smaller { font-size: 80px }
 
   header .mainBg .seper { margin-left: 38% }
@@ -568,12 +583,12 @@ footer { z-index: 100000000; text-align: center; opacity: 0.5; letter-spacing: 0
   #about .groupping1 h2 { font-size: 40px }
   #about .groupping2 { background-size: 600px 286px; height: 286px }
   #about .groupping2 > ul { padding-top: 42px }
-  #about .groupping { margin-top: -247px }
+  #about .groupping { margin-top: -219px }
   
   #work h2 { font-size: 65px }
-  #work .groupping1 { top: 22% }
+  #work .groupping1 { top: 21% }
   #work .groupping2 .bg { margin-top: 267px }
-  #work .groupping2 ul { top: 6%; }
+  #work .groupping2 ul { top: 7%; }
   #work .groupping1 > ul > li { margin-bottom: 25px;  }
   #work .groupping1 ul ul li { font-size: 12px }
   #work .groupping1 ul ul { margin: 14px 0 }
@@ -585,6 +600,11 @@ footer { z-index: 100000000; text-align: center; opacity: 0.5; letter-spacing: 0
 
 }
 
+@media only screen and (max-height: 700px) and (max-width: 1100px) {
+  #work h2 { font-size: 50px; margin-bottom: 10px }
+  #work .groupping2 ul li.active .description, #work .groupping2 ul li:hover .description { padding-top: 30px }
+  #work .groupping2 ul { top: 6.5%; } 
+}
 
 @media only screen and (max-height: 600px) and (min-width: 1024px) {
   #intro .shadow { background-size: 45px; }
