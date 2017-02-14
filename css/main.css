@@ -865,7 +865,7 @@ header .aniForMenu {-moz-animation:aniForMenu 0 cubic-bezier(0.7,-0.1, 0.25, 1) 
   #intro .groupping h2 { font-size: 84px; height: 62px;  }
   #intro .first { width: 252px; font-size: 18.3px; margin: 0 auto; margin-top: 14px; margin-bottom: 2px; line-height: 27px }
   #intro .first em:last-child { font-size: 20.4px }
-  #intro .second { font-size: 16.5px }
+  #intro .second { font-size: 16px }
   #intro .groupping { margin-left: -129.4px }
 
   header .mainBg .seper { margin-left: 11% }
