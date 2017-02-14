@@ -934,7 +934,7 @@ header .aniForMenu {-moz-animation:aniForMenu 0 cubic-bezier(0.7,-0.1, 0.25, 1) 
   #about .groupping2 .active, #about .groupping2 > ul > li:hover { background-color: #ffcc00 }
   #about .groupping2 .active span.icon, #about .groupping2 > ul > li:hover span.icon  { opacity: 1 }
   #about .groupping2 .active h3, #about .groupping2 > ul > li:hover h3 { display: none; }
-  #about .groupping2 > ul { padding-top: 0 }
+  #about .groupping2 > ul { padding-top: 15px }
 
   #wrapper #work .groupping2 ul li .links a { letter-spacing: 0; width: 120px }
   #wrapper #work .groupping2 ul li .links a:last-child { margin-left: 5% }
@@ -943,6 +943,7 @@ header .aniForMenu {-moz-animation:aniForMenu 0 cubic-bezier(0.7,-0.1, 0.25, 1) 
   #wrapper #work .groupping2 ul li .description { padding-top: 20px; padding-left: 25px; padding-right: 25px }
   #wrapper #work .groupping2 ul li .serif { top: 28px }
   #work .groupping1 {width: 100% }
+  #about .groupping1 p { margin-bottom: 35px; }
 } 
 
 
