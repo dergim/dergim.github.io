@@ -9,6 +9,9 @@ section { z-index: 100; position: absolute; top: 0; left: 0;  }
 section.active { z-index: 10000; }
 
 #work { overflow: hidden; }
+::-webkit-scrollbar { 
+    display: none; 
+}
 
 
 /* js */
@@ -600,7 +603,7 @@ footer { z-index: 100000000; text-align: center; opacity: 0.5; letter-spacing: 0
 
 }
 
-@media only screen and (max-height: 700px) and (max-width: 1100px) {
+@media only screen and (max-height: 700px) and (max-width: 1100px) and (min-width: 1024px) {
   #work h2 { font-size: 50px; margin-bottom: 10px }
   #work .groupping2 ul li.active .description, #work .groupping2 ul li:hover .description { padding-top: 30px }
   #work .groupping2 ul { top: 6.5%; } 
@@ -612,4 +615,351 @@ footer { z-index: 100000000; text-align: center; opacity: 0.5; letter-spacing: 0
 }
 
 
+@media only screen and (max-width: 1024px) { 
+  footer { display: none }
+  .greyBg p.smaller { font-size: 70px }
 
+  #about .groupping1 h2 { font-size: 37px }
+  #about .groupping1 p { font-size: 12px }
+
+  #work .groupping1 { top: 85px }
+  #work .groupping1 ul li .underline { width: 3px; height: 18px; bottom: 19px; right: -20px; }
+  #work .groupping1 { width: 90%; text-align: left; padding-left: 10%; box-sizing: border-box; }
+  #work .groupping1 ul ul li { display: inline-block; padding-right: 10px }
+  #work .groupping1 ul li h3 { float: left; }
+  #work .groupping1 ul ul { display: block; margin: 0; margin-left: 130px }
+  #work .groupping1 > ul > li { margin-bottom: 16px; margin-left: 17px }
+  #work .groupping1 > ul > li:last-child ul { margin-left: 100px }
+
+  #work .groupping2 .bg { width: 90%; margin-top: 400px }
+  #work .groupping2 { width: 100% }
+  #wrapper #work .groupping2 ul li { display: inline-block; margin-top: 40px; line-height: normal; width: 90%; margin: 0; height: 200px; margin-bottom: 40px }
+  #work .groupping2 ul li.active, #work .groupping2 ul li:hover { width: 90%; margin: 0; margin-bottom: 40px }
+  #work .groupping2 ul { text-align: center; margin-top: 78px; width: 100% }
+  #work .groupping2 ul li .description { display: block; width: 44%; height: 69%; padding: 35px 53px; left: 0; top: 0; text-align: left; }
+
+
+
+/*  #work .groupping2 ul li { overflow: hidden; margin-left: 40px; line-height: 180px; position: relative; color: #fff; background: url('../imgs/noah_bg.jpg') no-repeat; background-size: cover; width: 75%; margin-left: 30px; margin-top: 70px; margin-bottom: 70px; height: 180px; transition: 0.3s; -webkit-transition: 0.3s; -ms-transition: 0.3s; -moz-transition: 0.3s;  }
+  #work .groupping2 ul li.active, #work .groupping2 ul li:hover { margin-top: 60px; margin-bottom: 60px; margin-left: 0; line-height: normal; height: 200px; width: 100%; transition: 0.3s; -webkit-transition: 0.3s; -ms-transition: 0.3s; -moz-transition: 0.3s;  }
+  #work .groupping2 ul li:hover { cursor: pointer; }
+  #work .groupping2 ul li .description:hover { cursor: pointer }
+*/
+  #wrapper #work .groupping2 ul li p { display: block;   }
+  #wrapper #work .groupping2 ul li .screen { right: 9%; bottom: 0;  width: 417px; height: 200px; background-size: 417px 200px;   }
+  #wrapper #work .groupping2 ul li .description {display: block; text-align: left; left: 0; top: 0; width: 44%; height: 69%; padding: 35px 53px;   }
+  #wrapper #work .groupping2 ul li .links { display: block; width: 50%; height: 100%; top: 0; right: 35px;   }
+  #wrapper #work .groupping2 ul li .serif {display: block;  }
+
+
+  #wrapper #work .groupping2 ul li .description { padding-top: 30px }
+  #wrapper #work .groupping2 ul li .screen { right: 3%; bottom: 0; width: 369px; background-size: 369px 176px; height: 176px; }
+  #wrapper #work .groupping2 ul li .description { padding-left: 35px; width: 50%; }
+  #wrapper #work .groupping2 ul li .links { width: 45%; right: 0; }
+  #wrapper #work .groupping2 ul li .links.oneLink a { margin-top: 80px }
+  #wrapper #work .groupping2 ul li:nth-child(6) .links { width: 45% }
+
+  header .menu, header .menu:hover { line-height: normal; width: 30px; right: 25px; z-index: 100000000000; height: 25px; margin-top: 0; top: auto; bottom: 5px; }
+  
+  header .menu .hidden { display: none; font-size: 0; width: 0; height: 0; }
+  header .menu span.burger, header .menu:hover span.burger { width: 100%; height: 2px; display: block; float: none; margin: 0; padding: 0 }
+  header .menu span.burger:nth-child(2) { margin: 0; float: none; }
+  header .menu:hover span.burger:nth-child(2) { margin-left: -6px; margin-top: 4px }
+
+  header .menu span.burger { transition: 0.3s; -webkit-transition: 0.3s; -ms-transition: 0.3s; -moz-transition: 0.3s;  }
+  header .menu span.burger:nth-child(2) { margin: 4px 0; }
+  header .menu:hover span {/* transform: translate("20px");*/ transition: 0.3s; -webkit-transition: 0.3s; -ms-transition: 0.3s; -moz-transition: 0.3s }
+  
+  header .mainBg h4 { width: 100px; height: 100px; line-height: 100px; background-image: none; right: 0;    margin-top: -76.5px; }
+  header .sns { z-index: 1000000000000; top: auto; bottom: 10px; left: 25px; width: auto; }
+  header .sns li { margin-bottom: 0; display: inline-block; margin-right: 10px }
+
+/*  header .mainBg.active { left: auto; top: 0; }
+  header .mainBg { left: auto; top: 100% }
+  header .mainBg.active .subBg { left: auto; top: 0;  }
+  header .mainBg .subBg { left: auto; top: 100%;  }*/
+  
+  #wrapper .subBg.workBorder { border-left: 50px solid #4adece; border-top: 50px solid #4adece; border-bottom: 100px solid #4adece; }
+  #wrapper .subBg.contactBorder { border-left: 50px solid #2e2a51; border-top: 50px solid #2e2a51; border-bottom: 100px solid #2e2a51;}
+  .subBg { border-top: 50px solid #fc0; border-left: 50px solid #fc0; border-bottom: 100px solid #fc0; }
+  header nav {margin-top: -109px; width: 28%; }
+  header nav a { font-size: 30px; }
+  header .mainBg .seper { height: 147px; margin-top: -97px; margin-left: 35% }
+  header h3 { margin-top: -51.5px; margin-left: 43% }
+  header nav a:nth-child(1).active .line, header nav a:nth-child(1):hover .line { width: 150px }
+  header nav a:nth-child(2).active .line, header nav a:nth-child(2):hover .line { width: 142px }
+  header nav a:nth-child(3).active .line, header nav a:nth-child(3):hover .line { width: 198px }
+  header nav a.active .line, header nav a:hover .line { display: none }
+  
+  header nav a.work { margin: 13px 0 }
+
+
+  header .aniForHoverBg {-moz-animation:aniForHoverBg 0 cubic-bezier(0.7,-0.1, 0.25, 1) 0 ;-o-animation:aniForHoverBg 0 cubic-bezier(0.7,-0.1, 0.25, 1) 0; -webkit-animation:aniForHoverBg 0 cubic-bezier(0.7,-0.1, 0.25, 1) 0 ;animation:aniForHoverBg 0 cubic-bezier(0.7,-0.1, 0.25, 1) 0 }
+
+
+@-webkit-keyframes aniForHoverBg{
+  0% { -webkit-right: 0; }
+  50% { -webkit-right: 0; }
+  100% { -webkit-right: 0; }
+}
+@-moz-keyframes aniForHoverBg{
+  0% { -moz-right: 0; }
+  50% { -moz-right: 0; }
+  100% { -moz-right: 0;}
+}
+@-o-keyframes aniForHoverBg{
+  0% { -o-right: 0; }
+  50% { -o-right: 0; }
+  100% { -o-right: 0; }
+}
+@keyframes aniForHoverBg{
+  0% { right: 0; }
+  50% { right: 0; }
+  100% { right: 0; }
+}
+
+header .aniForMenu {-moz-animation:aniForMenu 0 cubic-bezier(0.7,-0.1, 0.25, 1) 0;-o-animation:aniForMenu 0 cubic-bezier(0.7,-0.1, 0.25, 1) 0; -webkit-animation:aniForMenu 0 cubic-bezier(0.7,-0.1, 0.25, 1) 0;animation:aniForMenu 0 cubic-bezier(0.7,-0.1, 0.25, 1) 0}
+
+
+@-webkit-keyframes aniForMenu{
+  0% { -webkit-right: 25px; }
+  50% { -webkit-right: 25px; }
+  100% { -webkit-right: 25px; }
+}
+@-moz-keyframes aniForMenu{
+  0% { -moz-right: 25px; }
+  50% { -moz-right: 25px; }
+  100% { -moz-right: 25px;}
+}
+@-o-keyframes aniForMenu{
+  0% { -o-right: 25px; }
+  50% { -o-right: 25px; }
+  100% { -o-right: 25px; }
+}
+@keyframes aniForMenu{
+  0% { right: 25px; }
+  50% { right: 25px; }
+  100% { right: 25px; }
+}
+
+
+#wrapper header .menu .hidden.aniForHidden {-moz-animation:aniForHidden 0 ease-out 0;-o-animation:aniForHidden 0 ease-out 0; -webkit-animation:aniForHidden 0 ease-out 0;animation:aniForHidden 0 ease-out 0}
+
+
+@-webkit-keyframes aniForHidden{
+  0% { -webkit-transform: translate(0); }
+  50% { -webkit-transform: translate(0); }
+  100% { -webkit-transform: translate(0); }
+}
+@-moz-keyframes aniForHidden{
+  0% { -moz-transform: translate(0); }
+  50% { -moz-transform: translate(0);}
+  100% { -moz-transform: translate(0);}
+}
+@-o-keyframes aniForHidden{
+  0% { -o-transform: translate(0); }
+  50% { -o-transform: translate(0); }
+  100% { -o-transform: translate(0); }
+}
+@keyframes aniForHidden{
+  0% { transform: translate(0); }
+  50% { transform: translate(0); }
+  100% { transform: translate(0); }
+}
+  #intro .shadow { margin-top: -25px }
+  
+  header #lang { right: 25px }
+  h1 a { left: 25px }
+
+  #border .border { display: none; }
+  #border .border.btm { display: block }
+  .hoverBg { display: none }
+  
+  .greyBg p { font-size: 120px }
+
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) { 
+  body, html { min-height: 500px; }
+
+}
+
+
+@media only screen and (max-width: 768px) { 
+  #about .groupping2 { width: 447px; background-image: none; height: auto; border-top: 2px solid #f1c000; }
+  #about .groupping2 > ul { padding: 30px 0 0 0; }
+
+  #intro .groupping h2 { font-size: 100px; height: 77px; line-height: 87px }
+  #intro .first { font-size: 11.5px; margin-top: 6px } 
+  #intro .second { font-size: 19.8px }
+  #intro .groupping { margin-top: -88px; margin-left: -154px }
+  #intro .groupping.default { margin-left: -229.5px; transform: scale(1.2, 1.2, 1.2, 1.2); -ms-transform: scale(1.2, 1.2, 1.2, 1.2); -webkit-transform: scale(1.2, 1.2); }
+  #intro .shadow { background-size: 63px; background-position: left center; }
+
+  #about .groupping1 h2 { font-size: 30px; margin-bottom: 4px }
+  #about ul ul li { line-height: 26px }
+  #about .groupping2 > ul > li { height: 193px; width: 149px }
+  #about .groupping { margin-left: -223.5px; margin-top: -220px }
+  #about .groupping1 { width: 447px }
+  
+  .greyBg p { font-size: 100px }
+
+  #work .groupping2 .links a { width: 160px; }
+  #wrapper #work .groupping2 ul li .links { width: 41%  }
+  #wrapper #work .groupping2 ul li .screen { right: -8% }
+  #wrapper #work .groupping2 ul li .description { padding-right: 0; width: 55% }
+  #work .groupping2 ul li h3 { font-size: 22px }
+  #work .groupping2 .bg { height: 1405px }
+
+  header h3 { display: none; }
+
+  header nav a { text-align: left; }
+  header nav { margin-left: 25% }
+  header .mainBg .seper { margin-left: 13% }
+
+  #contact .groupping1 h3 { font-size: 65px; line-height: 70px; top: 127px }
+  #contact .groupping1 .inside span { height: 231px }
+  #contact .groupping1 .inside { height: 231px }
+  #contact .groupping2 { margin-top: 100px }
+  
+  #contact .groupping { margin-left: -282.5px  }
+  #contact .groupping1 { width: 565px; }
+  #contact .groupping1 .inside span { width: 65px }
+  #contact .groupping1 .inside span:nth-child(4) { width: 75px }
+  #contact .groupping1 h3 { left: 0; width: 100% }
+  #contact .groupping1 .inside span:nth-child(1) { margin-left: 50px }
+  #wrapper #contact p.default { font-size: 18px !important; }
+}
+
+
+
+@media only screen and (max-width: 600px) { 
+  .greyBg p.smaller { font-size: 50px }
+  .greyBg p { font-size: 80px }
+
+  #wrapper #work .groupping2 ul li { height: 214px }
+  #wrapper #work .groupping2 ul li .description { width: 51% }
+  #work .groupping2 .bg { height: 1500px }
+  #wrapper #work .groupping2 ul li .links.oneLink a { margin-top: 86px }
+  #work .groupping2 .links a:first-child { margin-bottom: 28px; margin-top: 51px }
+
+
+  #contact .groupping { margin-left: -250px; margin-top: -237px  }
+  #contact .groupping1 { width: 500px; }
+  #contact .groupping1 .inside { height: 205px }
+  #contact .groupping1 .inside span { width: 50px; height: 100% }
+  #contact .groupping1 .inside span:nth-child(4) { width: 65px }
+  #contact .groupping1 h3 { font-size: 50px; line-height: 60px; top: 119px }
+  #contact .groupping1 .inside span:nth-child(1) { margin-left: 67.5px }
+  #contact .groupping2 { letter-spacing: 0; margin-left: -109px; margin-top: 82px }
+
+}
+
+@media only screen and (max-width: 500px) { 
+  .greyBg p.smaller { font-size: 40px }
+  .greyBg p { font-size: 60px }
+  
+  #intro .shadow { background-size: 56px }
+  #intro .groupping.default { margin-left: -175.5px }
+  #intro .groupping h2 { font-size: 84px; height: 62px;  }
+  #intro .first { width: 252px; font-size: 18.6px; margin: 0 auto; margin-top: 14px; margin-bottom: 2px; line-height: 27px }
+  #intro .first em:last-child { font-size: 20.4px }
+  #intro .second { font-size: 16.5px }
+  #intro .groupping { margin-left: -129.4px }
+
+  header .mainBg .seper { margin-left: 11% }
+  header nav  { margin-left: 21% }
+  
+  #wrapper #work .groupping2 ul li .description { padding-top: 25px;position: relative; height: 100%; padding-right: 35px; box-sizing: border-box; width: 100%; }
+  #wrapper #work .groupping2 ul li .serif { position: absolute; top: 41px; right: 35px; text-transform: lowercase; }
+  #wrapper #work .groupping2 ul li .links { bottom: 20px; left: 0; top: auto; width: 100%; height: auto; }
+  #wrapper #work .groupping2 ul li:nth-child(6) .links { width: 100% }
+  #wrapper #work .groupping2 ul li .links a { margin: 0; height: 33px; line-height: 33px; width: 137px; }
+  #wrapper #work .groupping2 ul li .links a:last-child { margin-left: 9% }
+  #wrapper #work .groupping2 ul li  { position: relative;  }
+  #wrapper #work .groupping2 ul li p .break { margin-bottom: 3px }
+  #wrapper #work .groupping2 ul li .links.oneLink a { margin-left: 0 }
+
+  #work .groupping2 .links a { margin: 0; display: inline-block; }
+
+  #work h2 { font-size: 40px; margin-bottom: 10px }
+  #work .groupping1 ul li h3 { font-size: 12px; line-height: 26px }
+  #work .groupping1 ul ul { margin-left: 114px }
+  #work .groupping1 > ul > li:last-child ul { margin-left: 93px }
+  #work .groupping1 ul li .underline { height: 14px; bottom: 21px }
+  #work .groupping1 ul ul li { font-size: 12px }
+
+  #work .groupping2 ul { margin-top: 59px }
+  #work .groupping1 { top: 78px }
+  
+  #about .groupping1 { width: 350px }
+  #about .groupping2 { width: 350px }
+  #about .groupping1 p { letter-spacing: 0; }
+  #about .groupping1 h2 { font-size: 25px }
+  #about .groupping2 > ul > li { width: 116.6px }
+  #about ul ul li { font-size: 11px; line-height: 21px; font-style: normal }
+  #about .groupping2 h3 { font-size: 12px }
+  #about .groupping { margin-left: -175px }
+  
+  .subBg { border-top: 50px solid #fc0; border-left: 25px solid #fc0; border-bottom: 75px solid #fc0; } 
+  #wrapper .subBg.workBorder { border-left: 25px solid #4adece; border-top: 50px solid #4adece; border-bottom: 75px solid #4adece; }
+  #wrapper .subBg.contactBorder { border-left: 25px solid #2e2a51; border-top: 50px solid #2e2a51; border-bottom: 75px solid #2e2a51; }
+
+
+}
+
+@media only screen and (max-width: 450px) { 
+  header .mainBg h4 { width: 88px; height: 88px; line-height: 88px; margin-top: -69.5px }
+  header nav a { font-size: 25px }
+  header nav a.work { margin: 5px 0 }
+  header nav { margin-top: -91px }
+  header .mainBg .seper { height: 114px; margin-top: -82px }
+
+  #wrapper #contact p.default {  font-size: 14px !important;   transform: translate(-17px, -177px);
+    -webkit-transform: translate(-17px, -177px);
+    -ms-transform: translate(-17px, -177px); }
+}
+
+
+@media only screen and (max-width: 400px) {
+  header nav {  margin-left: 12% }
+  
+  header .mainBg .seper { display: none }
+  #about .groupping { margin-left: -150px; margin-top: -208px }
+  #about .groupping2 > ul > li svg { width: 60px }
+  #about .groupping1 { width: 300px }
+  #about .groupping2 { width: 300px }
+  #about .groupping2 > ul > li { width: 100px }
+  #about .groupping2 .active, #about .groupping2 > ul > li:hover { background-color: #ffcc00 }
+  #about .groupping2 .active span.icon, #about .groupping2 > ul > li:hover span.icon  { opacity: 1 }
+  #about .groupping2 .active h3, #about .groupping2 > ul > li:hover h3 { display: none; }
+  #about .groupping2 > ul { padding-top: 0 }
+
+  #wrapper #work .groupping2 ul li .links a { letter-spacing: 0; width: 120px }
+  #wrapper #work .groupping2 ul li .links a:last-child { margin-left: 5% }
+  #work .groupping1 > ul > li { margin-left: 0 }
+  #work .groupping1 ul ul li:last-child { padding-right: 0 }
+  #wrapper #work .groupping2 ul li .description { padding-top: 20px; padding-left: 25px; padding-right: 25px }
+  #wrapper #work .groupping2 ul li .serif { top: 28px }
+  #work .groupping1 {width: 100% }
+} 
+
+
+@media only screen and (max-width: 350px) {
+  .greyBg p.smaller { font-size: 30px }
+  .greyBg p { font-size: 45px }
+  #about .groupping2 > ul > li:nth-child(2) { margin-left: -10px; margin-right: -10px }
+  #about .groupping2 { width: 280px; margin-left: 10px }
+/*  #about .groupping2 > ul > li:nth-child(1) { margin-left: 10px }*/
+
+  #about .groupping1{ width: 270px; margin-left: 15px }
+
+  #intro .groupping h2 { font-size: 70px; height: 52px; line-height: 61px; }
+  #intro .first { width: 206px; font-size: 15.4px; margin-bottom: 3px; line-height: 22px; margin-top: 9px }
+  #intro .first em:last-child { font-size: 16.8px }
+  #intro .second { font-size: 13.5px }
+
+  #intro .groupping { margin-left: -107.5px; margin-top: -72px }
+  #intro .groupping.default { margin-left: -127.5px }
+}
