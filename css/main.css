@@ -938,6 +938,7 @@ header .aniForMenu {-moz-animation:aniForMenu 0 cubic-bezier(0.7,-0.1, 0.25, 1) 
 
   #wrapper #work .groupping2 ul li .links a { letter-spacing: 0; width: 120px }
   #wrapper #work .groupping2 ul li .links a:last-child { margin-left: 5% }
+  #wrapper #work .groupping2 ul li .links.oneLink a { margin-left: 0 }
   #work .groupping1 > ul > li { margin-left: 0 }
   #work .groupping1 ul ul li:last-child { padding-right: 0 }
   #wrapper #work .groupping2 ul li .description { padding-top: 20px; padding-left: 25px; padding-right: 25px }
@@ -948,6 +949,7 @@ header .aniForMenu {-moz-animation:aniForMenu 0 cubic-bezier(0.7,-0.1, 0.25, 1) 
 
 
 @media only screen and (max-width: 350px) {
+  #about .groupping2 > ul { padding-top: 10px }
   .greyBg p.smaller { font-size: 30px }
   .greyBg p { font-size: 45px }
   #about .groupping2 > ul > li:nth-child(2) { margin-left: -10px; margin-right: -10px }
