@@ -21,3 +21,25 @@
 	#wrapper #contact .groupping2 p { font-size: 14px }
 	
 }
+
+@media only screen and (max-width: 1024px) {
+	#work .groupping1 ul ul { margin-left: 115px }
+	
+}
+
+@media only screen and (max-width: 500px) {
+	#work .groupping1 ul ul { margin-left: 103px }
+	#wrapper #work .groupping2 ul li .serif { top: 36px }
+	
+}
+
+@media only screen and (max-width: 400px) {
+	#wrapper #work .groupping2 ul li .serif { top: 31px }
+}
+
+@media only screen and (max-width: 350px) {
+	#work .groupping2 ul li h3 { font-size: 20px; margin-bottom: 2px }
+	#wrapper #work .groupping2 ul li .description { padding-top: 22px }
+	#wrapper #work .groupping2 ul li p .break { margin-bottom: 4px }
+
+}
