@@ -720,8 +720,8 @@ nav .active { opacity: 0.5 }
   #work .prev .noMore.bg:hover span { margin-left: 0; }
     
 
- /* #work .seeDesign p.close { z-index: 10000000 }
-  #work .designGroupping { z-index: 1000000 }*/
+  #work .seeDesign p.close { z-index: 10000000 }
+  #work .designGroupping { z-index: 1000000 }
    
   .moveCircle { -webkit-animation: moveCircle 0 infinite; -o-animation: moveCircle 0 infinite; -moz-animation: moveCircle 0 infinite; animation: moveCircle 0 infinite; }
 
