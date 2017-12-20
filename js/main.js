@@ -23,82 +23,95 @@ jQuery( document ).ready(function( $ ) {
 		$("#work ul li .groupping2 a").addClass("listLink");
 		$("#work ul li .groupping2 a").addClass("tenSec");
 
-		setTimeout(function () {
+		$(".lines span.vertical").delay().queue(function(next) {
 			$(".lines span.vertical").removeClass("verticalNo");
 			$(".lines span.horizontal").removeClass("horizontalNo");
+			next();
 
-			setTimeout(function () {
+			$(".lines span.vertical").delay(2000).queue(function(next) {
 				$(".lines span.vertical").addClass("opa100");
 				$(".lines span.horizontal").addClass("opa100");
 				$(".outline img").removeClass("opa100");
+				next();
 
-				setTimeout(function () {
+				$(".outline img").delay(1000).queue(function(next) {
 					$(".outline img").addClass("opa100");
 					$(".grayscale img").removeClass("opa100");
+					next();
 
-					setTimeout(function () {
+					$(".grayscale img").delay(1000).queue(function(next) {
 						$(".grayscale img").addClass("opa100");
 						$(".colour img").removeClass("opa100");
+						next();
 
-						setTimeout(function () {
+						$(".colour img").delay(1500).queue(function(next) {
 							$(".colour img").addClass("opa100");
+							next();
 
-							setTimeout(function () {
+							$(".loading").delay(500).queue(function(next) {
 								$(".loading").addClass("upLoading, minusZIndex");
+								next();
 
-								setTimeout(function () {
+								$(".greyBackground > div > span").delay(1000).queue(function(next) {
 									$(".greyBackground > div > span").removeClass("hideBackground");
+									next();
 
-									setTimeout(function () {
+									$(".greyBackground").delay(1000).queue(function(next) {
 										$(".greyBackground").removeClass("loadingBigger");
 										$("header h1").removeClass("fromtopleft");
 										$("header nav, header .dots").removeClass("fromtopright");
 										$("#social").removeClass("frombottomleft");
 										$(".pagination").removeClass("fromcenterright");
 										$("#work").addClass("changeIndex");
+										next();
 
-										setTimeout(function () {
+										$("#work h1").delay(1000).queue(function(next) {
 											$("#work h1").removeClass("textAni");
+											next();
 
-											setTimeout(function () {
+											$(".what").delay(200).queue(function(next) {
 												$(".what").removeClass("textAni");
+												next();
 
-
-												setTimeout(function () {
+												$(".briefInfo").delay(500).queue(function(next) {
 													$(".briefInfo").removeClass("textAni");
 													$("#work .next .bg").removeClass("fromtopleft");
 													$("#work .prev .bg").removeClass("frombottomleft");
 													$("#work .prev .bg").addClass("noMore");
+													next();
 
-													setTimeout(function () {
+													$("#work ul li .groupping2 a").delay(1000).queue(function(next) {
 														$("#work ul li .groupping2 a").removeClass("listLink");
+														next();
 
-														setTimeout(function () {
+														$("#work ul li .groupping2 a").delay(500).queue(function(next) {
 															$("#work ul li .groupping2 a").removeClass("tenSec");
 															$("#work ul li.active .groupping2 a").addClass("moveCircle");
-														}, 1000);
+															next();
+
+														});
 													
-													}, 1000);
+													});
 
-												}, 500);
+												});
 
-											}, 200);
+											});
 
-										}, 1000);
+										});
 
-									}, 1000);
+									});
 
-								}, 1000);
+								});
 
-							}, 500);
+							});
 
-						}, 1500);
+						});
 
-					}, 1000);
+					});
 
-				}, 1000);
+				});
 
-			}, 2000);
+			});
 
 		}, );
 
