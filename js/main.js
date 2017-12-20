@@ -2,10 +2,13 @@ $.noConflict();
 
 
 
+
 jQuery( document ).ready(function( $ ) {
   // Code that uses jQuery's $ can follow here.
 
-	$(window).on('load', function(){
+	
+
+  		$(window).on('load', function(){
 
 		$("#work .next .bg").addClass("fromtopleft");
 		$("#work .prev .bg").addClass("frombottomleft");
@@ -162,11 +165,6 @@ jQuery( document ).ready(function( $ ) {
 		// $(".lines span.horizontal").removeClass("horizontalNo");
 
 	});
-
-	$(document).ready(function(){
-		
-
-		
 
 
 		$("header nav a").click(function(){
@@ -420,7 +418,7 @@ jQuery( document ).ready(function( $ ) {
 	});
 
 
-	});
+
 
 
 
