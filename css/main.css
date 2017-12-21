@@ -197,7 +197,12 @@ nav .active { opacity: 0.5 }
 #work ul li:nth-child(3) .groupping2 a { background-image: url('../imgs/fourPlanets.png') !important; }
 #work ul li:nth-child(4) .groupping2 a { background-image: url('../imgs/prie.png') !important; }
 #work ul li:nth-child(5) .groupping2 a { background-image: url('../imgs/jandik.png') !important; }
-
+#wrapper #work > ul > li:first-child .groupping2 a { background-color: #0433ff }
+  #wrapper #work > ul > li:nth-child(2) .groupping2 a { background-color: #f02416 }
+  #wrapper #work > ul > li:nth-child(3) .groupping2 a { background-color: #4f2ad5 }
+  #wrapper #work > ul > li:nth-child(4) .groupping2 a { background-color: #f42411 }
+  #wrapper #work > ul > li:nth-child(5) .groupping2 a { background-color: #ff2c5f }
+  
 #work ul li .groupping2 a:hover .seeDetail { opacity: 1; }
 
 #work ul li h1 { font-size: 60px; font-weight: 400; letter-spacing: -2px; transition: 0.3s ease-in; }
