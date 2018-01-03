@@ -1,6 +1,6 @@
 /*  */
 html, body{ overflow: hidden; width: 100%; height: 100%; margin: 0; }
-body { overflow: hidden; margin: 0; background-image: url('../imgs/mainBg.jpg');  background-image: radial-gradient(at 39% 135% , #ee475c -67%, #19182A 80%);
+body {  overflow: hidden; margin: 0; background-image: url('../imgs/mainBg.jpg');  background-image: radial-gradient(at 39% 135% , #ee475c -67%, #19182A 80%);
   background-image: -webkit-radial-gradient(at 39% 135% , #ee475c -67%, #19182A 80%);
   background-image: -moz-radial-gradient(at 39% 135% , #ee475c -67%, #19182A 80%);
   background-image: -o-radial-gradient(at 39% 135% , #ee475c -67%, #19182A 80%); background-size: 100% 100%; background-repeat: no-repeat;  background-attachment: fixed;}
@@ -8,6 +8,43 @@ input[type=text], input[type=submit], input[type=buttom], input[type=reset],inpu
 
 input[type=text], input[type=password] { background-color: #fff }
 
+
+.opa0 { opacity: 0 !important;  }
+.fromTop { margin-top: -20px; transition: 0.5s; }
+/*.loadingColour { background: #19182A !important; }
+*/.transitTwo { transition: 2s; -webkit-transition: 2s; }
+.transitOne { transition: 1s; }
+.planetLeft { top: 90% !important;
+    width: 0 !important;
+    height: 0 !important;
+    left: 50% !important;
+    margin-left: -5px; opacity: 0.1;
+}
+
+.planetRight { 
+	top: 90% !important;
+    width: 0 !important;
+    height: 0 !important;
+	right: 50% !important; margin-right: -5px; opacity: 0.1; }
+
+
+.loading { position: absolute; z-index: 100000; width: 100%; height: 100%; background: #19182A }
+.loading .dots { opacity: 0.3; position: absolute; top: 50%; left: 50%; margin-top: -25px; margin-left: -25px; width: 50px; height: 50px; border-radius: 50%; background: #F32651; }
+.dots:nth-child(1) { box-shadow: #F32651 0px 0px 50.5px; }
+.dots:nth-child(2) { background: #10CEE9; box-shadow: #10CEE9 0px 0px 50.5px; }
+.dots:nth-child(3) { background: #F48E0F; box-shadow: #F48E0F 0px 0px 50.5px; }
+.dots:nth-child(4) { background: #11F5B0; box-shadow: #11F5B0 0px 0px 50.5px;  }
+
+.transitHalf { transition: 0.5s; }
+.black { position: absolute; top: 90%; left: 50%;  width: 0; height: 0; background: #000; border-radius: 50%; opacity: 0; }
+.blackAni { top: -10%; margin-left: -25px; width: 50px; height: 50px; opacity: 0.5; }
+.black:nth-child(1) { background: #F32651; }
+.black:nth-child(2) { background: #10CEE9; }
+.black:nth-child(3) { background: #F48E0F; }
+.black:nth-child(4) { background: #11F5B0; }
+
+.fromTopTwo { transform: translateY(-20px); }
+.fromBtm { transform: translateY(20px); }
 
 /* #wrapper_gradient */
 
