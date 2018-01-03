@@ -13,7 +13,6 @@ jQuery( document ).ready(function( $ ) {
 
 	    if(num == 101) {
 	        clearInterval(i);
-	        $(".loading").fadeOut(100);
 	    }
 	}, 40);
 
@@ -402,7 +401,8 @@ jQuery( document ).ready(function( $ ) {
 });
 
 
+$(window).on('load', function(){
 
-
-
-
+ $(".loading").fadeOut(100);
+ 
+});

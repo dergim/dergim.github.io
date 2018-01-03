@@ -29,9 +29,8 @@ jQuery( document ).ready(function( $ ) {
 
 		    if(num == 101) {
 		        clearInterval(i);
-		        $(".loading").fadeOut(100);
 		    }
-		}, 40);
+		}, 2000);
 
 
 		function smoothScroll (duration) {
@@ -181,7 +180,9 @@ jQuery( document ).ready(function( $ ) {
 
 
 $(window).on('load', function(){
-	$(this).delay(4000).queue(function(){
+
+	$(".loading").fadeOut(100);
+	$(this).delay(100).queue(function(){
 
 		$(".loadingPage span:eq(0)").addClass("left");
 		$(".loadingPage span:eq(1)").addClass("right");
