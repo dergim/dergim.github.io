@@ -1,3 +1,7 @@
+
+.subLoading .plaDot { box-shadow: #10CEE9 0px 0px 50.5px; background: #10CEE9; }
+
+
 #contents { 
 	background-image: url('../imgs/pro.jpg'); 
 	background-image: radial-gradient(at 39% 135% , #259ed0 -67%, #181528 80%);

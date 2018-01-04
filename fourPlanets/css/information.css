@@ -1,3 +1,6 @@
+.subLoading .plaDot { box-shadow: #11F5B0 0px 0px 50.5px; background: #11F5B0; }
+
+
 input[type=text], input[type=submit], input[type=buttom], input[type=reset],input[type=password], textarea  { background: none; border: 0 none; appearance: none; -moz-appearance: none; -webkit-appearance: none; border-radius: 0; -webkit-border-radius: 0; -moz-border-radius: 0; box-shadow: 0 0 0 0; -moz-box-shadow: 0 0 0 0; -webkit-box-shadow: 0 0 0 0; }
 select { background: none; border: 0 none;-webkit-appearance: none; appearance: none; -moz-appearance: none; border-radius: 0; -webkit-border-radius: 0; -moz-border-radius: 0; box-shadow: 0 0 0 0; -moz-box-shadow: 0 0 0 0; -webkit-box-shadow: 0 0 0 0;  }
 

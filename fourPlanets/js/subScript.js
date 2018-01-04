@@ -3,6 +3,12 @@ jQuery( document ).ready(function( $ ) {
   // Code that uses jQuery's $ can follow here.
 
 
+  $("#allGroup").addClass("hidden");
+  $(".subLoading .plaDot").addClass("opa0");
+
+
+
+
   // main menu 
 
   $("#mainMenu").click(function(){
@@ -82,4 +88,29 @@ jQuery( document ).ready(function( $ ) {
 
 });
 
+
+$(window).on('load', function(){
+
+  
+
+  $(".subLoading .plaDot").delay(500).queue(function(next) {
+    $(".subLoading .plaDot").addClass("transitHalf");
+    $(this).removeClass("opa0");
+
+      $(".subLoading .plaDot").delay(1000).queue(function(next) {
+        $(this).addClass("opa0");
+        next();
+
+        $(".subLoading").delay(1000).queue(function(next) {
+          $(this).fadeOut(500);
+          $("#allGroup").removeClass("hidden");
+          next();
+
+        });
+
+      });
+    next();
+  });
+
+});
 

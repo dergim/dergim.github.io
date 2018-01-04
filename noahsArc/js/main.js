@@ -13,7 +13,7 @@ jQuery( document ).ready(function( $ ) {
 		$("#banner ul li p.descript").addClass("fontSize");
 		$("#banner > ul > li > a").addClass("fontSize");
 		$("#banner ul li .groupping").addClass("opa");
-		$("#about .deco").addClass("heightZero");
+		// $("#about .deco").addClass("heightZero");
 		$("#services .imgs .img").addClass("heightZero");
 		$("#services .imgs .deco").addClass("heightZero");
 		$("#people .vid").addClass("scaleBigger");
@@ -143,7 +143,7 @@ jQuery( document ).ready(function( $ ) {
 				$("#about .deco").addClass("heightZero");
 			}
 
-			if(currentScrollPosition > getBHeight+500) {
+			if(currentScrollPosition > getBHeight+800) {
 				$("#services .imgs li:eq(0) .img").removeClass("heightZero");
 				$("#services .imgs li:eq(1) .img").removeClass("heightZero");
 				$("#services .imgs .deco").removeClass("heightZero");

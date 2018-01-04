@@ -1,6 +1,18 @@
-body, html { overflow: hidden; width: 100%; height: auto; overflow-y: auto }
-body { background-color: #1f1f38; position: relative; }
+body, html { width: 100%; height: 100%; }
+#allGroup { overflow: hidden; width: 100%; height: auto; overflow-y: auto; background-color: #1f1f38; position: relative; }
 input[type=text], input[type=submit], input[type=buttom], input[type=reset],input[type=password], textarea  { background: none; border: 0 none; appearance: none; -moz-appearance: none; -webkit-appearance: none; border-radius: 0; -webkit-border-radius: 0; -moz-border-radius: 0; box-shadow: 0 0 0 0; -moz-box-shadow: 0 0 0 0; -webkit-box-shadow: 0 0 0 0; }
+
+
+.subLoading { position: absolute; z-index: 100000; width: 100%; height: 100%; background: #19182A }
+.forRel { position: relative; width: 100%; height: 100%; }
+.subLoading .plaDot { opacity: 0.3; position: absolute; top: 50%; left: 50%; margin-top: -25px; margin-left: -25px; width: 50px; height: 50px; border-radius: 50%; }
+
+/* for js */
+#allGroup.hidden { height: 100% !important; }
+.opa0 { opacity: 0 !important; }
+.transitHalf { transition: 0.5s; -webkit-transition: 0.5s; }
+.transitOne { transition: 1s; -webkit-transition: 1s; }
+
 
 
 input { font-family: 'Robto', 'arial', sans-serif; outline: none }
